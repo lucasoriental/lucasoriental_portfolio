@@ -17,7 +17,7 @@ const EducationAndSkillsPage = () => {
   const fetchData = async (lng) => {
     try {
       const response = await fetch(
-        `https://lucasoriental.github.io/lucasorientalApiTest/database.json`
+        `https://lucasoriental.github.io/lucasorientalapi/database.json`
       );
       const data = await response.json();
       const dynamicTranslations = data[lng];
