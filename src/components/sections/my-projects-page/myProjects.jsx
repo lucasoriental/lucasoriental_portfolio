@@ -1,33 +1,67 @@
 import { useEffect, useState } from "react";
 import MyProjectModal from "./common/myProjectModal";
 
+import { useTranslation } from "react-i18next";
+
+import i18n from "../../../i18n";
+
 const MyProjectsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [project, setProject] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
+  const { t } = useTranslation();
+
+  const fetchData = async (lng) => {
+    try {
+      const response = await fetch(
+        `https://lucasoriental.github.io/lucasorientalApiTest/database.json`
+      );
+      const data = await response.json();
+      const dynamicTranslations = data[lng];
+
+      i18n.addResourceBundle(
+        lng,
+        "translation",
+        { myProjectsPage: dynamicTranslations },
+        true,
+        true
+      );
+      setProject(dynamicTranslations);
+      setIsLoading(false);
+    } catch (err) {
+      console.error(
+        "Something error happend during fetch on the My Projects page, please try refreshing the site..."
+      );
+    }
+  };
+
   useEffect(() => {
-    
-    const fetchData = async () => {
-      try {
-        const response = await fetch("https://lucasoriental.github.io/lucasorientalapi/database.json");
-        setProject(await response.json());
-        setIsLoading(false);
-      } catch (err) {
-        console.error(
-          "Something error happend during fetch on the My Projects page, please try refreshing the site..."
-        );
-      }
+    fetchData(i18n.language);
+
+    const handleLanguageChange = () => {
+      fetchData(i18n.language);
     };
-    fetchData();
+
+    i18n.on("languageChanged", handleLanguageChange);
+
+    return () => {
+      i18n.off("languageChanged", handleLanguageChange);
+    };
   }, []);
 
   return (
-    <div id="my-projects-container" >
+    <div id="my-projects-container">
       <div className="container-general">
         <div>
-          <p className="title-general" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">My Projects</p>
+          <p
+            className="title-general"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            {t("sections.myProjectsPage.title")}
+          </p>
         </div>
         {isLoading === true ? (
           <p
@@ -39,7 +73,7 @@ const MyProjectsPage = () => {
               fontWeight: "500",
             }}
           >
-            The data is loading, please wait a moment....
+            {t("errorMessages")}
           </p>
         ) : (
           <div className="project-view">
@@ -57,19 +91,30 @@ const MyProjectsPage = () => {
               }
               return (
                 <div key={project.id} className="div-each-project">
-                  <div className="div-project-image" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                  <div
+                    className="div-project-image"
+                    data-aos="fade-left"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
                     <img
                       className="project-image"
                       src={project.img}
                       alt="Project_image"
                     />
                   </div>
-                  <div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
                     <p className="project-title">{project.projectName}</p>
                     <p className="project-sub-title">{project.projectArea}</p>
                     <div className="my-project-tec-images">{tecs}</div>
                   </div>
-                  <a className="project-link-button" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                  <a
+                    className="project-link-button"
+                    data-aos="fade-left"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
                     <button
                       onClick={() => {
                         setSelectedProject(index);
@@ -77,7 +122,7 @@ const MyProjectsPage = () => {
                       }}
                       className="project-button"
                     >
-                      more details
+                      {t("sections.myProjectsPage.buttonText")}
                     </button>
                   </a>
                   {modalOpen && selectedProject === index && (

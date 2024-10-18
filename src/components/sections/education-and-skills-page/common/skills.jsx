@@ -42,8 +42,11 @@ export default function Skills(props) {
   }, []);
 
   return (
-    <div className="allSkills" data-aos="fade-right"
-    data-aos-anchor-placement="bottom-bottom">
+    <div
+      className="allSkills"
+      data-aos="fade-right"
+      data-aos-anchor-placement="bottom-bottom"
+    >
       <Swiper
         slidesPerView={itemsPerPage}
         spaceBetween={-100}

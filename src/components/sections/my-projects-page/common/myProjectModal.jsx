@@ -4,8 +4,12 @@ import BehanceIcon from "../../../../assets/light_theme/Behance";
 import GitHubIcon from "../../../../assets/light_theme/GitHub";
 import BrowserIcon from "../../../../assets/light_theme/browser";
 
+import { useTranslation } from "react-i18next";
+
 export default function MyProjectModal({ information, setOpenModal }) {
   const [iconSize, setIconSize] = useState(window.innerWidth <= 800 ? 15 : 30);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.body.classList.add("modal-open");
@@ -33,7 +37,9 @@ export default function MyProjectModal({ information, setOpenModal }) {
           >
             <XIconSvg width={30} height={30} strokeWidth={3} color="white" />
           </button>
-          <p className="modal-header-title">Check the Project</p>
+          <p className="modal-header-title">
+            {t("sections.myProjectsPage.headerModalText")}
+          </p>
         </div>
         <div className="modal-body">
           <img className="modal-img" src={information.img} alt="#" />
