@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import XIconSvg from "../../../../assets/common_elements/icon_X";
 
+import { useTranslation } from "react-i18next";
+
 export default function JobExperiencesModal({ setOpenModal, information }) {
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.body.classList.add("modal-open");
-    
+
     return () => {
       document.body.classList.remove("modal-open");
     };
@@ -23,7 +26,9 @@ export default function JobExperiencesModal({ setOpenModal, information }) {
           >
             <XIconSvg width={30} height={30} strokeWidth={3} color="white" />
           </button>
-          <p className="modal-header-title">Job Details</p>
+          <p className="modal-header-title">
+            {t("sections.jobExperiencesPage.headerModalText")}
+          </p>
         </div>
         <div className="modal-job-body">
           <div className="modal-body-img-and-info">
@@ -35,15 +40,28 @@ export default function JobExperiencesModal({ setOpenModal, information }) {
               />
             </div>
             <div className="modal-body-img-and-info-right">
-              <p className="modal-job-company-name">
-                {information.companyName}
-              </p>
-              <p className="modal-job-time">{information.time}</p>
-              <p className="modal-job-title">{information.jobTitle}</p>
+              <div
+                className="modal-job-company-name"
+                dangerouslySetInnerHTML={{
+                  __html: information.companyName,
+                }}
+              />
+              <div
+                className="modal-job-time"
+                dangerouslySetInnerHTML={{
+                  __html: information.time,
+                }}
+              />
+              <div
+                className="modal-job-title"
+                dangerouslySetInnerHTML={{
+                  __html: information.jobTitle,
+                }}
+              />
             </div>
           </div>
           <p className="modal-job-title-responsibilities">
-            My responsabilities on this experience:
+            {t("sections.jobExperiencesPage.bodyModalText")}
           </p>
           <div
             className="modal-job-responsibilities"

@@ -1,6 +1,11 @@
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+import i18n from "../../../../i18n";
+
 export default function College(props) {
+  const { t } = useTranslation();
+
   return (
     <div className="allColeges">
       {props.data.map((college) => {
@@ -13,7 +18,11 @@ export default function College(props) {
               src={college.img}
               className="EAS-college-picture"
             />
-            <div className="EAS-college-info-div" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+            <div
+              className="EAS-college-info-div"
+              data-aos="fade-right"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <a
                 href={college.websiteLink}
                 target="_blank"
@@ -29,7 +38,7 @@ export default function College(props) {
                 className="EAS-college-button"
               >
                 <button className="EAS-college-button">
-                  University Website
+                  {t('sections.educationAndSkillsPage.section1.buttonText')}
                 </button>
               </a>
             </div>

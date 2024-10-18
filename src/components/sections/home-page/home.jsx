@@ -6,11 +6,15 @@ import LinkedInSVG from "../../../assets/light_theme/LinkedIn";
 import MouseSrollSvg from "../../../assets/light_theme/mouse_arrow_down";
 import main_picture from "../../../assets/pictures/profile_photo_1.jpg";
 
-import { Tooltip } from 'react-tooltip';
+import { Tooltip } from "react-tooltip";
 
 import { Link } from "react-scroll";
 
+import { useTranslation } from "react-i18next";
+
 const MainPage = () => {
+  const { t } = useTranslation();
+
   const headerHeight = 120;
 
   return (
@@ -27,19 +31,28 @@ const MainPage = () => {
         <div className="home-column2">
           <div className="home-line1">
             <div>
-              <p className="home-paragraph-1">Hey there!</p>
-              <p className="home-paragraph-2">
-                This is <span>Lucas Oriental!</span>
-              </p>
+              <p className="home-paragraph-1">{t("sections.homePage.text1")}</p>
+              <div
+                className="home-paragraph-2"
+                dangerouslySetInnerHTML={{
+                  __html: t("sections.homePage.text2"),
+                }}
+              />
             </div>
             <div>
-              <p className="home-paragraph-1And2-mobile">
-                Hey there, this is <span>Lucas Oriental!</span>
-              </p>
+              <div
+                className="home-paragraph-1And2-mobile"
+                dangerouslySetInnerHTML={{
+                  __html: t("sections.homePage.textMobile"),
+                }}
+              />
             </div>
-            <p className="home-paragraph-3">
-              A <span>WEB Developer Jr</span> And <span>UX/UI Designer</span>
-            </p>
+            <div
+              className="home-paragraph-3"
+              dangerouslySetInnerHTML={{
+                __html: t("sections.homePage.text3"),
+              }}
+            />
           </div>
           <div className="home-line2">
             <Link
@@ -50,13 +63,17 @@ const MainPage = () => {
               offset={-headerHeight}
               duration={1000}
             >
-              <button id="home-button">Who Am I?</button>
+              <button id="home-button">
+                {t("sections.homePage.textButton")}
+              </button>
             </Link>
             <div className="home-social-medias">
               <a
                 place="top"
                 data-tooltip-id="my-tooltip-instagram"
-                data-tooltip-content="My Instagram"
+                data-tooltip-content={t(
+                  "sections.homePage.toolTipTexts.instagram"
+                )}
                 href="https://instagram.com/lucasorientaldev"
                 target="_blank"
                 className="home-social-medias-a"
@@ -67,7 +84,9 @@ const MainPage = () => {
               <a
                 place="top"
                 data-tooltip-id="my-tooltip-GitHub"
-                data-tooltip-content="My GitHub"
+                data-tooltip-content={t(
+                  "sections.homePage.toolTipTexts.gitHub"
+                )}
                 href="https://github.com/lucasoriental"
                 target="_blank"
                 className="home-social-medias-a"
@@ -78,7 +97,9 @@ const MainPage = () => {
               <a
                 place="top"
                 data-tooltip-id="my-tooltip-LinkedIn"
-                data-tooltip-content="My LinkedIn"
+                data-tooltip-content={t(
+                  "sections.homePage.toolTipTexts.linkedIn"
+                )}
                 href="https://linkedin.com/in/lucas-oriental-dos-santos"
                 target="_blank"
                 className="home-social-medias-a"
@@ -89,7 +110,9 @@ const MainPage = () => {
               <a
                 place="top"
                 data-tooltip-id="my-tooltip-Behance"
-                data-tooltip-content="My Behance"
+                data-tooltip-content={t(
+                  "sections.homePage.toolTipTexts.behance"
+                )}
                 href="https://behance.net/lucasoriental"
                 target="_blank"
                 className="home-social-medias-a"

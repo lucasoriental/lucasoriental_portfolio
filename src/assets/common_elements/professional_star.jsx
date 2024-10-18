@@ -1,13 +1,18 @@
 import { Tooltip } from "react-tooltip";
 
+import { useTranslation } from "react-i18next";
+
 export default function ProfessionalStarIconSvg({ size, outColor, inColor }) {
+  const { t } = useTranslation();
 
   return (
     <>
       <Tooltip id="my-tooltip-skill" />
       <svg
         data-tooltip-id="my-tooltip-skill"
-        data-tooltip-content="Obtained by through professional experience"
+        data-tooltip-content={t(
+          "sections.educationAndSkillsPage.section2and3.toolTipSkill"
+        )}
         className="professional-Skill-star"
         width={size}
         height={size}

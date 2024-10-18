@@ -15,6 +15,27 @@
 // General Styles
 // ------------------------------------
 
+.languageSwitcher-en-button,
+.languageSwitcher-pt-button {
+  width: 22px;
+  height: 22px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--RedLight);
+  border: 1px solid black;
+  color: white;
+}
+
+.div-languageSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .title-general {
   font-size: 70px;
   font-weight: 700;

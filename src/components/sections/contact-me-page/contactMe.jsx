@@ -7,7 +7,10 @@ import LocationSVG from "../../../assets/light_theme/locate";
 import MailSVG from "../../../assets/light_theme/mail";
 import NumberSVG from "../../../assets/light_theme/wpp_or_call";
 
+import { useTranslation } from "react-i18next";
+
 const contactMePage = () => {
+  const { t } = useTranslation();
   return (
     <div id="contact-me-container">
       <div className="container-general">
@@ -16,7 +19,7 @@ const contactMePage = () => {
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
         >
-          CONTACT ME
+          {t("sections.contactMePage.title")}
         </p>
         <div className="contact-me-form-social">
           <div className="contact-me-left-side">
@@ -27,7 +30,7 @@ const contactMePage = () => {
                   data-aos="fade-right"
                   data-aos-anchor-placement="bottom-bottom"
                 >
-                  Get in Touch!
+                  {t("sections.contactMePage.text1")}
                 </p>
                 <canvas
                   className="left-side-form-above-title"

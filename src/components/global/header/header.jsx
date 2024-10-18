@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import XIconSvg from "../../../assets/common_elements/icon_X";
 import MenuHamburguer from "../../../assets/common_elements/icon_menu_hamburger";
 
+import { useTranslation } from "react-i18next";
+
+import LanguageSwitcher from "../../../LanguageSwitcher";
+
 import { Link } from "react-scroll";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const headerHeight = 120;
 
   const [isActive, setIsActive] = useState(false);
@@ -26,10 +32,7 @@ const Header = () => {
     <header id="header-main">
       <div id="header-desktop">
         <nav className="header-desktop-nav">
-          {/* <div className="header-desktop-theme">
-            <div className="header-theme-selected" />
-            <ThemeSvg />
-          </div> */}
+          <LanguageSwitcher />
           <Link
             activeClass="active"
             to="home-main-container"
@@ -38,7 +41,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            Home
+            {t("header.home")}
           </Link>
           <Link
             activeClass="active"
@@ -48,7 +51,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            My Projects
+            {t("header.projects")}
           </Link>
           <Link
             activeClass="active"
@@ -58,7 +61,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            Education & Skills
+            {t("header.education")}
           </Link>
           <Link
             activeClass="active"
@@ -68,7 +71,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            Job Experiences
+            {t("header.jobs")}
           </Link>
           <Link
             activeClass="active"
@@ -78,7 +81,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            About Me
+            {t("header.about")}
           </Link>
           <Link
             activeClass="active"
@@ -88,22 +91,8 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            Contact Me
+            {t("header.contact")}
           </Link>
-          {/* <Link
-            activeClass="active"
-            to="about-me-container"
-            spy={true}
-            smooth={true}
-            offset={-headerHeight}
-            duration={1000}
-          >
-            Have a Fun😊
-          </Link> */}
-          {/* <div className="header-desktop-language">
-            <div className="header-language-selected" />
-            <LanguageSvg />
-          </div> */}
         </nav>
       </div>
 
@@ -133,16 +122,6 @@ const Header = () => {
                 />
               </button>
             </div>
-            {/* <div className="header-mobile-side-bar-top-Icons">
-              <div className="header-mobile-side-bar-top-Theme">
-                <div className="header-theme-selected" />
-                <ThemeSvg />
-              </div>
-              <div className="header-mobile-side-bar-top-Language">
-                <div className="header-language-selected" />
-                <LanguageSvg />
-              </div>
-            </div> */}
           </div>
           <nav className="header-mobile-side-bar-nav">
             <Link
@@ -154,7 +133,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              Home
+              {t("header.home")}
             </Link>
             <Link
               activeClass="active"
@@ -165,7 +144,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              My Projects
+              {t("header.projects")}
             </Link>
             <Link
               activeClass="active"
@@ -176,7 +155,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              Education & Skills
+              {t("header.education")}
             </Link>
             <Link
               activeClass="active"
@@ -187,7 +166,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              Job Experiences
+              {t("header.jobs")}
             </Link>
             <Link
               activeClass="active"
@@ -198,7 +177,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              About Me
+              {t("header.about")}
             </Link>
             <Link
               activeClass="active"
@@ -209,19 +188,9 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              Contact Me
+              {t("header.contact")}
             </Link>
-            {/* <Link
-              activeClass="active"
-              to="about-me-container"
-              spy={true}
-              smooth={true}
-              offset={-headerHeight}
-              duration={1000}
-              onClick={handleClickLink}
-            >
-              Have a Fun😊
-            </Link> */}
+            <LanguageSwitcher onClick={handleClickLink} />
           </nav>
         </div>
       </div>
