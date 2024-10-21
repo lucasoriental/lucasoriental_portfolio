@@ -95,7 +95,6 @@ const Header = () => {
           </Link>
         </nav>
       </div>
-
       <div id="header-mobile">
         <div className="header-mobile-bar">
           <button className="hamburguer" onClick={handleClick}>
@@ -106,7 +105,7 @@ const Header = () => {
               strokeColor="white"
             />
           </button>
-          <img alt="logo" src="" />
+          <LanguageSwitcher onClick={handleClickLink} />
         </div>
         <div
           className={`header-mobile-side-bar ${isActive ? "is-active" : ""}`}
@@ -190,7 +189,6 @@ const Header = () => {
             >
               {t("header.contact")}
             </Link>
-            <LanguageSwitcher onClick={handleClickLink} />
           </nav>
         </div>
       </div>

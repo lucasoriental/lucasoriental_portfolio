@@ -32,17 +32,9 @@ const contactMePage = () => {
                 >
                   {t("sections.contactMePage.text1")}
                 </p>
-                <canvas
-                  className="left-side-form-above-title"
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="bottom-bottom"
-                />
+                <canvas className="left-side-form-above-title" />
               </div>
-              <div
-                className="left-side-all-items"
-                data-aos="fade-left"
-                data-aos-anchor-placement="bottom-bottom"
-              >
+              <div className="left-side-all-items">
                 <div className="left-side-item">
                   <a
                     href="https://maps.app.goo.gl/WRGVPhNip7Dmu8Zg7"
@@ -50,7 +42,7 @@ const contactMePage = () => {
                     className="left-side-item-a"
                   >
                     <p className="social-media-name">
-                      Rio de Janeiro (RJ) - Brazil
+                      {t("sections.contactMePage.localization")}
                     </p>
                     <LocationSVG width={40} height={41} color={"#E00036"} />
                   </a>
