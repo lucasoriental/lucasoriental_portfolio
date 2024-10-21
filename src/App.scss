@@ -1048,6 +1048,14 @@
   }
 }
 
+.about-me-container-items {
+  @media (max-width: 398px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .about-me-image {
   height: 300px;
   width: 300px;
@@ -1059,6 +1067,10 @@
   @media (max-width: 1000px) {
     width: 200px;
     height: 200px;
+  }
+
+  @media (max-width: 398px) {
+    margin-bottom: 15px; 
   }
 }
 
