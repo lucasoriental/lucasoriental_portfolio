@@ -1,5 +1,5 @@
-import {useEffect} from "react";
-import 'react-tooltip/dist/react-tooltip.css';
+import { useEffect } from "react";
+import "react-tooltip/dist/react-tooltip.css";
 import Header from "../src/components/global/header/header";
 import "./App.scss";
 import AboutMe from "./components/sections/about-me-page/aboutMe";
@@ -13,12 +13,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
-
-  useEffect(()=>{
-    AOS.init({duration: 1000});
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
   }, []);
 
-  alert("en/us -> This project is still in progress! Updates/Improvements will be made over time, thank you for your understanding!; pt/br -> Este projeto ainda está em andamento! Atualizações/Melhorias serão feitas ao longo do tempo, obrigado pela compreensão!")
   return (
     <>
       <Header />
