@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import image from "../../../assets/pictures/img_about_me_section.jpeg";
+import image from "../../../assets/pictures/img_about_me_section.jpg";
 
 import { useTranslation } from "react-i18next";
 import i18n from "../../../i18n";
