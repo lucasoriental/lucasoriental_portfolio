@@ -63,7 +63,7 @@ const contactMePage = () => {
                     target="_blank"
                     className="left-side-item-a"
                   >
-                    <p className="social-media-name">+351 928 626 826</p>
+                    <p className="social-media-name">+351 938 626 826</p>
                     <NumberSVG width={39} height={42} color={"#E00036"} />
                   </a>
                 </div>
