@@ -37,12 +37,12 @@ const contactMePage = () => {
               <div className="left-side-all-items">
                 <div className="left-side-item">
                   <a
-                    href="https://maps.app.goo.gl/WRGVPhNip7Dmu8Zg7"
+                    href="https://maps.app.goo.gl/DKu344RzMXNqM6C46"
                     target="_blank"
                     className="left-side-item-a"
                   >
                     <p className="social-media-name">
-                      {t("sections.contactMePage.localization")}
+                    Figueira da Foz - Portugal
                     </p>
                     <LocationSVG width={40} height={41} color={"#E00036"} />
                   </a>
@@ -59,11 +59,11 @@ const contactMePage = () => {
                 </div>
                 <div className="left-side-item">
                   <a
-                    href="https://web.whatsapp.com/send?phone=5521995253580"
+                    href="tel:+351938626826"
                     target="_blank"
                     className="left-side-item-a"
                   >
-                    <p className="social-media-name">+55 (21) 99525-3580</p>
+                    <p className="social-media-name">+351 928 626 826</p>
                     <NumberSVG width={39} height={42} color={"#E00036"} />
                   </a>
                 </div>
