@@ -19,14 +19,14 @@ i18n.use(initReactI18next).init({
             text1: "Hey there!",
             text2: "This is <span>Lucas Oriental!</span>",
             text3:
-              "A <span>WEB Developer</span> And <span>UX/UI Designer</span>",
+              "A <span>Full-Stack Developer</span> & <span>UX/UI Designer</span>",
             textButton: "Who Am I?",
-            textMobile: "Hey there, this is <span>Lucas Oriental!</span>",
+            textMobile: "Hey there, this is <span>Lucas Oriental dos Santos!</span>",
             toolTipTexts: {
-              instagram: "My Instagram",
-              gitHub: "My GitHub",
-              linkedIn: "My LinkedIn",
-              behance: "My Behance",
+              instagram: "@lucasorientaldev",
+              gitHub: "@lucasoriental",
+              linkedIn: "Lucas Oriental dos Santos",
+              behance: "@lucasoriental",
             },
           },
           myProjectsPage: {
@@ -42,7 +42,7 @@ i18n.use(initReactI18next).init({
               toolTipSkill: "Obtained by through professional experience",
               titleCert: "Certificates",
               toolTipCert: "Click to see the credential",
-              itSec: "Information Technology (IT)",
+              itSec: "Development",
               desSec: "Design",
               modal_cert: {header: "Course Information", input1: "Credential Code", input2: "Website to validate the certificate", button: "Click here to validate it!"}
             },
@@ -74,15 +74,15 @@ i18n.use(initReactI18next).init({
             text1: "Seja Bem-Vindo!",
             text2: "Meu nome é <span>Lucas Oriental!</span>",
             text3:
-              "Sou <span>Desenvolvedor Web</span> e <span>Designer UX/UI</span>",
+              "Sou <span>Desenvolvedor Full-Stack</span> & <span>Designer UX/UI</span>",
             textButton: "Quem sou eu?",
             textMobile:
-              "Bem-vindo ao meu Portfólio, meu nome é <span>Lucas Oriental!</span>",
+              "Bem-vindo ao meu Portfólio, meu nome é <span>Lucas Oriental dos Santos!</span>",
             toolTipTexts: {
-              instagram: "Meu Instagram",
-              gitHub: "Meu GitHub",
-              linkedIn: "Meu LinkedIn",
-              behance: "Meu Behance",
+              instagram: "@lucasorientaldev",
+              gitHub: "@lucasoriental",
+              linkedIn: "Lucas Oriental dos Santos",
+              behance: "@lucasoriental",
             },
           },
           myProjectsPage: {
@@ -101,7 +101,7 @@ i18n.use(initReactI18next).init({
               toolTipSkill: "Obtido através da Experiência Profissional",
               titleCert: "Certificados",
               toolTipCert: "Clique para ver a credencial",
-              itSec: "Tecnologia da Informação (TI)",
+              itSec: "Desenvolvimento",
               desSec: "Design",
               modal_cert: {header: "Informações do Curso", input1: "Código da Credencial", input2: "Website para validar a o certificado", button: "Clique aqui para validar!"}
             },

@@ -64,7 +64,7 @@ export default function Certificates(props) {
                     dangerouslySetInnerHTML={{
                       __html: certificate.time,
                     }}
-                  /> h 
+                  /><p className="EAS-certificates-div-text">h</p> 
                 </div>
               </div>
               {modalOpen && selectedCourse === index && (

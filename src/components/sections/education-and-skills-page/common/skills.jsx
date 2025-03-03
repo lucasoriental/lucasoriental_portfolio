@@ -56,14 +56,6 @@ export default function Skills(props) {
         className="swipe-view-skills"
       >
         {props.data.map((skill) => {
-          const levelElements = [];
-          for (let i = 0; i < 10; i++) {
-            if (i < skill.level) {
-              levelElements.push(<canvas key={i} className="canvas-teste" />);
-            } else {
-              levelElements.push(<canvas key={i} className="canvas-teste2" />);
-            }
-          }
           return (
             <SwiperSlide key={skill.id}>
               <div className="EAS-skills">
@@ -81,7 +73,6 @@ export default function Skills(props) {
                   className="EAS-skills-picture"
                 />
                 <p className="EAS-skills-title">{skill.title}</p>
-                <div className="level-skill">{levelElements}</div>
               </div>
             </SwiperSlide>
           );
