@@ -5,6 +5,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        cookieMessage: {message: "This website uses cookies to enhance your browsing experience. By accepting, you consent to our use of cookies in accordance with our privacy policy.", button: "I accept it"},
         header: {
           home: "Home",
           projects: "My Projects",
@@ -60,6 +61,7 @@ i18n.use(initReactI18next).init({
     },
     pt: {
       translation: {
+        cookieMessage: {message: "Este site utiliza cookies para melhorar a sua experiência de navegação. Ao aceitar, você concorda com o uso de cookies de acordo com nossa política de privacidade.", button: "Eu aceito"},
         header: {
           home: "Home",
           projects: "Meus Projetos",
