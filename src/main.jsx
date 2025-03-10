@@ -5,7 +5,7 @@ import "./index.scss";
 import ReactGA from "react-ga4";
 import "./i18n";
 
-ReactGA.initialize("G-RHQBPREZL1");
+ReactGA.initialize("G-W7R929G221");
 ReactGA.send({
   hitType: "pageview",
   page: window.location.pathname,

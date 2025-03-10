@@ -42,7 +42,7 @@ function App() {
             dataLayer.push(arguments);
           }
           gtag('js', new Date());
-          gtag('config', 'G-RHQBPREZL1', { anonymize_ip: true });
+          gtag('config', 'G-W7R929G221', { anonymize_ip: true });
         }}
       >
         {t('cookieMessage.message')}
