@@ -31,22 +31,6 @@ function App() {
       <JobExperiences />
       <AboutMe />
       <ContactMe />
-
-      <CookieConsent
-        location="bottom"
-        buttonText={t('cookieMessage.button')}
-        cookieName="analytics_consent"
-        onAccept={() => {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag('js', new Date());
-          gtag('config', 'G-W7R929G221', { anonymize_ip: true });
-        }}
-      >
-        {t('cookieMessage.message')}
-      </CookieConsent>
     </>
   );
 }
