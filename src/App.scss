@@ -73,26 +73,25 @@ header {
 
 #header-desktop {
   display: flex;
-  padding: 20px 0px;
+  padding: 1.25rem 0px;
   align-items: center;
 
   nav {
     display: flex;
     align-items: center;
-    background-color: green;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 
     a {
       cursor: pointer;
       text-align: center;
-      padding: 0px 15px;
+      padding: 0px 0.9375rem;
       color: var(--White);
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: 600;
       transition: 600ms;
 
       @media (max-width: 912px) {
-        font-size: 12px;
+        font-size: 0.75rem;
       }
     }
 
@@ -118,7 +117,7 @@ header {
 }
 
 .header-mobile-bar {
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   justify-content: space-between;
 }
@@ -135,7 +134,7 @@ header {
   position: fixed;
   top: 0;
   left: unset;
-  width: 348px;
+  width: 21.75rem;
   height: 100vh;
   background-color: var(--RedLight);
   z-index: 9999;
@@ -162,7 +161,7 @@ header {
 
   a {
     width: 100%;
-    padding: 23px 0;
+    padding: 1.4375rem 0;
     text-align: center;
     text-decoration: none;
     color: var(--White);
