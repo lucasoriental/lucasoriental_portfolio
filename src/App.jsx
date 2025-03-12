@@ -8,7 +8,7 @@ import EducationAndSkills from "./components/sections/education-and-skills-page/
 import MainPage from "./components/sections/home-page/home";
 import JobExperiences from "./components/sections/job-experiences-page/jobExperiences";
 import MyProjects from "./components/sections/my-projects-page/myProjects";
-import CookieConsent from "react-cookie-consent"
+import "./tailwind.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
