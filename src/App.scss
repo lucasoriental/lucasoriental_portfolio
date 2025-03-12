@@ -17,23 +17,24 @@
 
 .languageSwitcher-en-button,
 .languageSwitcher-pt-button {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   font-size: 10px;
   border: none;
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .selected {
   background-color: var(--RedLight);
-  border: 1px solid black;
+  border: 0.5px solid black;
   color: white;
 }
 
-.div-languageSwitcher {
+.div-languageSwitcher{
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .title-general {
@@ -59,68 +60,51 @@
 
 //Header Setup global
 
-#header-main {
+header {
   background-color: var(--RedLight);
   color: var(--White);
   width: 100%;
   position: fixed;
   box-shadow: 0px 0px 50px var(--DarkGray);
-  z-index: 2;
+  z-index: 9999;
 }
 
 //Header Desktop
 
 #header-desktop {
   display: flex;
-  justify-content: center;
-  padding: 0px 58px;
+  padding: 20px 0px;
   align-items: center;
 
-  @media (max-width: 752px) {
-    display: none;
-  }
-}
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    margin-left: 20px;
 
-.header-desktop-nav {
-  display: flex;
-  max-width: 1440px;
-  justify-content: center;
+    a {
+      cursor: pointer;
+      text-align: center;
+      padding: 0px 15px;
+      color: var(--White);
+      font-size: 15px;
+      font-weight: 600;
+      transition: 600ms;
 
-  a {
-    cursor: pointer;
-    text-align: center;
-    padding: 30px 20px;
-    color: var(--White);
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 15px;
-    font-weight: 700;
-    transition: 600ms;
+      @media (max-width: 912px) {
+        font-size: 12px;
+      }
+    }
 
-    @media (max-width: 912px) {
-      font-size: 10px;
+    a:hover {
+      transition: 600ms;
+      color: var(--HoverTextColor);
     }
   }
 
-  a:hover {
-    transition: 600ms;
-    font-weight: 900;
-    color: var(--HoverTextColor)
+  @media (max-width: 1000px) {
+    display: none;
   }
-}
-
-.header-desktop-theme {
-  padding-right: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.header-desktop-language {
-  margin-left: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
 //Header Mobile
@@ -128,21 +112,20 @@
 #header-mobile {
   display: none;
 
-  @media (max-width: 752px) {
+  @media (max-width: 1000px) {
     display: contents;
   }
 }
 
 .header-mobile-bar {
-  padding: 20px 5%;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .hamburguer {
   display: content;
-  width: 35px;
-  z-index: 0;
+  z-index: 2;
   cursor: pointer;
   background: none;
   border: none;
@@ -155,10 +138,9 @@
   width: 348px;
   height: 100vh;
   background-color: var(--RedLight);
-  z-index: 1;
+  z-index: 9999;
   transition: 1s;
   transform: translateX(-100%);
-  backdrop-filter: blur(10px);
 }
 
 .header-mobile-side-bar.is-active {
@@ -166,18 +148,17 @@
 }
 
 .header-mobile-side-bar-top {
-  z-index: 1;
-  padding: 15px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-mobile-side-bar-nav {
+.header-mobile-side-bar > nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 100vh;
+  z-index: 9999;
 
   a {
     width: 100%;
@@ -185,36 +166,23 @@
     text-align: center;
     text-decoration: none;
     color: var(--White);
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
+    transition: 300ms;
   }
 
   a:hover {
-    background-color: var(--RedDark);
-    color: var(--HoverTextColor);
+    background-color: var(--White);
+    color: var(--RedDark);
     font-weight: 700;
+    transition: 300ms;
   }
 }
 
 .header-mobile-side-bar-top-XIcon {
   cursor: pointer;
-}
-
-.header-mobile-side-bar-top-Icons {
-  display: flex;
-}
-
-.header-mobile-side-bar-top-Language {
-  cursor: pointer;
-  margin-left: 19.5px;
-}
-
-.header-mobile-side-bar-top-Theme {
-  cursor: pointer;
-}
-
-.header-theme-selected {
-  background-color: blue;
+  z-index: 9999;
+  margin: 20px 0px 20px 20px;
 }
 
 // -------------------------------------
@@ -570,7 +538,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     margin: 60px 0px;
   }
 }
@@ -634,12 +602,10 @@
 }
 
 .column-1-teste {
-
   flex-grow: 0;
 }
 
 .column-2-teste {
-
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -804,7 +770,6 @@
 }
 
 .canvas-teste {
-
   margin: 0 2px;
   background-color: var(--RedLight);
   height: 20px;
@@ -820,7 +785,6 @@
 }
 
 .canvas-teste2 {
-
   margin: 0 2px;
   background-color: var(--LightGray);
   height: 20px;
@@ -1070,7 +1034,7 @@
   }
 
   @media (max-width: 398px) {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 }
 
@@ -1594,7 +1558,6 @@ body.modal-open {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--RedLight) !important;
-
 }
 
 .list-json-experience {
@@ -1604,7 +1567,6 @@ body.modal-open {
 
 //MODAL JOB EXPERIENCES
 
-
 .modal-job-img {
   width: 100px;
   height: 100%;
@@ -1612,7 +1574,7 @@ body.modal-open {
   border: 2px solid var(--DarkGray);
   border-radius: 10%;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     height: 100px;
   }
 }
@@ -1629,7 +1591,7 @@ body.modal-open {
   padding-top: 20px;
   margin-left: 20px;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     padding-top: 10px;
     margin-left: 15px;
   }
@@ -1637,14 +1599,14 @@ body.modal-open {
 
 .modal-body-img-and-info {
   display: flex;
-  margin: 20px 0px 30px 0px
+  margin: 20px 0px 30px 0px;
 }
 
 .modal-job-company-name {
   font-size: 25px;
   font-weight: 900;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 23px;
   }
 }
@@ -1653,7 +1615,7 @@ body.modal-open {
   font-size: 20px;
   font-weight: 700;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 18px;
   }
 }
@@ -1662,7 +1624,7 @@ body.modal-open {
   font-size: 18px;
   font-weight: 500;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 16px;
   }
 }
@@ -1672,7 +1634,7 @@ body.modal-open {
   font-weight: bold;
   font-size: 18px;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 16px;
   }
 }
@@ -1682,7 +1644,7 @@ body.modal-open {
   text-align: justify;
   color: var(--DarkGray);
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 14px;
   }
 }
@@ -1692,14 +1654,13 @@ body.modal-open {
   color: var(--DeepGray);
   text-decoration: underline;
   font-weight: 700;
-  transition: 500ms
+  transition: 500ms;
 }
 
 .modal-job-responsibilities span:hover {
   letter-spacing: 2px;
   transition: 500ms;
 }
-
 
 .X-icon-svg {
   transition: 1000ms;

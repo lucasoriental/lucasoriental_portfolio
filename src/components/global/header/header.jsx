@@ -29,9 +29,9 @@ const Header = () => {
   };
 
   return (
-    <header id="header-main">
+    <header>
       <div id="header-desktop">
-        <nav className="header-desktop-nav">
+        <nav>
           <LanguageSwitcher />
           <Link
             activeClass="active"
@@ -99,8 +99,8 @@ const Header = () => {
         <div className="header-mobile-bar">
           <button className="hamburguer" onClick={handleClick}>
             <MenuHamburguer
-              width={41}
-              height={26}
+              width={35}
+              height={25}
               strokeWidth={3}
               strokeColor="white"
             />
@@ -114,15 +114,15 @@ const Header = () => {
             <div className="header-mobile-side-bar-top-XIcon">
               <button className="hamburguer" onClick={handleClick}>
                 <XIconSvg
-                  width={35}
-                  height={35}
+                  width={25}
+                  height={25}
                   strokeWidth={3}
                   color="white"
                 />
               </button>
             </div>
           </div>
-          <nav className="header-mobile-side-bar-nav">
+          <nav>
             <Link
               activeClass="active"
               to="home-main-container"
