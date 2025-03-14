@@ -60,33 +60,36 @@
 
 //Header Setup global
 
-header {
-  background-color: var(--RedLight);
-  color: var(--White);
+/* header {
+  color: var(--RedDark);
   width: 100%;
   position: fixed;
-  box-shadow: 0px 0px 50px var(--DarkGray);
+  border-bottom: 1px solid black;
   z-index: 9999;
-}
+} */
 
 //Header Desktop
 
 #header-desktop {
-  display: flex;
+  /* display: flex;
   padding: 1.25rem 0px;
   align-items: center;
-
+  justify-content: space-between; */
+  
   nav {
-    display: flex;
-    align-items: center;
-    margin-left: 1.25rem;
+    //display: flex;
+    //align-items: center;
+    //margin-left: 1.25rem;
+    //overflow: auto;
+    //white-space: nowrap;
+    //background-color: cyan;
 
     a {
-      cursor: pointer;
-      text-align: center;
-      padding: 0px 0.9375rem;
-      color: var(--White);
-      font-size: 0.9375rem;
+      //cursor: pointer;
+      //text-align: center;
+      //padding: 0px 0.9375rem;
+      //color: var(--RedDark);
+      //font-size: 0.9375rem;
       font-weight: 600;
       transition: 600ms;
 
@@ -95,25 +98,26 @@ header {
       }
     }
 
-    a:hover {
+   /*  a:hover {
       transition: 600ms;
-      color: var(--HoverTextColor);
-    }
+      color: black;
+    } */
   }
 
-  @media (max-width: 1000px) {
+ /*  @media (max-width: 1000px) {
     display: none;
-  }
+  } */
 }
+
 
 //Header Mobile
 
 #header-mobile {
-  display: none;
+  //display: none;
 
-  @media (max-width: 1000px) {
+  /* @media (max-width: 1000px) {
     display: contents;
-  }
+  } */
 }
 
 .header-mobile-bar {

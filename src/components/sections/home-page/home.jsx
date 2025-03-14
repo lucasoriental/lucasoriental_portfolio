@@ -15,10 +15,10 @@ import { useTranslation } from "react-i18next";
 const MainPage = () => {
   const { t } = useTranslation();
 
-  const headerHeight = 120;
+  //const headerHeight = 120;
 
   return (
-    <div id="home-main-container">
+    <div id="home-main-container" className="bg-red-600">
       <div className="home-main-container-1">
         <div className="home-column1">
           <img
@@ -60,7 +60,7 @@ const MainPage = () => {
               to="about-me-container"
               spy={true}
               smooth={true}
-              offset={-headerHeight}
+              offset={""}
               duration={1000}
             >
               <button id="home-button">

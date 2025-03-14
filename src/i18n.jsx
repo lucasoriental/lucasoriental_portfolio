@@ -5,14 +5,31 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        cookieMessage: {message: "This website uses cookies to enhance your browsing experience. By accepting, you consent to our use of cookies in accordance with our privacy policy.", button: "I accept it"},
+        cookieMessage: {
+          message:
+            "This website uses cookies to enhance your browsing experience. By accepting, you consent to our use of cookies in accordance with our privacy policy.",
+          button: "I accept it",
+        },
         header: {
-          home: "Home",
-          projects: "My Projects",
-          education: "Education & Skills",
-          jobs: "Job Experiences",
-          about: "About Me",
-          contact: "Contact Me",
+          freelance: {
+            services: "My Services",
+            projects: "My Projects",
+            testimonials: "Client Testimonials",
+            skills: "Skills & Expertise",
+            about: "About Me",
+            contact: "Contact Me",
+            faq: "FAQ",
+            hireMe: "Hire Me"
+          },
+          hiring: {
+            home: "Home",
+            projects: "Previous Projects",
+            skills: "Skills & Expertise",
+            experience: "Professional Experience",
+            education: "Education",
+            about: "About Me",
+            contact: "Contact Me",
+          },
         },
         errorMessages: "The data is loading, please hold a moment...",
         sections: {
@@ -22,7 +39,8 @@ i18n.use(initReactI18next).init({
             text3:
               "A <span>Full-Stack Developer</span> & <span>UX/UI Designer</span>",
             textButton: "Who Am I?",
-            textMobile: "Hey there, this is <span>Lucas Oriental dos Santos!</span>",
+            textMobile:
+              "Hey there, this is <span>Lucas Oriental dos Santos!</span>",
             toolTipTexts: {
               instagram: "@lucasorientaldev",
               gitHub: "@lucasoriental",
@@ -45,7 +63,12 @@ i18n.use(initReactI18next).init({
               toolTipCert: "Click to see the credential",
               itSec: "Development",
               desSec: "Design",
-              modal_cert: {header: "Course Information", input1: "Credential Code", input2: "Website to validate the certificate", button: "Click here to validate it!"}
+              modal_cert: {
+                header: "Course Information",
+                input1: "Credential Code",
+                input2: "Website to validate the certificate",
+                button: "Click here to validate it!",
+              },
             },
           },
           jobExperiencesPage: {
@@ -55,22 +78,40 @@ i18n.use(initReactI18next).init({
             bodyModalText: "My responsabilities on this experience:",
           },
           aboutMePage: { title: "About Me" },
-          contactMePage: { title: "Contact Me", text1: "Get in Touch!"},
+          contactMePage: { title: "Contact Me", text1: "Get in Touch!" },
         },
       },
     },
     pt: {
       translation: {
-        cookieMessage: {message: "Este site utiliza cookies para melhorar a sua experiência de navegação. Ao aceitar, você concorda com o uso de cookies de acordo com nossa política de privacidade.", button: "Eu aceito"},
-        header: {
-          home: "Home",
-          projects: "Meus Projetos",
-          education: "Educação & Habilidades",
-          jobs: "Experiências Profissionais",
-          about: "Sobre mim",
-          contact: "Meus Contatos",
+        cookieMessage: {
+          message:
+            "Este site utiliza cookies para melhorar a sua experiência de navegação. Ao aceitar, você concorda com o uso de cookies de acordo com nossa política de privacidade.",
+          button: "Eu aceito",
         },
-        errorMessages: "As informações estão sendo carregadas, só um instante...",
+        header: {
+          freelance: {
+            services: "Meus Serviços",
+            projects: "Meus Projetos",
+            testimonials: "Depoimentos",
+            skills: "Habilidades",
+            about: "Sobre Mim",
+            contact: "Contatos",
+            faq: "Perguntas Frequentes",
+            hireMe: "Me Contrate"
+          },
+          hiring_side: {
+            home: "Início",
+            projects: "Projetos Anteriores",
+            skills: "Habilidades & Expertise",
+            experience: "Experiência Profissional",
+            education: "Educação",
+            about: "Sobre Mim",
+            contact: "Entre em Contato",
+          },
+        },
+        errorMessages:
+          "As informações estão sendo carregadas, só um instante...",
         sections: {
           homePage: {
             text1: "Seja Bem-Vindo!",
@@ -105,7 +146,12 @@ i18n.use(initReactI18next).init({
               toolTipCert: "Clique para ver a credencial",
               itSec: "Desenvolvimento",
               desSec: "Design",
-              modal_cert: {header: "Informações do Curso", input1: "Código da Credencial", input2: "Website para validar a o certificado", button: "Clique aqui para validar!"}
+              modal_cert: {
+                header: "Informações do Curso",
+                input1: "Código da Credencial",
+                input2: "Website para validar a o certificado",
+                button: "Clique aqui para validar!",
+              },
             },
           },
           jobExperiencesPage: {
@@ -115,7 +161,7 @@ i18n.use(initReactI18next).init({
             bodyModalText: "Minhas Responsabilidades:",
           },
           aboutMePage: { title: "Sobre mim" },
-          contactMePage: { title: "Meus Contatos", text1: "Entre em contato!"},
+          contactMePage: { title: "Meus Contatos", text1: "Entre em contato!" },
         },
       },
     },

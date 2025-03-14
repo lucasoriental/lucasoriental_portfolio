@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { useTranslation } from "react-i18next";
+import HeaderFreelancer from "./components/global/header/headerFreelancer";
 
 function App() {
   useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <HeaderFreelancer />
       <MainPage />
       <MyProjects />
       <EducationAndSkills />
