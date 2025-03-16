@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LanguageSwitcher from "../../../LanguageSwitcher";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
@@ -9,8 +9,15 @@ export default function HeaderFreelancer() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
+    console.log("Antes:", isOpen);
     setIsOpen(!isOpen);
+    console.log("Depois:", isOpen);
   };
+
+  useEffect(() => {
+    console.log("Estado atualizado:", isOpen);
+  }, [isOpen]); // O log será disparado sempre que `isOpen` mudar.
+  
 
   const HeaderFreelance = [
     {
@@ -50,7 +57,7 @@ export default function HeaderFreelancer() {
   console.log(isOpen);
 
   return (
-    <header className="flex p-5 justify-between bg-red-600 items-center ">
+    <header className="flex p-5 justify-between bg-gradient-to-b from-red-900 to-transparent items-center fixed z-50 w-full">
       <div className="flex">
         <LanguageSwitcher />
         {/* nav bar for large devices */}
@@ -73,13 +80,11 @@ export default function HeaderFreelancer() {
         <div
           className={`flex lg:hidden flex-col fixed right-0 top-0 text-right pt-5 h-screen bg-white transition-transform transform duration-500 ${
             isOpen ? "translate-x-0" : "translate-x-full"
-          } ease-in-out ${
-            isOpen ? "pointer-events-auto" : "pointer-events-none"
-          }`}
+          } ease-in-out`}
         >
           {isOpen && (
             <X
-              onClick={handleClick}
+              onClick={() => handleClick()}
               size={25}
               className="flex text-red-600 cursor-pointer ml-auto mr-5 mb-5"
             />
@@ -94,7 +99,7 @@ export default function HeaderFreelancer() {
                     to={item.to}
                     activeClass="active"
                     duration={1000}
-                    onClick={handleClick}
+                    onClick={() => handleClick()}
                   >
                     {item.name}
                   </Link>
@@ -104,12 +109,12 @@ export default function HeaderFreelancer() {
         </div>
       </div>
       <div className="flex items-center gap-5">
-        {/* <button
+        <button
           type="button"
-          className="bg-green-50 pl-5 pr-5 pt-2 pb-2  text-sm rounded-full hover:bg-red-300 select-none lg:flex hidden"
+          className="bg-green-50 pl-5 pr-5 pt-2 pb-2  text-sm rounded-full hover:bg-red-300 select-none flex font-bold"
         >
-          Hire Me
-        </button> */}
+          Request a Free Quote!
+        </button>
         <button
           className="flex lg:hidden cursor-pointer text-white"
           onClick={handleClick}
