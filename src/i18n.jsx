@@ -19,14 +19,13 @@ i18n.use(initReactI18next).init({
             about: "About Me",
             contact: "Contact Me",
             faq: "FAQ",
-            hireMe: "Hire Me"
+            hireMe: "Hire Me",
           },
           hiring: {
             home: "Home",
-            projects: "Previous Projects",
-            skills: "Skills & Expertise",
-            experience: "Professional Experience",
-            education: "Education",
+            projects: "My Projects",
+            education: "Education & Skills",
+            jobs: "Job Experiences",
             about: "About Me",
             contact: "Contact Me",
           },
@@ -98,16 +97,15 @@ i18n.use(initReactI18next).init({
             about: "Sobre Mim",
             contact: "Contatos",
             faq: "Perguntas Frequentes",
-            hireMe: "Me Contrate"
+            hireMe: "Me Contrate",
           },
-          hiring_side: {
-            home: "Início",
-            projects: "Projetos Anteriores",
-            skills: "Habilidades & Expertise",
-            experience: "Experiência Profissional",
-            education: "Educação",
-            about: "Sobre Mim",
-            contact: "Entre em Contato",
+          hiring: {
+            home: "Home",
+            projects: "Meus Projetos",
+            education: "Educação & Habilidades",
+            jobs: "Experiências Profissionais",
+            about: "Sobre mim",
+            contact: "Meus Contatos",
           },
         },
         errorMessages:

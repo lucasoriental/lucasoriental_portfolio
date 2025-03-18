@@ -1,20 +1,15 @@
 import { useEffect } from "react";
-import "react-tooltip/dist/react-tooltip.css";
-import Header from "../src/components/global/header/header";
-import "./App.scss";
-import AboutMe from "./components/sections/about-me-page/aboutMe";
-import ContactMe from "./components/sections/contact-me-page/contactMe";
-import EducationAndSkills from "./components/sections/education-and-skills-page/educationAndSkills";
-import MainPage from "./components/sections/home-page/home";
-import JobExperiences from "./components/sections/job-experiences-page/jobExperiences";
-import MyProjects from "./components/sections/my-projects-page/myProjects";
-import "./tailwind.css";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
+import "./App.scss";
+import "./tailwind.css";
 import "aos/dist/aos.css";
 
 import { useTranslation } from "react-i18next";
-import HeaderFreelancer from "./components/global/header/headerFreelancer";
+
+import Hiring from "./components/pages/hiring";
+import Freelance from "./components/pages/freelance";
+import Home from "./components/pages/Home";
 
 function App() {
   useEffect(() => {
@@ -24,15 +19,15 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <>
-      <HeaderFreelancer />
-      <MainPage />
-      <MyProjects />
-      <EducationAndSkills />
-      <JobExperiences />
-      <AboutMe />
-      <ContactMe />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Hiring" element={<Hiring />} />{" "}
+        {/* Portfólio para empresas */}
+        <Route path="/Freelance" element={<Freelance />} />{" "}
+        {/* Portfólio para clientes */}
+      </Routes>
+    </Router>
   );
 }
 
