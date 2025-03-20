@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+#image-home {
+  animation: teste 4s ease-in-out infinite;
+}
+
+#image-home1 {
+  animation: teste1 4s ease-in-out infinite;
+}
+
+@keyframes teste {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
