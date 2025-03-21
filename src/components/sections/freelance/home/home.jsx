@@ -49,7 +49,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="w-screen mt-36 bg-red-600 p-1">
+      <div className="w-screen bg-red-600 p-1 mt-36">
         <p className="text-white w-[95%] max-w-96 border mr-auto ml-auto p-4 mt-4 mb-4 text-center rounded-xl">
           "Se o teu negócio não está na Internet, então o teu negócio estará
           fora dos negócios."{" "}

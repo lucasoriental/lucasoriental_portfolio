@@ -24,3 +24,34 @@
     transform: translateY(10px);
   }
 }
+
+.wave_lg {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wave_sm {
+  aspect-ratio: 450/960;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom_wave_lg {
+  background-image: url("/src/assets/common_elements/bottom_960_300.svg");
+}
+
+.top_wave_lg {
+  background-image: url("/src/assets/common_elements/top_960_300.svg");
+}
+
+.top_wave_sm {
+  background-image: url("/src/assets/common_elements/top_450_960.svg");
+}
+
+.bottom_wave_sm {
+  background-image: url("/src/assets/common_elements/bottom_450_960.svg");
+}
