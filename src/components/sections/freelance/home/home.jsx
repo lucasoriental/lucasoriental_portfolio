@@ -1,16 +1,20 @@
 import React from "react";
 import iphoneMockup from "../../../../assets/mockups_renderizados/iphone14-em-pe.png";
-
+import MeshBackground from "./meshBackground";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   return (
-    <main className="dark: pt-36 pb-36">
-      <div className="w-[90%] max-w-4xl m-auto items-center flex flex-col lg:flex-row lg:flex-wrap">
+    <main className="dark: relative pt-36 pb-36 lg:h-[calc(100vh*0.9)]">
+      <MeshBackground />
+      <div className="w-[90%] max-w-4xl m-auto flex flex-col lg:flex-row items-center relative z-10">
         <div className="flex flex-col items-center lg:basis-3/5">
-          <h1 className="text-5xl font-extrabold text-center text-zinc-900 mb-5 select-none lg:text-start">
+          <h1 className="text-5xl font-extrabold drop-shadow-xl text-center text-white mb-5 select-none lg:text-start">
             Transformo a tua ideia num negócio digital{" "}
-            <span className="text-red-500 font-black inline-block min-w-32 text-nowrap">
+            <span
+              className="text-white drop-shadow-[0 0 5px text-red-600;] font-black inline-block min-w-32 text-nowrap"
+              id="textTempGlow"
+            >
               <Typewriter
                 words={["de Sucesso!", "Incrível!", "Perfeito!"]}
                 loop={true}
@@ -22,7 +26,7 @@ const Home = () => {
               />
             </span>
           </h1>
-          <p className="text-lg font-medium text-zinc-500 mb-7 text-center select-none lg:text-start">
+          <p className="text-lg font-medium text-zinc-100 mb-7 text-center select-none lg:text-start">
             Não precisas fazer tudo sozinho – juntos, podemos criar a estratégia
             certa para o teu negócio brilhar no digital.
           </p>
@@ -33,7 +37,7 @@ const Home = () => {
                 <span className="font-medium lg:text-xs">grátis</span>
               </p>
             </button>
-            <button className="flex bg-gray-300 pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-44">
+            <button className="flex bg-white pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-44">
               <p className="text-red-600 font-normal text-sm self-center lg:text-xs">
                 Ver meus Serviços
               </p>
@@ -48,15 +52,6 @@ const Home = () => {
             id="image-home"
           />
         </div>
-      </div>
-      <div className="w-screen bg-red-600 p-1 mt-36">
-        <p className="text-white w-[95%] max-w-96 border mr-auto ml-auto p-4 mt-4 mb-4 text-center rounded-xl">
-          "Se o teu negócio não está na Internet, então o teu negócio estará
-          fora dos negócios."{" "}
-          <span className="text-zinc-200 text-base font-bold">
-            ~ Bill Gates
-          </span>
-        </p>
       </div>
     </main>
   );

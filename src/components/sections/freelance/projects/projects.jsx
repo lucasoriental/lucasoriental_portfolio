@@ -14,9 +14,10 @@ const Projects = () => {
           digital.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-10">
-        <div
-          className="flex flex-col h-96 max-w-80 w-[90%] relative"
+      <div className="flex flex-wrap justify-center gap-10 max-w-[90rem] items-center mx-auto">
+        <a
+          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
+          href="#"
           style={{
             background: `url(${tempImg})`,
             backgroundSize: "cover",
@@ -24,7 +25,13 @@ const Projects = () => {
           }}
         >
           <div className="w-full h-full">
-            <div className="bg-red-700 absolute bottom-0 flex flex-col w-[80%] p-5 ">
+            <div className="bg-zinc-800 w-fit h-fit p-5">
+              <p className="font-base text-lg text-white">
+                Desenvolvimento/Programação
+              </p>
+              <p className="font-base text-lg text-white"> & Design</p>
+            </div>
+            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
               <p className="text-white text-wrap font-semibold text-xl ">
                 Dra. Rute Matos
               </p>
@@ -36,7 +43,152 @@ const Projects = () => {
               </button>
             </div>
           </div>
-        </div>
+        </a>
+        <a
+          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
+          href="#"
+          style={{
+            background: `url(${tempImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="w-full h-full">
+            <div className="bg-zinc-800 w-fit h-fit p-5">
+              <p className="font-base text-lg text-white">
+                Desenvolvimento/Programação
+              </p>
+              <p className="font-base text-lg text-white"> & Design</p>
+            </div>
+            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
+              <p className="text-white text-wrap font-semibold text-xl ">
+                Dra. Rute Matos
+              </p>
+              <p className="text-white text-wrap font-light text-xl mb-3">
+                Criação de Website
+              </p>
+              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
+                More Information
+              </button>
+            </div>
+          </div>
+        </a>
+        <a
+          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
+          href="#"
+          style={{
+            background: `url(${tempImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="w-full h-full">
+            <div className="bg-zinc-800 w-fit h-fit p-5">
+              <p className="font-base text-lg text-white">
+                Desenvolvimento/Programação
+              </p>
+              <p className="font-base text-lg text-white"> & Design</p>
+            </div>
+            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
+              <p className="text-white text-wrap font-semibold text-xl ">
+                Dra. Rute Matos
+              </p>
+              <p className="text-white text-wrap font-light text-xl mb-3">
+                Criação de Website
+              </p>
+              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
+                More Information
+              </button>
+            </div>
+          </div>
+        </a>
+        <a
+          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
+          href="#"
+          style={{
+            background: `url(${tempImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="w-full h-full">
+            <div className="bg-zinc-800 w-fit h-fit p-5">
+              <p className="font-base text-lg text-white">
+                Desenvolvimento/Programação
+              </p>
+              <p className="font-base text-lg text-white"> & Design</p>
+            </div>
+            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
+              <p className="text-white text-wrap font-semibold text-xl ">
+                Dra. Rute Matos
+              </p>
+              <p className="text-white text-wrap font-light text-xl mb-3">
+                Criação de Website
+              </p>
+              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
+                More Information
+              </button>
+            </div>
+          </div>
+        </a>
+        <a
+          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
+          href="#"
+          style={{
+            background: `url(${tempImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="w-full h-full">
+            <div className="bg-zinc-800 w-fit h-fit p-5">
+              <p className="font-base text-lg text-white">
+                Desenvolvimento/Programação
+              </p>
+              <p className="font-base text-lg text-white"> & Design</p>
+            </div>
+            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
+              <p className="text-white text-wrap font-semibold text-xl ">
+                Dra. Rute Matos
+              </p>
+              <p className="text-white text-wrap font-light text-xl mb-3">
+                Criação de Website
+              </p>
+              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
+                More Information
+              </button>
+            </div>
+          </div>
+        </a>
+        <a
+          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
+          href="#"
+          style={{
+            background: `url(${tempImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="w-full h-full">
+            <div className="bg-zinc-800 w-fit h-fit p-5">
+              <p className="font-base text-lg text-white">
+                Desenvolvimento/Programação
+              </p>
+              <p className="font-base text-lg text-white"> & Design</p>
+            </div>
+            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
+              <p className="text-white text-wrap font-semibold text-xl ">
+                Dra. Rute Matos
+              </p>
+              <p className="text-white text-wrap font-light text-xl mb-3">
+                Criação de Website
+              </p>
+              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
+                More Information
+              </button>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
   );
