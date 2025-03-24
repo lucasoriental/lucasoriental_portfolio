@@ -136,235 +136,238 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-screen max-w-[90%] mr-auto ml-auto pt-24 pb-24">
-      <p className="text-center text-2xl font-black mb-3">
-        Conhecimentos e Habilidades
-      </p>
-      <p className="text-center">
-        Nesta secção estão todas as ferramentas e tecnologias que eu possuo
-        conhecimento obtido através de experiências
-        profissionais, estudos e projetos anteriores.
-      </p>
-      <div className="max-w-4xl w-[90%] mr-auto ml-auto">
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Linguagens de Programação
+    <section className="dark: relative pb-36 pt-36">
+      <div className="w-[90%] max-w-screen mr-auto ml-auto">
+        <div className="mx-auto w-[90%] max-w-4xl mb-12">
+          <p className="text-4xl font-extrabold text-center text-zinc-900 mb-5 select-none lg:text-start lg:w-[20em]">
+            Avaliações de Clientes e Colegas Profissionais
           </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillLingProg.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
-          </div>
+          <p className="text-lg font-medium text text-zinc-700 mb-7 text-center select-none lg:text-start lg:w-[40em]">
+            As avaliações seguintes são um reflexo do meu modo de trabalho,
+            ficarei muito contente em trabalhar consigo e obter uma avaliação
+            similar ou ainda melhor!
+          </p>
         </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Linguagens de Marcação e Estilização
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillLingMarNStyle.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+        <div className="max-w-4xl w-[90%] mr-auto ml-auto">
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Linguagens de Programação
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillLingProg.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Frameworks e Bibliotecas Frontend
-          </p>
-          <div className="flex flex-wrap justify-start gap-3">
-            {skillFrameworksFront.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Linguagens de Marcação e Estilização
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillLingMarNStyle.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Backend e Infraestrutura
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillbackNInfra.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Frameworks e Bibliotecas Frontend
+            </p>
+            <div className="flex flex-wrap justify-start gap-3">
+              {skillFrameworksFront.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Base de Dados
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillDb.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Backend e Infraestrutura
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillbackNInfra.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Controle de Versão
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillControleVersao.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Base de Dados
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillDb.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Testes e Qualidade de Código
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillTest.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Controle de Versão
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillControleVersao.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Ferramentas de Desenvolvimento
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillFerramentas.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Testes e Qualidade de Código
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillTest.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Sistemas Operacionais
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillSistemas.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Ferramentas de Desenvolvimento
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillFerramentas.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Hospedagem e DNS
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillHostsNDns.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Sistemas Operacionais
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillSistemas.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            Gerenciamento e Produtividade
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillGerenciamento.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 ml-2 text-white h-full">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Hospedagem e DNS
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillHostsNDns.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div>
-          <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
-            CMS & Website Builders
-          </p>
-          <div className="flex gap-3 flex-wrap justify-start">
-            {skillCMS.map(({ icon: SkillIcon, name }) => (
-              <div
-                key={name}
-                className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
-              >
-                <SkillIcon className="text-3xl text-white" />
-                <span className="text-sm mt-2 h-full ml-2 text-white">
-                  {name}
-                </span>
-              </div>
-            ))}
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              Gerenciamento e Produtividade
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillGerenciamento.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 ml-2 text-white h-full">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
+              CMS & Website Builders
+            </p>
+            <div className="flex gap-3 flex-wrap justify-start">
+              {skillCMS.map(({ icon: SkillIcon, name }) => (
+                <div
+                  key={name}
+                  className="flex items-center bg-red-700 pr-4 pl-4 pt-1 pb-1 rounded-xl flex-grow basis-auto"
+                >
+                  <SkillIcon className="text-3xl text-white" />
+                  <span className="text-sm mt-2 h-full ml-2 text-white">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

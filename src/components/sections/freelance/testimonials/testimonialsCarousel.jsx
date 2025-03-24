@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
 import tempPic from "../../../../assets/pictures/profile_photo_1.jpg";
-
 
 const testimonials = [
   {
@@ -30,26 +29,45 @@ const testimonials = [
 
 export default function Carousel() {
   const [index, setIndex] = useState(0);
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
 
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   const prevSlide = () => {
-    setIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
+    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+  };
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    const deltaX = touchStartX.current - touchEndX.current;
+
+    if (deltaX > 50) {
+      nextSlide();
+    } else if (deltaX < -50) {
+      prevSlide();
+    }
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-3xl">
+    <div
+      className="flex flex-col items-center max-w-3xl overflow-hidden"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       <motion.figure
         key={index}
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -50 }}
         transition={{ duration: 0.5 }}
-        className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 w-[90%]"
+        className="md:flex bg-red-600 rounded-xl p-8 md:p-0 dark:bg-slate-800 w-[90%]"
       >
         <img
           className="w-40 lg:h-full object-cover md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
@@ -58,25 +76,27 @@ export default function Carousel() {
         />
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
-            <p className="text-lg font-medium">“{testimonials[index].quote}”</p>
+            <p className="text-lg font-medium text-white">“{testimonials[index].quote}”</p>
           </blockquote>
           <figcaption className="font-medium">
-            <div className="text-sky-500 dark:text-sky-400">
-              {testimonials[index].name}
-            </div>
-            <div className="text-slate-700 dark:text-slate-500">
-              {testimonials[index].position}
-            </div>
+            <div className="text-white dark:text-sky-400">{testimonials[index].name}</div>
+            <div className="text-zinc-300 dark:text-slate-500">{testimonials[index].position}</div>
           </figcaption>
         </div>
       </motion.figure>
 
       {/* Botões de Navegação */}
-      <div className="flex gap-4 mt-4">
-        <button onClick={prevSlide} className="px-4 py-2 bg-gray-300 rounded">
+      <div className="flex gap-4 pt-10">
+        <button
+          onClick={prevSlide}
+          className="px-4 py-2 rounded-full bg-red-600 text-white"
+        >
           {"<"}
         </button>
-        <button onClick={nextSlide} className="px-4 py-2 bg-gray-300 rounded">
+        <button
+          onClick={nextSlide}
+          className="px-4 py-2 rounded-full bg-red-600 text-white"
+        >
           {">"}
         </button>
       </div>

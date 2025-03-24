@@ -1,13 +1,24 @@
 import React from "react";
+import MeshBackground from "../home/meshBackground";
 
 const AboutMe = () => {
   return (
-    <div className="w-screen max-w-[90%] mr-auto ml-auto pt-24 pb-24">
-      <p className="text-center text-2xl font-black mb-3">Sobre mim</p>
-      <div className="max-w-screen-md  mr-auto ml-auto">
-        {/* <img src="#" alt="img" /> */}
-        <canvas className="w-48 h-48 bg-gray-950 self-center mb-5 float-left mr-5" />
-        <p className="text-justify mr-auto ml-auto">
+    <section className="dark: relative pb-36 pt-36">
+      <MeshBackground />
+      <div className="mx-auto w-[90%] max-w-4xl">
+        <p className="text-4xl font-extrabold drop-shadow-xl text-center text-white mb-5 select-none lg:text-start lg:w-[20em]">
+          Sobre Mim
+        </p>
+        <p className="text-lg font-medium text text-zinc-100 mb-7 text-center select-none lg:text-start lg:w-[40em]">
+          Com uma abordagem estratégica e personalizada, ajudo a transformar a
+          presença online da tua marca, desde o desenvolvimento até ao marketing
+          digital.
+        </p>
+      </div>
+      <div className="max-w-4xl w-[90%] mx-auto">
+        {/* <img src="#" alt="img" className="w-48 h-48 self-center mb-5 float-left mr-5"/> */}
+        <canvas className="w-48 h-48 bg-zinc-100 self-center mb-5 float-left mr-5" />
+        <p className="text-justify mx-auto text-zinc-100">
           Hello! My name is Lucas Oriental dos Santos, and I am a Full Stack
           Developer with three years of experience in React.js, Node.js, and
           database management. My academic background includes a Bachelor's
@@ -48,7 +59,7 @@ const AboutMe = () => {
           I can contribute to your project!
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 export default AboutMe;

@@ -5,9 +5,9 @@ const Cta1 = () => {
   return (
     <div className="w-screen h-60 lg:h-96 flex relative">
       <div
-        className="absolute inset-0 grayscale"
+        className="absolute inset-0 grayscale overflow-hidden"
         style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(${background1})`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${background1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "grayscale(100%)",

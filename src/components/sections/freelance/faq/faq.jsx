@@ -220,39 +220,52 @@ const Faq = () => {
   ];
 
   return (
-    <div className="w-screen max-w-[90%] mr-auto ml-auto pt-24 pb-24">
-      <p className="text-center text-2xl font-black mb-3">
-        Perguntas Frequentes
-      </p>
-      <p className="text-center">Subtítulo para esta secção</p>
-      <div>
-        {arrFAQ.map((seccao) => (
-          <div key={seccao.id} className="flex flex-col">
-            <h3 className="text-xl font-bold pt-10 pb-2 ">{seccao.seccao}</h3>
-            <div className="flex flex-col gap-6">
-              {seccao.perguntas.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex flex-col lg:flex-row lg:justify-between bg-slate-200"
-                >
-                  <h4 className=" basis-2/5 p-5 text-lg text-justify">
-                    {item.pergunta}
-                  </h4>
+    <div className="w-[90%] max-w-4xl mx-auto py-36">
+      <div className="mx-auto">
+        <div className="mx-auto w-[90%] max-w-4xl mb-12">
+          <p className="text-4xl font-extrabold text-center text-zinc-900 mb-5 select-none lg:text-start lg:w-[20em]">
+            Avaliações de Clientes e Colegas Profissionais
+          </p>
+          <p className="text-lg font-medium text text-zinc-700 mb-7 text-center select-none lg:text-start lg:w-[40em]">
+            As avaliações seguintes são um reflexo do meu modo de trabalho,
+            ficarei muito contente em trabalhar consigo e obter uma avaliação
+            similar ou ainda melhor!
+          </p>
+        </div>
+        <div>
+          {arrFAQ.map((seccao) => (
+            <div key={seccao.id} className="flex flex-col">
+              <h3 className="text-xl font-bold pt-10 pb-2 ">{seccao.seccao}</h3>
+              <div className="flex flex-col gap-6">
+                {seccao.perguntas.map((item) => (
                   <div
-                    dangerouslySetInnerHTML={{ __html: item.resposta }}
-                    className="text-justify basis-2/4 p-5 text-sm font-light text-gray-600"
-                  />
-                </div>
-              ))}
+                    key={item.id}
+                    className="flex flex-col lg:flex-row lg:justify-between bg-slate-200"
+                  >
+                    <h4 className=" basis-2/5 p-5 text-lg text-justify">
+                      {item.pergunta}
+                    </h4>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: item.resposta }}
+                      className="text-justify basis-2/4 p-5 text-sm font-light text-gray-600"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <p className="mt-10 text-center text-white bg-red-600 p-6 rounded-lg">
+          A sua dúvida não está entre as mais perguntadas? Envie-me a sua dúvida
+          para que possa ajudar:{" "}
+          <a
+            href="mailto:lucasoriental@gmail.com"
+            className="font-bold underline"
+          >
+            lucasoriental@gmail.com
+          </a>
+        </p>
       </div>
-      <p className="mt-10 text-center text-white bg-red-600 p-6 rounded-lg">
-        A sua dúvida não está entre as mais perguntadas? Envie-me a sua dúvida
-        para que possa ajudar:{" "}
-        <a href="mailto:lucasoriental@gmail.com" className="font-bold underline">lucasoriental@gmail.com</a>
-      </p>
     </div>
   );
 };

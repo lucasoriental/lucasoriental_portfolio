@@ -2,6 +2,7 @@ import React from "react";
 import iphoneMockup from "../../../../assets/mockups_renderizados/iphone14-em-pe.png";
 import MeshBackground from "./meshBackground";
 import { Typewriter } from "react-simple-typewriter";
+import { ArrowRight } from "lucide-react";
 
 const Home = () => {
   return (
@@ -31,15 +32,16 @@ const Home = () => {
             certa para o teu negócio brilhar no digital.
           </p>
           <div className="lg:flex lg:self-start lg:gap-6 items-center">
-            <button className="flex bg-red-600 pt-3 pb-3 w-64 justify-center border-none rounded-xl mb-5 lg:w-fit lg:pl-4 lg:pr-4">
-              <p className="text-white text-sm font-light self-center lg:text-xs">
+            <button className="flex bg-zinc-100 pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-fit lg:pl-4 lg:pr-4 border border-red-950 shadow-2xl shadow-red-950">
+              <p className="text-red-600 text-md font-base self-center lg:text-sm">
                 Solicitar um orçamento{" "}
-                <span className="font-medium lg:text-xs">grátis</span>
+                <span className="font-medium lg:text-md animate-text-attention">grátis</span>
               </p>
             </button>
-            <button className="flex bg-white pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-44">
-              <p className="text-red-600 font-normal text-sm self-center lg:text-xs">
+            <button className="flex pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-44">
+              <p className="text-white font-normal text-sm self-center lg:text-md flex items-center gap-2">
                 Ver meus Serviços
+                <ArrowRight className="w-4"/>
               </p>
             </button>
           </div>
@@ -48,7 +50,7 @@ const Home = () => {
           <img
             src={iphoneMockup}
             alt="Profile"
-            className="h-[35em] lg:h-96 mb-5"
+            className="h-[35em] lg:h-96 mb-5 drop-shadow-2xl"
             id="image-home"
           />
         </div>

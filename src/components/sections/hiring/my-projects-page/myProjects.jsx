@@ -51,6 +51,8 @@ const MyProjectsPage = () => {
     };
   }, []);
 
+  console.log(project.projects)
+
   return (
     <div id="my-projects-container">
       <div className="container-general">

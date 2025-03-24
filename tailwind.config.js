@@ -3,12 +3,12 @@ export default {
   theme: {
     extend: {
       animation: {
-        "loop-scroll": "loop-scroll 20s linear infinite",
+        "text-attention": "text-animation 1.5s ease infinite",
       },
       keyframes: {
-        "loop-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-50%)" },
+        "text-animation": {
+          "0%": { color: "#dc2626" },
+          "50%": { color: "#fff" },
         },
       },
     },

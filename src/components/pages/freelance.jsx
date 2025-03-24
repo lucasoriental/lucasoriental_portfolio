@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Cta1 from "../sections/freelance/ctas/cta1";
 import Cta2 from "../sections/freelance/ctas/cta2";
+import Cta3 from "../sections/freelance/ctas/cta3";
 
 function Freelance() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function Freelance() {
       <Services />
       <Cta2 />
       <Projects />
+      <Cta3/>
       <Testimonials />
       <AboutMe />
       <Skills />

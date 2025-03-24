@@ -1,195 +1,111 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import tempImg from "../../../../assets/pictures/development-services-img.jpg";
 
+import { useTranslation } from "react-i18next";
+import MeshBackground from "../home/meshBackground";
+
+import MyProjectModal from "./common/myProjectModal";
+
+import i18n from "../../../../i18n";
+
 const Projects = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [project, setProject] = useState([]);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const { t } = useTranslation();
+
+  const fetchData = async (lng) => {
+    try {
+      const response = await fetch(
+        `https://lucasoriental.github.io/lucasorientalapi/database.json`
+      );
+      const data = await response.json();
+      const dynamicTranslations = data[lng];
+
+      i18n.addResourceBundle(
+        lng,
+        "translation",
+        { Projects: dynamicTranslations },
+        true,
+        true
+      );
+      setProject(dynamicTranslations);
+      setIsLoading(false);
+    } catch (err) {
+      console.error(
+        "Something error happend during fetch on the My Projects page, please try refreshing the site..."
+      );
+    }
+  };
+
+  useEffect(() => {
+    fetchData(i18n.language);
+
+    const handleLanguageChange = () => {
+      fetchData(i18n.language);
+    };
+
+    i18n.on("languageChanged", handleLanguageChange);
+
+    return () => {
+      i18n.off("languageChanged", handleLanguageChange);
+    };
+  }, []);
+
+  console.log(project.projects);
+
   return (
-    <section className="dark: pb-36 pt-36">
-      <div className="mr-auto ml-auto w-[90%] max-w-4xl">
-        <p className="text-4xl font-extrabold text-center text-zin-950 mb-5 select-none lg:text-start lg:w-[20em]">
+    <section className="dark: relative pb-36 pt-36">
+      <MeshBackground />
+      <div className="mx-auto w-[90%] max-w-4xl">
+        <p className="text-4xl font-extrabold drop-shadow-xl text-center text-white mb-5 select-none lg:text-start lg:w-[20em]">
           Os Serviços que Impulsionam o Teu Negócio no Digital
         </p>
-        <p className="text-lg font-medium text text-zinc-800 mb-7 text-center select-none lg:text-start lg:w-[38em]">
+        <p className="text-lg font-medium text text-zinc-100 mb-7 text-center select-none lg:text-start lg:w-[40em]">
           Com uma abordagem estratégica e personalizada, ajudo a transformar a
           presença online da tua marca, desde o desenvolvimento até ao marketing
           digital.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-10 max-w-[90rem] items-center mx-auto">
-        <a
-          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
-          href="#"
+      {/* Main Grid of all projects */}
+      {isLoading === true ? (
+        <p
           style={{
-            background: `url(${tempImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            textAlign: "center",
+            fontSize: "25px",
+            color: "#FFF",
+            margin: "90px 0px",
+            fontWeight: "500",
           }}
         >
-          <div className="w-full h-full">
-            <div className="bg-zinc-800 w-fit h-fit p-5">
-              <p className="font-base text-lg text-white">
-                Desenvolvimento/Programação
-              </p>
-              <p className="font-base text-lg text-white"> & Design</p>
-            </div>
-            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
-              <p className="text-white text-wrap font-semibold text-xl ">
-                Dra. Rute Matos
-              </p>
-              <p className="text-white text-wrap font-light text-xl mb-3">
-                Criação de Website
-              </p>
-              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
-                More Information
-              </button>
-            </div>
-          </div>
-        </a>
-        <a
-          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
-          href="#"
-          style={{
-            background: `url(${tempImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="w-full h-full">
-            <div className="bg-zinc-800 w-fit h-fit p-5">
-              <p className="font-base text-lg text-white">
-                Desenvolvimento/Programação
-              </p>
-              <p className="font-base text-lg text-white"> & Design</p>
-            </div>
-            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
-              <p className="text-white text-wrap font-semibold text-xl ">
-                Dra. Rute Matos
-              </p>
-              <p className="text-white text-wrap font-light text-xl mb-3">
-                Criação de Website
-              </p>
-              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
-                More Information
-              </button>
-            </div>
-          </div>
-        </a>
-        <a
-          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
-          href="#"
-          style={{
-            background: `url(${tempImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="w-full h-full">
-            <div className="bg-zinc-800 w-fit h-fit p-5">
-              <p className="font-base text-lg text-white">
-                Desenvolvimento/Programação
-              </p>
-              <p className="font-base text-lg text-white"> & Design</p>
-            </div>
-            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
-              <p className="text-white text-wrap font-semibold text-xl ">
-                Dra. Rute Matos
-              </p>
-              <p className="text-white text-wrap font-light text-xl mb-3">
-                Criação de Website
-              </p>
-              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
-                More Information
-              </button>
-            </div>
-          </div>
-        </a>
-        <a
-          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
-          href="#"
-          style={{
-            background: `url(${tempImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="w-full h-full">
-            <div className="bg-zinc-800 w-fit h-fit p-5">
-              <p className="font-base text-lg text-white">
-                Desenvolvimento/Programação
-              </p>
-              <p className="font-base text-lg text-white"> & Design</p>
-            </div>
-            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
-              <p className="text-white text-wrap font-semibold text-xl ">
-                Dra. Rute Matos
-              </p>
-              <p className="text-white text-wrap font-light text-xl mb-3">
-                Criação de Website
-              </p>
-              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
-                More Information
-              </button>
-            </div>
-          </div>
-        </a>
-        <a
-          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
-          href="#"
-          style={{
-            background: `url(${tempImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="w-full h-full">
-            <div className="bg-zinc-800 w-fit h-fit p-5">
-              <p className="font-base text-lg text-white">
-                Desenvolvimento/Programação
-              </p>
-              <p className="font-base text-lg text-white"> & Design</p>
-            </div>
-            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
-              <p className="text-white text-wrap font-semibold text-xl ">
-                Dra. Rute Matos
-              </p>
-              <p className="text-white text-wrap font-light text-xl mb-3">
-                Criação de Website
-              </p>
-              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
-                More Information
-              </button>
-            </div>
-          </div>
-        </a>
-        <a
-          className="flex flex-col h-[35em] max-w-96 w-[90%] relative"
-          href="#"
-          style={{
-            background: `url(${tempImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="w-full h-full">
-            <div className="bg-zinc-800 w-fit h-fit p-5">
-              <p className="font-base text-lg text-white">
-                Desenvolvimento/Programação
-              </p>
-              <p className="font-base text-lg text-white"> & Design</p>
-            </div>
-            <div className="bg-red-700 absolute flex flex-col w-[80%] p-5 bottom-5 left-1/2 transform -translate-x-1/2">
-              <p className="text-white text-wrap font-semibold text-xl ">
-                Dra. Rute Matos
-              </p>
-              <p className="text-white text-wrap font-light text-xl mb-3">
-                Criação de Website
-              </p>
-              <button className="w-fit flex bg-red-600 pt-2 pb-2 pr-6 pl-6 text-white self-end">
-                More Information
-              </button>
-            </div>
-          </div>
-        </a>
-      </div>
+          {t("errorMessages")}
+        </p>
+      ) : (
+        <div className="flex flex-wrap justify-center gap-5 max-w-[90rem] w-[95%] items-center mx-auto">
+          {project.projects.map((project, index) => {
+            return (
+              <a
+                key={index}
+                onClick={() => {
+                  setSelectedProject(index);
+                  setModalOpen(true);
+                }}
+                className="bg-green-400 px-10 py-2"
+              >
+                Clique aqui
+                {modalOpen && selectedProject === index && (
+                  <MyProjectModal
+                    information={project}
+                    setOpenModal={setModalOpen}
+                  />
+                )}
+              </a>
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 };
