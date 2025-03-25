@@ -92,9 +92,21 @@ const Projects = () => {
                   setSelectedProject(index);
                   setModalOpen(true);
                 }}
-                className="bg-green-400 px-10 py-2"
+                className="relative w-[90%] h-[25rem] max-w-96"
+                style={{
+                  backgroundImage: `url(${project.img})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
               >
-                Clique aqui
+                <div className="absolute bottom-0 mb-6 bg-red-700 py-5 w-[90%] left-1/2 -translate-x-1/2 px-5 flex flex-col">
+                  <p className="text-white font-bold text-lg">
+                    {project.projectName}
+                  </p>
+                  <p className="border-t text-red-200 font-semibold text-base">
+                    {project.projectArea}
+                  </p>
+                </div>
                 {modalOpen && selectedProject === index && (
                   <MyProjectModal
                     information={project}
