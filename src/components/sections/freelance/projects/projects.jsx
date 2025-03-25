@@ -54,8 +54,6 @@ const Projects = () => {
     };
   }, []);
 
-  console.log(project.projects);
-
   return (
     <section className="dark: relative pb-36 pt-36">
       <MeshBackground />

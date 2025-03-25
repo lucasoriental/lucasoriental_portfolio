@@ -12,10 +12,6 @@ export default function HeaderFreelancer() {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    console.log("Menu state updated:", isOpen);
-  }, [isOpen]);
-
   const HeaderFreelance = [
     { name: t("header.freelance.services"), to: "container_services" },
     { name: t("header.freelance.projects"), to: "container_projects" },
