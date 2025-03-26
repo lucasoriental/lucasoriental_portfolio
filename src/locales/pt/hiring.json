@@ -1,27 +1,11 @@
 {
-  "cookieMessage": {
-    "message": "Este site utiliza cookies para melhorar a sua experiência de navegação. Ao aceitar, você concorda com o uso de cookies de acordo com nossa política de privacidade.",
-    "button": "Eu aceito"
-  },
   "header": {
-    "freelance": {
-      "services": "Meus Serviços",
-      "projects": "Meus Projetos",
-      "testimonials": "Depoimentos",
-      "skills": "Habilidades",
-      "about": "Sobre Mim",
-      "contact": "Contatos",
-      "faq": "Perguntas Frequentes",
-      "hireMe": "Me Contrate"
-    },
-    "hiring": {
-      "home": "Home",
-      "projects": "Meus Projetos",
-      "education": "Educação & Habilidades",
-      "jobs": "Experiências Profissionais",
-      "about": "Sobre mim",
-      "contact": "Meus Contatos"
-    }
+    "home": "Home",
+    "projects": "Meus Projetos",
+    "education": "Educação & Habilidades",
+    "jobs": "Experiências Profissionais",
+    "about": "Sobre mim",
+    "contact": "Meus Contatos"
   },
   "errorMessages": "As informações estão sendo carregadas, só um instante...",
   "sections": {
