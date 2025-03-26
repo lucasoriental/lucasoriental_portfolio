@@ -1,1 +1,84 @@
-{ "": "" }
+{
+  "header": {
+    "services": "Serviços",
+    "projects": "Projetos",
+    "testimonials": "Testemunhos",
+    "aboutMe": "Sobre Mim",
+    "skills": "Competências",
+    "contact": "Contacto",
+    "faq": "FAQ",
+    "hireMe": "Contrata-me"
+  },
+  "heroSection": {
+    "title1": "Transformo a tua ideia num negócio digital",
+    "subTitle": "Não precisas fazer tudo sozinho - Juntos, podemos criar a estratégia infalível para o teu negócio brilhar no digital!",
+    "button1": "Solicitar um orçamento grátis",
+    "auxButton1": "Tempo limitado!",
+    "button2": "Ver meus Serviços"
+  },
+  "servicesSection": {
+    "title": "editar",
+    "subTitle": "editar",
+    "service1": {
+      "title": "Desenvolvimento/Programação",
+      "subTitle": "Soluções completas e personalizadas",
+      "services": [
+        "Desenvolvimento de Websites Personalizados",
+        "Criação de Lojas Online (E-commerce)",
+        "Desenvolvimento de Landing Pages Otimizadas",
+        "Criação de Aplicações Móveis",
+        "Manutenção e Atualização de Websites Existentes",
+        "Elaboração de Portfólios Digitais",
+        "Desenvolvimento de Páginas para Eventos"
+      ]
+    },
+    "service2": {
+      "title": "Design",
+      "subTitle": "Identidade visual que destaca a sua marca",
+      "services": [
+        "Criação de Interfaces para Websites",
+        "Design de Interfaces para Aplicações Móveis",
+        "Desenvolvimento de Páginas Web Personalizadas",
+        "Elaboração de Conteúdos Visuais para Redes Sociais",
+        "Design de Banners e Thumbnails",
+        "Criação de Flyers e Folders",
+        "Desenvolvimento de Cartões Empresariais",
+        "Elaboração de Apresentações Digitais (Slides)"
+      ]
+    },
+    "service3": {
+      "title": "Marketing Digital",
+      "subTitle": "Estratégias eficazes para o crescimento do seu negócio",
+      "services": [
+        "Gestão de Mídias Sociais",
+        "Criação e Otimização de Lojas no Instagram",
+        "Gestão de Tráfego Pago (PPC)",
+        "Desenvolvimento de Comunidades no Facebook",
+        "Análise e Monitorização de Resultados de Marketing",
+        "Criação e Edição de Conteúdos para Reels e TikToks"
+      ]
+    }
+  },
+  "projectsSection": {
+    "title": "editar",
+    "subTitle": "editar"
+  },
+  "testimonialsSection": {
+    "title": "editar",
+    "subTitle": "editar"
+  },
+  "callToAction": {
+    "callToAction1": {
+      "messageCta1": "Se o teu negócio não está na internet, então o teu negócio está fora dos negócios",
+      "authorCta1": "Bill Gates"
+    },
+    "callToAction2": {
+      "messageCta2": "A inovação é a chave para o sucesso em qualquer negócio, e a internet é a plataforma onde ela acontece.",
+      "authorCta2": "Sundar Pichai"
+    },
+    "callToAction3": {
+      "messageCta3": "Gostou do que viu? Entre em contacto agora e comece o seu projeto!",
+      "buttonCta3": "Entre em Contacto"
+    }
+  }
+}
