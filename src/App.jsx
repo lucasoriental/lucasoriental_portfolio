@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
-import "./App.scss";
-import "./tailwind.css";
+import "../src/styles/App.scss";
+import "../src/styles/tailwind.css";
 import "aos/dist/aos.css";
 
 import { useTranslation } from "react-i18next";
 
-import Hiring from "./components/pages/hiring";
-import Freelance from "./components/pages/freelance";
-import Home from "./components/pages/Home";
+import Hiring from "../src/pages/Hiring/hiring";
+import Freelance from "../src/pages/Freelance/freelance";
+import Home from "../src/pages/Home/Home";
 
 function App() {
   useEffect(() => {
@@ -22,10 +22,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Hiring" element={<Hiring />} />{" "}
-        {/* Portfólio para empresas */}
-        <Route path="/Freelance" element={<Freelance />} />{" "}
-        {/* Portfólio para clientes */}
+        <Route path="/Hiring" element={<Hiring />} />
+        <Route path="/Freelance" element={<Freelance />} />
       </Routes>
     </Router>
   );
