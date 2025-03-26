@@ -2,6 +2,10 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
+import { SiGithub, SiBehance } from "@icons-pack/react-simple-icons";
+import { Globe } from "lucide-react";
+import { X } from "lucide-react";
+
 export default function MyProjectModal({ information, setOpenModal }) {
   const { t } = useTranslation();
 
@@ -16,8 +20,11 @@ export default function MyProjectModal({ information, setOpenModal }) {
     <div className="modal-background" onClick={() => setOpenModal(false)}>
       <div className="modal-container" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
-          <button className="modal-close-button" onClick={() => setOpenModal(false)}>
-            X
+          <button
+            className="ml-10"
+            onClick={() => setOpenModal(false)}
+          >
+            <X className="text-white"/>
           </button>
           <p className="modal-header-title">
             {t("sections.myProjectsPage.headerModalText")}
@@ -30,32 +37,46 @@ export default function MyProjectModal({ information, setOpenModal }) {
             <p className="modal-body-sub-title">{information.projectArea}</p>
             <div
               className="modal-text"
-              dangerouslySetInnerHTML={{ __html: information.projectDescription }}
+              dangerouslySetInnerHTML={{
+                __html: information.projectDescription,
+              }}
             />
           </div>
         </div>
         <div className="modal-footer">
           {information.gitHubRepo && (
-            <a className="modal-link-a" href={information.gitHubRepo} target="_blank">
+            <a
+              className="modal-link-a"
+              href={information.gitHubRepo}
+              target="_blank"
+            >
               <div className="modal-button-project">
-                <div className="modal-button-project-icon"></div>
-                <p className="modal-button-project-text">GitHub</p>
+                <SiGithub className="text-white w-5 mx-2 lg:w-10" />
+                <p className="text-white text-sm lg:text-base">GitHub</p>
               </div>
             </a>
           )}
           {information.website && (
-            <a className="modal-link-a" href={information.website} target="_blank">
+            <a
+              className="modal-link-a"
+              href={information.website}
+              target="_blank"
+            >
               <div className="modal-button-project">
-                <div className="modal-button-project-icon"></div>
-                <p className="modal-button-project-text">WebSite</p>
+                <Globe className="text-white w-5 mx-2 lg:w-10" />
+                <p className="text-white text-sm lg:text-base">Website</p>
               </div>
             </a>
           )}
           {information.behanceRepo && (
-            <a className="modal-link-a" href={information.behanceRepo} target="_blank">
+            <a
+              className="modal-link-a"
+              href={information.behanceRepo}
+              target="_blank"
+            >
               <div className="modal-button-project">
-                <div className="modal-button-project-icon"></div>
-                <p className="modal-button-project-text">Behance</p>
+                <SiBehance className="text-white w-5 mx-2 lg:w-10" />
+                <p className="text-white text-sm lg:text-base">Behance</p>
               </div>
             </a>
           )}
