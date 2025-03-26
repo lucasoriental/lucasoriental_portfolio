@@ -1,26 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
-import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import { X, AlignJustify } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function HeaderFreelancer() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("freelance");
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
 
+  const goToHiring = () => {
+    navigate("/hiring", { state: { scrollTo: "container_hiring" } });
+  };
+
   const HeaderFreelance = [
-    { name: t("header.freelance.services"), to: "container_services" },
-    { name: t("header.freelance.projects"), to: "container_projects" },
-    { name: t("header.freelance.testimonials"), to: "container_testimonials" },
-    { name: t("header.freelance.skills"), to: "container_skills" },
-    { name: t("header.freelance.about"), to: "container_about" },
-    { name: t("header.freelance.contact"), to: "container_contact" },
-    { name: t("header.freelance.faq"), to: "container_faq" },
-    { name: t("header.freelance.hireMe"), to: "container_hireMe" },
+    { name: t("header.services"), to: "container_services" },
+    { name: t("header.projects"), to: "container_projects" },
+    { name: t("header.testimonials"), to: "container_testimonials" },
+    { name: t("header.skills"), to: "container_skills" },
+    { name: t("header.aboutMe"), to: "container_about" },
+    { name: t("header.contact"), to: "container_contact" },
+    { name: t("header.faq"), to: "container_faq" },
+    { name: t("header.hireMe"), to: goToHiring },
   ];
 
   return (
@@ -30,15 +35,13 @@ export default function HeaderFreelancer() {
         {/* Navbar for large devices */}
         <nav className="hidden lg:flex items-center pl-5 gap-5">
           {HeaderFreelance.map((item) => (
-            <Link
-              className="text-sm font-semibold text-white hover:text-red-300 cursor-pointer select-none"
+            <button
               key={item.name}
-              to={item.to}
-              activeClass="active"
-              duration={1000}
+              onClick={typeof item.to === "function" ? item.to : null}
+              className="text-sm font-semibold text-white hover:text-red-300 cursor-pointer select-none"
             >
               {item.name}
-            </Link>
+            </button>
           ))}
         </nav>
 
@@ -55,16 +58,13 @@ export default function HeaderFreelancer() {
           />
           <nav className="flex flex-col">
             {HeaderFreelance.map((item) => (
-              <Link
-                className="text-sm font-semibold text-red-600 hover:bg-red-300 cursor-pointer select-none w-full py-2 px-5"
+              <button
                 key={item.name}
-                to={item.to}
-                activeClass="active"
-                duration={1000}
-                onClick={handleClick}
+                onClick={typeof item.to === "function" ? item.to : null}
+                className="text-sm font-semibold text-red-600 hover:bg-red-300 cursor-pointer select-none w-full py-2 px-5"
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </nav>
         </div>
@@ -77,7 +77,10 @@ export default function HeaderFreelancer() {
         >
           Request a Free Quote!
         </button>
-        <button className="lg:hidden cursor-pointer text-white" onClick={handleClick}>
+        <button
+          className="lg:hidden cursor-pointer text-white"
+          onClick={handleClick}
+        >
           <AlignJustify size={25} />
         </button>
       </div>

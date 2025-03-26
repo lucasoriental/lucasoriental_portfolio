@@ -1,1 +1,10 @@
-{ "": "" }
+{
+    "welcome": "Bem-vindo ao meu Portfólio profissional!",
+    "introduction": "Olá, chamo-me Lucas Oriental, sou Desenvolvedor Full-Stack e Designer UX/UI.",
+    "title": "Encontre a solução ideal para si:",
+    "button1": "Para Empresas",
+    "textAuxButton1": "Procura um profissional qualificado para integrar a sua equipa? Vamos trabalhar juntos!",
+    "button2": "Para Clientes",
+    "textAuxButton2": "Precisa de uma solução digital personalizada? Posso ajudar a transformar a sua ideia em realidade!"
+  }
+  

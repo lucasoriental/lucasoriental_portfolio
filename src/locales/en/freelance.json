@@ -1,1 +1,12 @@
-{ "": "" }
+{
+  "header": {
+    "services": "Services",
+    "projects": "Previous Projects",
+    "testimonials": "Testimonials",
+    "aboutMe": "About Me",
+    "skills": "Skills",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "hireMe": "Hire Me"
+  }
+}

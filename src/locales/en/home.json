@@ -1,1 +1,10 @@
-{ "": "" }
+{
+    "welcome": "Welcome to my professional Portfolio!",
+    "introduction": "Hi, I'm Lucas Oriental, a Full-Stack Developer and UX/UI Designer.",
+    "title": "Find the right solution for you:",
+    "button1": "For Companies",
+    "textAuxButton1": "Looking for a skilled professional to join your team? Let’s work together!",
+    "button2": "For Clients",
+    "textAuxButton2": "Need a custom digital solution? I can help bring your ideas to life!"
+  }
+  

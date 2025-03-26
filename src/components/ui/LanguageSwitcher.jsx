@@ -13,23 +13,15 @@ const LanguageSwitcher = ({ onClick }) => {
   };
 
   return (
-    <div className="flex gap-0">
-      <button
-        onClick={() => changeLanguage("en")}
-        className={`p-0.5 text-md border border-slate-950 pr-3 pl-3
-          ${selectedLang === "en" ? "bg-red-800 text-white" : "bg-white text-gray-950 border-spacing-1.5"}
-        `}
+    <div className="flex gap-2">
+      <select
+        value={selectedLang}
+        onChange={(e) => changeLanguage(e.target.value)}
+        className="px-2 py-1 rounded w-fit text-sm font-semibold"
       >
-        EN
-      </button>
-      <button
-        onClick={() => changeLanguage("pt")}
-        className={`p-0.5 text-md border border-slate-950 pr-3 pl-3
-          ${selectedLang === "pt" ? "bg-red-800 text-white" : "bg-white text-gray-950 border-spacing-1.5"}
-        `}
-      >
-        PT
-      </button>
+        <option value="en">EN</option>
+        <option value="pt">PT</option>
+      </select>
     </div>
   );
 };
