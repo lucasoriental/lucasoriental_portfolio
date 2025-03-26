@@ -12,7 +12,7 @@ const EducationAndSkillsPage = () => {
   const [educationAndSkillsInformation, setEducationAndSkillsInformation] =
     useState(null);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation('hiring');
 
   const fetchData = async (lng) => {
     try {

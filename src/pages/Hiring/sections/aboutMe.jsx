@@ -7,7 +7,7 @@ import i18n from "../../../locales/i18n";
 const AboutMePage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [aboutMe, setAboutMe] = useState(null);
-  const { t } = useTranslation();
+  const { t } = useTranslation('hiring');
 
   const fetchData = async (lng) => {
     try {
@@ -56,7 +56,7 @@ const AboutMePage = () => {
           data-aos="fade-up"
           data-aos-anchor-placement="top-center"
         >
-          {t("sections.aboutMePage.title")}
+          {t("aboutMePage.title")}
         </p>
         <div className="about-me-container-items">
           <img

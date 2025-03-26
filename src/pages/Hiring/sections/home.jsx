@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
 const MainPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('hiring');
 
   const headerHeight = 120;
 

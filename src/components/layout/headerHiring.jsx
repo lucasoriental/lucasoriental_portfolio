@@ -9,7 +9,7 @@ import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
 import { Link } from "react-scroll";
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('hiring');
 
   const headerHeight = 120;
 
@@ -41,7 +41,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            {t("header.hiring.home")}
+            {t("header.home")}
           </Link>
           <Link
             activeClass="active"
@@ -51,7 +51,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            {t("header.hiring.projects")}
+            {t("header.projects")}
           </Link>
           <Link
             activeClass="active"
@@ -61,7 +61,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            {t("header.hiring.education")}
+            {t("header.education")}
           </Link>
           <Link
             activeClass="active"
@@ -71,7 +71,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            {t("header.hiring.jobs")}
+            {t("header.jobs")}
           </Link>
           <Link
             activeClass="active"
@@ -81,7 +81,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            {t("header.hiring.about")}
+            {t("header.about")}
           </Link>
           <Link
             activeClass="active"
@@ -91,7 +91,7 @@ const Header = () => {
             offset={-headerHeight}
             duration={1000}
           >
-            {t("header.hiring.contact")}
+            {t("header.contact")}
           </Link>
         </nav>
       </div>
@@ -132,7 +132,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              {t("header.hiring.home")}
+              {t("header.home")}
             </Link>
             <Link
               activeClass="active"
@@ -143,7 +143,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              {t("header.hiring.projects")}
+              {t("header.rojects")}
             </Link>
             <Link
               activeClass="active"
@@ -154,7 +154,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              {t("header.hiring.education")}
+              {t("header.education")}
             </Link>
             <Link
               activeClass="active"
@@ -165,7 +165,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              {t("header.hiring.jobs")}
+              {t("header.jobs")}
             </Link>
             <Link
               activeClass="active"
@@ -176,7 +176,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              {t("header.hiring.about")}
+              {t("header.about")}
             </Link>
             <Link
               activeClass="active"
@@ -187,7 +187,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              {t("header.hiring.contact")}
+              {t("header.contact")}
             </Link>
           </nav>
         </div>

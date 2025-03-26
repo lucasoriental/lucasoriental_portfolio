@@ -12,14 +12,14 @@ import ptHiring from "../locales/pt/hiring.json";
 i18n.use(initReactI18next).init({
   resources: {
     en: {
-      home: { enHome },
-      freelance: { enFreelance },
-      hiring: { enHiring },
+      home: enHome,
+      freelance: enFreelance,
+      hiring: enHiring,
     },
     pt: {
-      home: { ptHome },
-      freelance: { ptFreelance },
-      hiring: { ptHiring },
+      home: ptHome,
+      freelance: ptFreelance,
+      hiring: ptHiring,
     },
   },
   lng: "pt",
