@@ -1,0 +1,76 @@
+{
+  "cookieMessage": {
+    "message": "Este site utiliza cookies para melhorar a sua experiência de navegação. Ao aceitar, você concorda com o uso de cookies de acordo com nossa política de privacidade.",
+    "button": "Eu aceito"
+  },
+  "header": {
+    "freelance": {
+      "services": "Meus Serviços",
+      "projects": "Meus Projetos",
+      "testimonials": "Depoimentos",
+      "skills": "Habilidades",
+      "about": "Sobre Mim",
+      "contact": "Contatos",
+      "faq": "Perguntas Frequentes",
+      "hireMe": "Me Contrate"
+    },
+    "hiring": {
+      "home": "Home",
+      "projects": "Meus Projetos",
+      "education": "Educação & Habilidades",
+      "jobs": "Experiências Profissionais",
+      "about": "Sobre mim",
+      "contact": "Meus Contatos"
+    }
+  },
+  "errorMessages": "As informações estão sendo carregadas, só um instante...",
+  "sections": {
+    "homePage": {
+      "text1": "Seja Bem-Vindo!",
+      "text2": "Meu nome é <span>Lucas Oriental!</span>",
+      "text3": "Sou <span>Desenvolvedor Full-Stack</span> & <span>Designer UX/UI</span>",
+      "textButton": "Quem sou eu?",
+      "textMobile": "Bem-vindo ao meu Portfólio, meu nome é <span>Lucas Oriental dos Santos!</span>",
+      "toolTipTexts": {
+        "instagram": "@lucasorientaldev",
+        "gitHub": "@lucasoriental",
+        "linkedIn": "Lucas Oriental dos Santos",
+        "behance": "@lucasoriental"
+      }
+    },
+    "myProjectsPage": {
+      "title": "Meus Projetos",
+      "buttonText": "mais detalhes",
+      "headerModalText": "Confira o Projeto"
+    },
+    "educationAndSkillsPage": {
+      "title": "Educação & Habilidades",
+      "section1": {
+        "title": "Ensino Superior",
+        "buttonText": "Website da Universidade"
+      },
+      "section2and3": {
+        "titleSkills": "Habilidades",
+        "toolTipSkill": "Obtido através da Experiência Profissional",
+        "titleCert": "Certificados",
+        "toolTipCert": "Clique para ver a credencial",
+        "itSec": "Desenvolvimento",
+        "desSec": "Design",
+        "modal_cert": {
+          "header": "Informações do Curso",
+          "input1": "Código da Credencial",
+          "input2": "Website para validar a o certificado",
+          "button": "Clique aqui para validar!"
+        }
+      }
+    },
+    "jobExperiencesPage": {
+      "title": "Experiências Profissionais",
+      "buttonText": "mais detalhes",
+      "headerModalText": "Detalhes da Experiência",
+      "bodyModalText": "Minhas Responsabilidades:"
+    },
+    "aboutMePage": { "title": "Sobre mim" },
+    "contactMePage": { "title": "Meus Contatos", "text1": "Entre em contato!" }
+  }
+}

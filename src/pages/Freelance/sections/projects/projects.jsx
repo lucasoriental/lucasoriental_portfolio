@@ -4,7 +4,7 @@ import MeshBackground from "../../common/meshBackground";
 
 import MyProjectModal from "../../common/myProjectModal";
 
-import i18n from "../../../../i18n/i18n";
+import i18n from "../../../../locales/i18n";
 
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
