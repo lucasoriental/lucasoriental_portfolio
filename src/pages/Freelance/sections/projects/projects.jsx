@@ -82,7 +82,7 @@ const Projects = () => {
         <div className="flex flex-wrap justify-center gap-5 max-w-[90rem] w-[95%] items-center mx-auto">
           {project.projects.map((project, index) => {
             return (
-              <a
+              <button
                 key={index}
                 onClick={() => {
                   setSelectedProject(index);
@@ -109,7 +109,7 @@ const Projects = () => {
                     setOpenModal={setModalOpen}
                   />
                 )}
-              </a>
+              </button>
             );
           })}
         </div>

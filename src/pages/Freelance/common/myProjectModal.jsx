@@ -1,4 +1,3 @@
-// MyProjectModal.js
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -16,15 +15,20 @@ export default function MyProjectModal({ information, setOpenModal }) {
     };
   }, []);
 
+  const handleLinkClick = (url, e) => {
+    e.stopPropagation(); // Evita que o clique no botão feche o modal
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="modal-background" onClick={() => setOpenModal(false)}>
       <div className="modal-container" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <button
-            className="ml-10"
+            className="ml-3 lg:ml-10"
             onClick={() => setOpenModal(false)}
           >
-            <X className="text-white"/>
+            <X className="text-white" />
           </button>
           <p className="modal-header-title">
             {t("sections.myProjectsPage.headerModalText")}
@@ -45,40 +49,37 @@ export default function MyProjectModal({ information, setOpenModal }) {
         </div>
         <div className="modal-footer">
           {information.gitHubRepo && (
-            <a
+            <button
               className="modal-link-a"
-              href={information.gitHubRepo}
-              target="_blank"
+              onClick={(e) => handleLinkClick(information.gitHubRepo, e)}
             >
               <div className="modal-button-project">
                 <SiGithub className="text-white w-5 mx-2 lg:w-10" />
                 <p className="text-white text-sm lg:text-base">GitHub</p>
               </div>
-            </a>
+            </button>
           )}
           {information.website && (
-            <a
+            <button
               className="modal-link-a"
-              href={information.website}
-              target="_blank"
+              onClick={(e) => handleLinkClick(information.website, e)}
             >
               <div className="modal-button-project">
                 <Globe className="text-white w-5 mx-2 lg:w-10" />
                 <p className="text-white text-sm lg:text-base">Website</p>
               </div>
-            </a>
+            </button>
           )}
           {information.behanceRepo && (
-            <a
+            <button
               className="modal-link-a"
-              href={information.behanceRepo}
-              target="_blank"
+              onClick={(e) => handleLinkClick(information.behanceRepo, e)}
             >
               <div className="modal-button-project">
                 <SiBehance className="text-white w-5 mx-2 lg:w-10" />
                 <p className="text-white text-sm lg:text-base">Behance</p>
               </div>
-            </a>
+            </button>
           )}
         </div>
       </div>
