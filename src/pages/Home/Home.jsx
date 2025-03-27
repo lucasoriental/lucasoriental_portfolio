@@ -17,8 +17,8 @@ function Home() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <div className="bg-red-700 dark:bg-gray-950 w-screen h-screen flex flex-col justify-center">
-        <div className="flex flex-col mr-auto ml-auto w-fit pb-32 pt-9 max-w-[90%] max-h-[90%] border">
+      <div className="bg-red-700 dark:bg-gray-950 flex flex-col justify-center min-h-screen py-10 px-5">
+        <div className="flex flex-col mx-auto border py-10 px-2">
           <h1 className="text-3xl font-extrabold text-center text-white mb-5 max-w-[90%] mr-auto ml-auto select-none drop-shadow-lg">
             {t("welcome")}
           </h1>
@@ -55,7 +55,7 @@ function Home() {
           <div className="flex flex-col items-center w-fit mx-auto mt-10 gap-2">
             <button
               onClick={toggleDarkMode}
-              className="p-3 bg-slate-800 dark:bg-yellow-600 rounded-full"
+              className="p-3 bg-slate-800 dark:bg-yellow-600 rounded-full mb-3"
             >
               {darkMode ? (
                 <Sun className="text-white" />
