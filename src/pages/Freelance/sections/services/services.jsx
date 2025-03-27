@@ -74,7 +74,7 @@ const Services = () => {
       services: t("servicesSection.desService.services", {
         returnObjects: true,
       }),
-      reverse: true, // This card has the reversed layout (row-reverse)
+      reverse: true,
     },
     {
       title: t("servicesSection.markService.title"),
