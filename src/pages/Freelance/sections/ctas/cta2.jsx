@@ -1,7 +1,9 @@
 import React from "react";
 import background2 from "../../../../assets/images/call-to-action-2.jpg";
+import { useTranslation } from "react-i18next";
 
 const Cta2 = () => {
+  const { t } = useTranslation("freelance");
   return (
     <div className="w-screen h-60 lg:h-96 flex relative">
       <div
@@ -14,9 +16,8 @@ const Cta2 = () => {
         }}
       />
       <p className="text-white max-w-96 w-[90%] mx-auto font-base text-xl self-center relative z-10 text-end">
-        "A inovação é a chave para o sucesso em qualquer negócio, e a internet é
-        a plataforma onde ela acontece."{" "}
-        <span className="text-white text-xl font-bold">~ Sundar Pichai</span>
+        "{t("callToAction.callToAction2.messageCta2")}"{" "}
+        <span className="text-white text-xl font-bold">{t("callToAction.callToAction2.authorCta2")}</span>
       </p>
     </div>
   );
