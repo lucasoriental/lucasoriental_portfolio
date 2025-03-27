@@ -12,7 +12,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("freelance");
 
   const fetchData = async (lng) => {
     try {
@@ -57,12 +57,10 @@ const Projects = () => {
       <MeshBackground />
       <div className="mx-auto w-[90%] max-w-4xl">
         <p className="text-4xl font-extrabold drop-shadow-xl text-center text-white mb-5 select-none lg:text-start lg:w-[20em]">
-          Os Serviços que Impulsionam o Teu Negócio no Digital
+          {t("projectsSection.title")}
         </p>
         <p className="text-lg font-medium text text-zinc-100 mb-7 text-center select-none lg:text-start lg:w-[40em]">
-          Com uma abordagem estratégica e personalizada, ajudo a transformar a
-          presença online da tua marca, desde o desenvolvimento até ao marketing
-          digital.
+        {t("projectsSection.subTitle")}
         </p>
       </div>
       {/* Main Grid of all projects */}
