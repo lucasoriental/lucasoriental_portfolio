@@ -1,12 +1,84 @@
 {
   "header": {
     "services": "Services",
-    "projects": "Previous Projects",
+    "projects": "Projects",
     "testimonials": "Testimonials",
     "aboutMe": "About Me",
     "skills": "Skills",
     "contact": "Contact",
     "faq": "FAQ",
     "hireMe": "Hire Me"
+  },
+  "heroSection": {
+    "title1": "I turn your idea into a digital business",
+    "subTitle": "You don't have to do it all alone – Together, we can create the perfect strategy for your business to shine in the digital world!",
+    "button1": "Request a free quote",
+    "auxButton1": "Limited time!",
+    "button2": "See My Services"
+  },
+  "servicesSection": {
+    "title": "edit",
+    "subTitle": "edit",
+    "devService": {
+      "title": "Development/Programming",
+      "subTitle": "Complete and customized solutions",
+      "services": [
+        "Custom Website Development",
+        "Online Store Creation (E-commerce)",
+        "Optimized Landing Page Development",
+        "Mobile Application Development",
+        "Maintenance and Updates for Existing Websites",
+        "Digital Portfolio Creation",
+        "Event Page Development"
+      ]
+    },
+    "desService": {
+      "title": "Design",
+      "subTitle": "Visual identity that makes your brand stand out",
+      "services": [
+        "Website Interface Design",
+        "Mobile App Interface Design",
+        "Custom Web Page Development",
+        "Visual Content Creation for Social Media",
+        "Banner and Thumbnail Design",
+        "Flyer and Brochure Creation",
+        "Business Card Development",
+        "Digital Presentation Design (Slides)"
+      ]
+    },
+    "markService": {
+      "title": "Digital Marketing",
+      "subTitle": "Effective strategies for growing your business",
+      "services": [
+        "Social Media Management",
+        "Instagram Store Creation and Optimization",
+        "Paid Traffic Management (PPC)",
+        "Facebook Community Development",
+        "Marketing Results Analysis and Monitoring",
+        "Content Creation and Editing for Reels and TikToks"
+      ]
+    }
+  },
+  "projectsSection": {
+    "title": "edit",
+    "subTitle": "edit"
+  },
+  "testimonialsSection": {
+    "title": "edit",
+    "subTitle": "edit"
+  },
+  "callToAction": {
+    "callToAction1": {
+      "messageCta1": "If your business is not on the internet, then your business is out of business",
+      "authorCta1": "Bill Gates"
+    },
+    "callToAction2": {
+      "messageCta2": "Innovation is the key to success in any business, and the internet is the platform where it happens.",
+      "authorCta2": "Sundar Pichai"
+    },
+    "callToAction3": {
+      "messageCta3": "Did you like what you saw? Get in touch now and start your project!",
+      "buttonCta3": "Get in Touch"
+    }
   }
 }
