@@ -64,7 +64,8 @@
   },
   "projectsSection": {
     "title": "Projetos Que Falam Por Si!",
-    "subTitle": "Um portfólio de soluções inovadoras que elevaram marcas e negócios a um novo nível."
+    "subTitle": "Um portfólio de soluções inovadoras que elevaram marcas e negócios a um novo nível.",
+    "modalHeaderText": "Confira o Projeto"
   },
   "testimonialsSection": {
     "title": "O Que Dizem Sobre o Meu Trabalho?",
@@ -95,11 +96,11 @@
   },
   "faqSection": {
     "title": "Dúvidas Frequentes",
-    "subTitle": "Encontra answears para as questions mais comuns sobre os meus serviços e processos.",
+    "subTitle": "Encontra respostas para as questões mais comuns sobre os meus serviços, pagamentos e processos.",
     "questions": [
       {
         "id": 1,
-        "sections": "1. Sobre os Serviços",
+        "seccao": "1. Sobre os Serviços",
         "questions": [
           {
             "id": 1,
@@ -125,7 +126,7 @@
       },
       {
         "id": 2,
-        "sections": "2. Contratos e Formalização",
+        "seccao": "2. Contratos e Formalização",
         "questions": [
           {
             "id": 6,
@@ -151,7 +152,7 @@
       },
       {
         "id": 3,
-        "sections": "3. Pagamentos e Faturação",
+        "seccao": "3. Pagamentos e Faturação",
         "questions": [
           {
             "id": 10,
@@ -177,7 +178,7 @@
       },
       {
         "id": 4,
-        "sections": "4. Processo de Trabalho",
+        "seccao": "4. Processo de Trabalho",
         "questions": [
           {
             "id": 14,
@@ -208,7 +209,7 @@
       },
       {
         "id": 5,
-        "sections": "5. Suporte e Manutenção",
+        "seccao": "5. Suporte e Manutenção",
         "questions": [
           {
             "id": 19,
@@ -229,7 +230,7 @@
       },
       {
         "id": 6,
-        "sections": "6. Segurança e Privacidade",
+        "seccao": "6. Segurança e Privacidade",
         "questions": [
           {
             "id": 22,
@@ -250,7 +251,7 @@
       },
       {
         "id": 7,
-        "sections": "7. Outros Serviços e Personalizações",
+        "seccao": "7. Outros Serviços e Personalizações",
         "questions": [
           {
             "id": 25,
@@ -283,12 +284,12 @@
   },
   "callToAction": {
     "callToAction1": {
-      "messageCta1": "Se o teu negócio não está na internet, então o teu negócio está fora dos negócios ",
-      "authorCta1": "~ Bill Gates"
+      "messageCta1": "Se o teu negócio não está na internet, então o teu negócio está fora dos negócios.",
+      "authorCta1": "Bill Gates"
     },
     "callToAction2": {
       "messageCta2": "A inovação é a chave para o sucesso em qualquer negócio, e a internet é a plataforma onde ela acontece.",
-      "authorCta2": "~ Sundar Pichai"
+      "authorCta2": "Sundar Pichai"
     },
     "callToAction3": {
       "messageCta3": "Gostou do que viu? Entre em contacto agora e ",
