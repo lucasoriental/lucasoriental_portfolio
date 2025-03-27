@@ -9,17 +9,17 @@ const Faq = () => {
   console.log(arr);
 
   return (
-    <div className="w-[90%] max-w-4xl mx-auto py-36">
-      <div className="mx-auto">
+    <section className="dark: relative pb-36 pt-36">
+      <div className="w-[90%] max-w-screen mx-auto">
         <div className="mx-auto w-[90%] max-w-4xl mb-12">
           <p className="text-4xl font-extrabold text-center text-zinc-900 mb-5 select-none lg:text-start lg:w-[20em]">
             {t("faqSection.title")}
           </p>
-          <p className="text-lg font-medium text text-zinc-700 mb-7 text-center select-none lg:text-start lg:w-[40em]">
+          <p className="text-lg font-medium text-zinc-700 mb-7 text-center select-none lg:text-start lg:w-[40em]">
             {t("faqSection.subTitle")}
           </p>
         </div>
-        <div>
+        <div className="max-w-4xl mx-auto">
           {arr.map((seccao) => (
             <div key={seccao.id} className="flex flex-col">
               <h3 className="text-xl font-bold pt-10 pb-2 ">{seccao.seccao}</h3>
@@ -42,7 +42,7 @@ const Faq = () => {
             </div>
           ))}
         </div>
-        <p className="mt-10 text-center text-white bg-red-600 p-6 rounded-lg">
+        <p className="mt-10 text-center text-white bg-red-600 p-6 rounded-lg max-w-4xl mx-auto">
           {t("faqSection.auxText")}
           <a
             href="mailto:lucasoriental@gmail.com"
@@ -52,7 +52,7 @@ const Faq = () => {
           </a>
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
