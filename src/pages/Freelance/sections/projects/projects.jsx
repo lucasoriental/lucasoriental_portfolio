@@ -60,7 +60,7 @@ const Projects = () => {
           {t("projectsSection.title")}
         </p>
         <p className="text-lg font-medium text text-zinc-100 mb-7 text-center select-none lg:text-start lg:w-[40em]">
-        {t("projectsSection.subTitle")}
+          {t("projectsSection.subTitle")}
         </p>
       </div>
       {/* Main Grid of all projects */}
@@ -77,7 +77,7 @@ const Projects = () => {
           {t("errorMessages")}
         </p>
       ) : (
-        <div className="flex flex-wrap justify-center gap-5 max-w-[90rem] w-[95%] items-center mx-auto">
+        <div className="flex flex-wrap justify-center lg:justify-between gap-5 max-w-4xl mx-auto items-center">
           {project.projects.map((project, index) => {
             return (
               <button
@@ -94,10 +94,10 @@ const Projects = () => {
                 }}
               >
                 <div className="absolute bottom-0 mb-6 bg-red-700 py-5 w-[90%] left-1/2 -translate-x-1/2 px-5 flex flex-col">
-                  <p className="text-white font-bold text-lg">
+                  <p className="text-white font-bold text-lg text-start">
                     {project.projectName}
                   </p>
-                  <p className="border-t text-red-200 font-semibold text-base">
+                  <p className="border-t text-red-200 font-semibold text-base text-start">
                     {project.projectArea}
                   </p>
                 </div>
