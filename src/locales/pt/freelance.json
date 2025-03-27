@@ -19,7 +19,7 @@
   "servicesSection": {
     "title": "editar",
     "subTitle": "editar",
-    "service1": {
+    "devService": {
       "title": "Desenvolvimento/Programação",
       "subTitle": "Soluções completas e personalizadas",
       "services": [
@@ -32,7 +32,7 @@
         "Desenvolvimento de Páginas para Eventos"
       ]
     },
-    "service2": {
+    "desService": {
       "title": "Design",
       "subTitle": "Identidade visual que destaca a sua marca",
       "services": [
@@ -46,7 +46,7 @@
         "Elaboração de Apresentações Digitais (Slides)"
       ]
     },
-    "service3": {
+    "markService": {
       "title": "Marketing Digital",
       "subTitle": "Estratégias eficazes para o crescimento do seu negócio",
       "services": [
