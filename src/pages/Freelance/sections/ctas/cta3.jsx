@@ -16,9 +16,9 @@ const Cta3 = () => {
         }}
       />
       <div className="flex flex-col items-center justify-center z-10 mx-auto max-w-2xl w-[90%]">
-        <p className="text-white text-2xl max-w-96 lg:max-w-2xl mx-auto font-semibold lg:text-3xl self-center text-center mb-5 lg:mb-10 shadow-white">
+        <p className="text-white text-2xl max-w-96 lg:max-w-2xl mx-auto font-semibold lg:text-4xl self-center text-center mb-5 lg:mb-10 shadow-white">
         {t("callToAction.callToAction3.messageCta3")}
-          <span className="text-red-600 font-bold animate-text-attention">
+          <span className="text-red-600 font-bold animate-text-attention lg:text-4xl">
           {t("callToAction.callToAction3.auxMessageCta3")}
           </span>
         </p>
