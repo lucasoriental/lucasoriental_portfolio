@@ -15,10 +15,14 @@ const Cta2 = () => {
           filter: "grayscale(100%)",
         }}
       />
-      <p className="text-white max-w-96 w-[90%] mx-auto font-base text-xl self-center relative z-10 text-end">
-        "{t("callToAction.callToAction2.messageCta2")}"{" "}
-        <span className="text-white text-xl font-bold">{t("callToAction.callToAction2.authorCta2")}</span>
-      </p>
+      <div className="max-w-96 w-[90%] mx-auto self-center relative z-10 lg:max-w-2xl" >
+        <p className="text-white font-base text-xl lg:text-4xl text-end">
+          "{t("callToAction.callToAction2.messageCta2")}"
+        </p>
+        <p className="text-white font-base text-xl font-bold lg:mt-5 lg:text-3xl mt-2 text-end">
+          {t("callToAction.callToAction2.authorCta2")}
+        </p>
+      </div>
     </div>
   );
 };
