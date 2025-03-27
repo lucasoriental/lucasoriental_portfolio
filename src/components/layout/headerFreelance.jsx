@@ -73,9 +73,9 @@ export default function HeaderFreelancer() {
       <div className="flex items-center gap-5">
         <button
           type="button"
-          className="bg-green-50 px-5 py-2 text-sm rounded-full hover:bg-red-300 font-bold"
+          className="bg-green-50 px-5 py-2 text-sm rounded-full hover:bg-red-300 text-red-700 font-bold"
         >
-          Request a Free Quote!
+          {t("header.buttonText")}
         </button>
         <button
           className="lg:hidden cursor-pointer text-white"
