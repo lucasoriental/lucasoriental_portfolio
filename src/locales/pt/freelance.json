@@ -10,15 +10,18 @@
     "hireMe": "Contrata-me"
   },
   "heroSection": {
-    "title1": "Transformo a tua ideia num negócio digital",
+    "title1": "Transformo a tua ideia num negócio digital ",
+    "titleAux": ["Perfeito", "de Sucesso", "Incrível"],
+    "title2": "",
     "subTitle": "Não precisas fazer tudo sozinho - Juntos, podemos criar a estratégia infalível para o teu negócio brilhar no digital!",
-    "button1": "Solicitar um orçamento grátis",
-    "auxButton1": "Tempo limitado!",
-    "button2": "Ver meus Serviços"
+    "button1": "Solicitar um orçamento ",
+    "auxButton1": "GRÁTIS",
+    "aux2Button1": "",
+    "button2": "Veja meus Serviços"
   },
   "servicesSection": {
-    "title": "editar",
-    "subTitle": "editar",
+    "title": "Soluções Sob Medida para o Teu Negócio Digital",
+    "subTitle": "Desenvolvimento, Design e Marketing aliados para criar experiências digitais que encantam e convertem clientes para o teu negócio.",
     "devService": {
       "title": "Desenvolvimento/Programação",
       "subTitle": "Soluções completas e personalizadas",
@@ -60,24 +63,236 @@
     }
   },
   "projectsSection": {
-    "title": "editar",
-    "subTitle": "editar"
+    "title": "Projetos Que Falam Por Si!",
+    "subTitle": "Um portfólio de soluções inovadoras que elevaram marcas e negócios a um novo nível."
   },
   "testimonialsSection": {
-    "title": "editar",
-    "subTitle": "editar"
+    "title": "O Que Dizem Sobre o Meu Trabalho?",
+    "subTitle": "Opiniões de clientes e profissionais com quem tive a oportunidade de colaborar ao longo da minha jornada."
+  },
+  "skillsSection": {
+    "title": "Ferramentas e Competências ao Teu Serviço",
+    "subTitle": "Domínio das principais tecnologias para transformar ideias em soluções digitais eficientes.",
+    "skillSections": {
+      "cat1": "Linguagens de Programação",
+      "cat2": "Linguagens de Marcação e Estilização",
+      "cat3": "Frameworks e Bibliotecas Front-end",
+      "cat4": "Back-end e Infraestrutura",
+      "cat5": "Bases de Dados",
+      "cat6": "Controlo de Versão",
+      "cat7": "Testes e Qualidade de Código",
+      "cat8": "Ferramentas de Desenvolvimento",
+      "cat9": "Sistemas Operativos",
+      "cat10": "Hosts e DNS",
+      "cat11": "CMS",
+      "cat12": "Design",
+      "cat13": "Gestão"
+    }
+  },
+  "contactsSection": {
+    "title": "Vamos Falar Sobre o Teu Projeto?",
+    "subTitle": "Estou pronto para ajudar a transformar a tua visão em realidade. Entra em contacto!"
+  },
+  "faqSection": {
+    "title": "Dúvidas Frequentes",
+    "subTitle": "Encontra answears para as questions mais comuns sobre os meus serviços e processos.",
+    "questions": [
+      {
+        "id": 1,
+        "sections": "1. Sobre os Serviços",
+        "questions": [
+          {
+            "id": 1,
+            "question": "1.1 Que serviços posso contratar?",
+            "answear": "Ofereço uma ampla gama de serviços, desde a criação de websites e lojas online até a gestão de redes sociais e design gráfico. Podes encontrar a lista completa dos serviços na secção de Serviços. Se não encontrares exatamente o que procuras, entra em contacto comigo! Terei todo o gosto em entender as tuas necessidades e encontrar a melhor solução para si."
+          },
+          {
+            "id": 2,
+            "question": "1.2 Trabalhas com clientes de diferentes setores e países?",
+            "answear": "Sim! Atendo clientes de diversos setores, tanto em Portugal quanto no estrangeiro, adaptando as soluções às necessidades específicas de cada negócio."
+          },
+          {
+            "id": 3,
+            "question": "1.3 Como posso saber qual o serviço mais adequado para mim?",
+            "answear": "Se tiveres dúvidas sobre qual serviço escolher, basta entrares em contacto. Faço uma análise do teu projeto e apresento a melhor solução com base nas tuas necessidades e objetivos."
+          },
+          {
+            "id": 4,
+            "question": "1.4 Posso contratar apenas uma parte de um serviço, como um design sem desenvolvimento?",
+            "answear": "Sim! Se precisares apenas do design de um website, aplicação ou redes sociais, sem o desenvolvimento, também posso ajudar."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "sections": "2. Contratos e Formalização",
+        "questions": [
+          {
+            "id": 6,
+            "question": "2.1 É necessário assinar um contrato?",
+            "answear": "Sim! O contrato garante segurança para ambas as partes, estabelecendo prazos, valores, entregas e direitos."
+          },
+          {
+            "id": 7,
+            "question": "2.2 Como é feita a assinatura do contrato?",
+            "answear": "O contrato pode ser assinado digitalmente através de plataformas como DocuSign ou HelloSign, garantindo validade jurídica e agilidade no processo."
+          },
+          {
+            "id": 8,
+            "question": "2.3 O que acontece se eu precisar cancelar o projeto depois de iniciado?",
+            "answear": "A política de cancelamento e possíveis reembolsos estará definida no contrato. Geralmente, parte do valor pago cobre o tempo e o trabalho já investidos."
+          },
+          {
+            "id": 9,
+            "question": "2.4 O contrato protege a minha propriedade intelectual?",
+            "answear": "Sim! Todo o material criado será teu, conforme acordado no contrato. Se necessário, posso incluir cláusulas de confidencialidade para proteger informações sensíveis."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "sections": "3. Pagamentos e Faturação",
+        "questions": [
+          {
+            "id": 10,
+            "question": "3.1 Quais são as formas de pagamento aceites?",
+            "answear": "Atualmente, aceito pagamentos via Wise e PayPal, em breve, MB Way e transferência bancária também estarão disponíveis."
+          },
+          {
+            "id": 11,
+            "question": "3.2 Como funciona o pagamento?",
+            "answear": "O pagamento pode ser feito de forma integral ou parcelado, conforme o que for combinado no contrato. Normalmente, um sinal inicial é necessário para dar início ao projeto."
+          },
+          {
+            "id": 12,
+            "question": "3.3 Trabalhas com orçamento fixo ou preço por hora?",
+            "answear": "O valor do projeto é geralmente fechado com base nos requisitos do cliente. Em alguns casos específicos, posso trabalhar com um valor por hora."
+          },
+          {
+            "id": 13,
+            "question": "3.4 Emites faturas para os pagamentos?",
+            "answear": "Sim! Emito faturas de acordo com a legislação em vigor."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "sections": "4. Processo de Trabalho",
+        "questions": [
+          {
+            "id": 14,
+            "question": "4.1 Como funciona o processo de desenvolvimento do meu projeto?",
+            "answear": "O processo normalmente segue estas etapas: Reunião inicial – Compreensão das necessidades e expectativas; Proposta e contrato – Apresentação do orçamento e prazos; Desenvolvimento – Criação do design e funcionalidades, com feedback contínuo; Revisões e ajustes – Possibilidade de melhorias antes da entrega; Entrega e suporte – Entrega final e possível suporte pós-projeto."
+          },
+          {
+            "id": 15,
+            "question": "4.2 Quanto tempo demora o desenvolvimento?",
+            "answear": "O tempo de desenvolvimento varia consoante a complexidade do projeto e os requisitos específicos. Projetos mais simples podem ser concluídos rapidamente, enquanto soluções mais avançadas, como e-commerces ou aplicações móveis, exigem um tempo maior para garantir qualidade e funcionalidade. Durante a fase inicial, irei avaliar o teu pedido e fornecer uma estimativa mais precisa do prazo de entrega."
+          },
+          {
+            "id": 16,
+            "question": "4.3 Como posso acompanhar o progresso do meu projeto?",
+            "answear": "Mantenho um canal aberto de comunicação (e-mail, WhatsApp ou reuniões periódicas) para atualizar sobre o progresso e receber feedback."
+          },
+          {
+            "id": 17,
+            "question": "4.4 Posso solicitar alterações durante o processo?",
+            "answear": "Sim, pequenas alterações estão incluídas. Caso sejam necessárias mudanças significativas, ajustamos o orçamento e os prazos."
+          },
+          {
+            "id": 18,
+            "question": "4.5 Se já tiver um website, podes atualizá-lo ou melhorá-lo?",
+            "answear": "Sim! Posso otimizar, corrigir erros ou redesenhar o teu website para melhor desempenho e design atualizado."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "sections": "5. Suporte e Manutenção",
+        "questions": [
+          {
+            "id": 19,
+            "question": "5.1 O suporte está incluído após a entrega?",
+            "answear": "Sim! Ofereço um período de suporte gratuito (normalmente entre 15 e 30 dias), dependendo do projeto."
+          },
+          {
+            "id": 20,
+            "question": "5.2 Como funciona a manutenção de websites e lojas online?",
+            "answear": "Caso precises de atualizações, segurança ou otimizações frequentes, podemos estabelecer um plano de manutenção mensal."
+          },
+          {
+            "id": 21,
+            "question": "5.3 E se houver um problema no meu site depois da entrega?",
+            "answear": "Caso o problema esteja dentro do período de suporte gratuito, resolvo sem custos adicionais. Para problemas fora desse período, podemos avaliar o melhor plano de manutenção."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "sections": "6. Segurança e Privacidade",
+        "questions": [
+          {
+            "id": 22,
+            "question": "6.1 O meu site será seguro?",
+            "answear": "Sim! Implemento medidas como SSL, backups regulares e firewall para garantir a segurança dos teus dados e dos teus clientes."
+          },
+          {
+            "id": 23,
+            "question": "6.2 Os meus dados estão protegidos?",
+            "answear": "Sim! Trabalho de acordo com as normas do RGPD, garantindo que todas as informações são tratadas com segurança e privacidade."
+          },
+          {
+            "id": 24,
+            "question": "6.3 O que acontece se o meu site for hackeado?",
+            "answear": "Caso tenhas um plano de manutenção, tomo medidas imediatas para restaurar a segurança. Se não tiveres manutenção ativa, podemos avaliar uma solução emergencial."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "sections": "7. Outros Serviços e Personalizações",
+        "questions": [
+          {
+            "id": 25,
+            "question": "7.1 Também fazes consultoria para estratégias digitais?",
+            "answear": "Sim! Se precisas de orientação sobre como melhorar a presença digital do teu negócio, podemos trabalhar juntos em estratégias personalizadas."
+          },
+          {
+            "id": 26,
+            "question": "7.2 Podes criar um design exclusivo para o meu site ou redes sociais?",
+            "answear": "Sim! Todos os designs são personalizados e feitos sob medida para cada cliente."
+          },
+          {
+            "id": 27,
+            "question": "7.3 Fazes integrações com outras plataformas (ex.: pagamentos, automações, CRM)?",
+            "answear": "Sim, posso integrar o teu site ou loja online com ferramentas externas, como gateways de pagamento, automação de marketing e CRM."
+          },
+          {
+            "id": 28,
+            "question": "7.4 Posso contratar apenas um design e pedir para outro profissional desenvolvê-lo?",
+            "answear": "Sim, se precisas apenas do design, posso entregá-lo pronto para que outro profissional o desenvolva."
+          }
+        ]
+      }
+    ],
+    "auxText": "A sua dúvida não está entre as mais perguntadas? Envie-me a sua dúvida para que possa ajudar: "
+  },
+  "aboutMeSection": {
+    "title": "A Minha Jornada no Mundo Digital",
+    "subTitle": "Um pouco sobre a minha trajetória, experiência e o que me motiva a criar soluções digitais impactantes."
   },
   "callToAction": {
     "callToAction1": {
-      "messageCta1": "Se o teu negócio não está na internet, então o teu negócio está fora dos negócios",
-      "authorCta1": "Bill Gates"
+      "messageCta1": "Se o teu negócio não está na internet, então o teu negócio está fora dos negócios ",
+      "authorCta1": "~ Bill Gates"
     },
     "callToAction2": {
       "messageCta2": "A inovação é a chave para o sucesso em qualquer negócio, e a internet é a plataforma onde ela acontece.",
-      "authorCta2": "Sundar Pichai"
+      "authorCta2": "~ Sundar Pichai"
     },
     "callToAction3": {
-      "messageCta3": "Gostou do que viu? Entre em contacto agora e comece o seu projeto!",
+      "messageCta3": "Gostou do que viu? Entre em contacto agora e ",
+      "auxMessageCta3": "comece o seu projeto!",
       "buttonCta3": "Entre em Contacto"
     }
   }
