@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Picture from "../../assets/images/home-profile.jpg";
-import { Moon, Sun } from "lucide-react";
+//import { Moon, Sun } from "lucide-react";
 
 import { useTranslation } from "react-i18next";
 
@@ -53,7 +53,7 @@ function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center w-fit mx-auto mt-10 gap-2">
-            <button
+            {/* <button
               onClick={toggleDarkMode}
               className="p-3 bg-slate-800 dark:bg-yellow-600 rounded-full mb-3"
             >
@@ -62,7 +62,7 @@ function Home() {
               ) : (
                 <Moon className="text-white" />
               )}
-            </button>
+            </button> */}
             <LanguageSwitcher />
           </div>
         </div>
