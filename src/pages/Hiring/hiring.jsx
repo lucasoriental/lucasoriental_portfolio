@@ -10,6 +10,7 @@ import EducationAndSkills from "../Hiring/sections/educationAndSkills";
 import JobExperiences from "../Hiring/sections/jobExperiences";
 import AboutMe from "../Hiring/sections/aboutMe";
 import ContactMe from "../Hiring/sections/contactMe";
+import ScrollToTopButton from "../../components/ui/scrollToTopButton";
 
 function Hiring() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function Hiring() {
 
   return (
     <div id="Hiring">
+      <ScrollToTopButton />
       <HeaderHiring />
       <MainPage />
       <MyProjects />
