@@ -1,4 +1,4 @@
-import { useState } from "react";
+/* import { useState } from "react"; */
 import { Link } from "react-router-dom";
 import Picture from "../../assets/images/home-profile.jpg";
 //import { Moon, Sun } from "lucide-react";
@@ -8,15 +8,15 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
 
 function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  /* const [darkMode, setDarkMode] = useState(false); */
   const { t } = useTranslation("home");
 
-  const toggleDarkMode = () => {
+  /* const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-  };
+  }; */
 
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div /* className={`${darkMode && "dark"}`} */>
       <div className="bg-red-700 dark:bg-gray-950 flex flex-col justify-center min-h-screen py-10 px-5">
         <div className="flex flex-col mx-auto border py-10 px-2">
           <h1 className="text-3xl font-extrabold text-center text-white mb-5 max-w-[90%] mr-auto ml-auto select-none drop-shadow-lg">
