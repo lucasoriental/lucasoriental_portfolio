@@ -5,6 +5,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+import { Link } from "react-scroll";
+
 const Home = () => {
   const { t } = useTranslation("freelance");
   return (
@@ -31,21 +33,29 @@ const Home = () => {
             {t("heroSection.subTitle")}
           </p>
           <div className="lg:flex lg:self-start lg:gap-6 items-center">
-            <button className="flex bg-zinc-100 pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-fit lg:pl-4 lg:pr-4 border border-red-950 shadow-2xl shadow-red-950">
+            <a
+              href="https://wa.me/message/54TN4AJGPRJXD1"
+              target="_blank"
+              className="flex bg-zinc-100 pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-fit lg:pl-4 lg:pr-4 border border-red-950 shadow-2xl shadow-red-950"
+            >
               <p className="text-red-600 text-md font-base self-center lg:text-sm">
                 {t("heroSection.button1")}
                 <span className="font-medium lg:text-md animate-text-attention">
-                {t("heroSection.auxButton1")}
+                  {t("heroSection.auxButton1")}
                 </span>
                 {t("heroSection.aux2Button1")}
               </p>
-            </button>
-            <button className="flex pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-44">
+            </a>
+            <Link
+              to="container_services"
+              smooth={true}
+              className="flex pt-3 pb-3 w-64 justify-center rounded-xl mb-5 lg:w-44 cursor-pointer"
+            >
               <p className="text-white font-normal text-sm self-center lg:text-md flex items-center gap-2">
                 {t("heroSection.button2")}
                 <ArrowRight className="w-4" />
               </p>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center lg:basis-2/5 mt-5 lg:mt-0">
