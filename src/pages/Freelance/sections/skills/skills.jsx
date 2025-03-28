@@ -166,7 +166,7 @@ const Skills = () => {
     },
   ];
   return (
-    <section className="dark: relative pb-36 pt-36">
+    <section id="container_skills" className="dark: relative pb-36 pt-36">
       <div className="w-[90%] max-w-screen mx-auto">
         <div className="mx-auto w-[90%] max-w-4xl mb-12">
           <p className="text-4xl font-extrabold text-center text-zinc-900 mb-5 select-none lg:text-start lg:w-[20em]">
