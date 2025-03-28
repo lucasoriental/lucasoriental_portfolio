@@ -37,7 +37,13 @@ export default function HeaderFreelancer() {
           {HeaderFreelance.map((item) => (
             <button
               key={item.name}
-              onClick={typeof item.to === "function" ? item.to : null}
+              onClick={() => {
+                if (typeof item.to === "function") {
+                  item.to();
+                } else {
+                  document.getElementById(item.to)?.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
               className="text-sm font-semibold text-white hover:text-red-300 cursor-pointer select-none"
             >
               {item.name}
@@ -60,7 +66,14 @@ export default function HeaderFreelancer() {
             {HeaderFreelance.map((item) => (
               <button
                 key={item.name}
-                onClick={typeof item.to === "function" ? item.to : null}
+                onClick={() => {
+                  if (typeof item.to === "function") {
+                    item.to();
+                  } else {
+                    document.getElementById(item.to)?.scrollIntoView({ behavior: "smooth" });
+                    setIsOpen(false); // Fecha o menu ao clicar
+                  }
+                }}
                 className="text-sm font-semibold text-red-600 hover:bg-red-300 cursor-pointer select-none w-full py-2 px-5"
               >
                 {item.name}
