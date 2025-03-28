@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 //import tempPic from "../../../../assets/images/home-profile.jpg";
 import ruteMatos from "../../../../assets/images/ruteMatos.webp";
+import caioVaz from "../../../../assets/images/caioVaz.jpeg";
 
 const testimonials = [
   {
@@ -11,6 +12,13 @@ const testimonials = [
       "Estou extremamente satisfeita com o website que me foi desenvolvido! Desde o início, apresentei um esboço do que tinha em mente, e o resultado final correspondeu totalmente às minhas expectativas. O design ficou limpo, profissional e transmite exatamente a imagem que eu queria passar. Além disso, o profissional esteve sempre disponível para ouvir as minhas sugestões, fazer ajustes e garantir que tudo ficasse perfeito. Recomendo sem hesitação pelo profissionalismo, atenção aos detalhes e compromisso em entregar um trabalho de qualidade!",
     name: "Dra. Rute Isabel Matos",
     position: "Psicóloga Clínica e da Saúde",
+  },
+  {
+    img: caioVaz,
+    quote:
+      "Lucas é um profissional dedicado, preciso e inovador. Com um olhar estratégico e atenção aos detalhes, entrega soluções funcionais e alinhadas às necessidades do projeto. Além da competência técnica, tem grande capacidade de adaptação e resolução de problemas, sendo um parceiro confiável para qualquer equipe. Seu compromisso com a excelência garante resultados eficientes.",
+    name: "Caio Marcelo vaz Lima",
+    position: "Desenvolvedor Full-Stack",
   },
 ];
 
@@ -57,7 +65,7 @@ export default function Carousel() {
         className="md:flex bg-red-600 rounded-xl p-8 md:p-0 dark:bg-slate-800 w-[90%]"
       >
         <img
-          className="w-40 lg:h-full object-cover md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+          className="w-40 lg:h-full h-40 object-cover md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
           src={testimonials[index].img}
           alt={testimonials[index].name}
         />
