@@ -4,7 +4,7 @@ import XIconSvg from "../../../../assets/icons/icon_X";
 import { useTranslation } from "react-i18next";
 
 export default function JobExperiencesModal({ setOpenModal, information }) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   useEffect(() => {
     document.body.classList.add("modal-open");

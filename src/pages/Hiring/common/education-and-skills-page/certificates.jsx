@@ -10,7 +10,7 @@ export default function Certificates(props) {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   return (
     <div className="container-certificates">

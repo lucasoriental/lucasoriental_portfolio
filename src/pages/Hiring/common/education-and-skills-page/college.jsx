@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 export default function College(props) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   return (
     <div className="allColeges">
