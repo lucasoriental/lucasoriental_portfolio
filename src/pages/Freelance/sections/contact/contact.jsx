@@ -21,7 +21,7 @@ const Contacts = () => {
   };
 
   return (
-    <section className="relative w-screen mx-auto pt-24 pb-24">
+    <section id="container_contact" className="relative w-screen mx-auto pt-24 pb-24">
       <MeshBackground />
       <div>
         <div className="mr-auto ml-auto w-[90%] max-w-4xl">
