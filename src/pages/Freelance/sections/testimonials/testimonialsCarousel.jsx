@@ -17,8 +17,8 @@ const testimonials = [
     img: caioVaz,
     quote:
       "Lucas é um profissional dedicado, preciso e inovador. Com um olhar estratégico e atenção aos detalhes, entrega soluções funcionais e alinhadas às necessidades do projeto. Além da competência técnica, tem grande capacidade de adaptação e resolução de problemas, sendo um parceiro confiável para qualquer equipe. Seu compromisso com a excelência garante resultados eficientes.",
-    name: "Caio Marcelo vaz Lima",
-    position: "Desenvolvedor Full-Stack",
+    name: "Caio Marcelo vaz",
+    position: "Desenvolvedor Front-end",
   },
 ];
 
