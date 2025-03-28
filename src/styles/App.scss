@@ -65,22 +65,6 @@
   justify-content: center;
   align-items: center;
 
-  a {
-    cursor: pointer;
-    text-align: center;
-    padding: 30px 20px;
-    color: var(--White);
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 15px;
-    font-weight: 700;
-    transition: 600ms;
-
-    @media (max-width: 912px) {
-      font-size: 10px;
-    }
-  }
-
   a:hover {
     transition: 600ms;
     font-weight: 900;
@@ -89,14 +73,6 @@
 }
 
 //Header Mobile
-
-#header-mobile {
-  display: none;
-
-  @media (max-width: 752px) {
-    display: contents;
-  }
-}
 
 .header-mobile-bar {
   padding: 20px 5%;
