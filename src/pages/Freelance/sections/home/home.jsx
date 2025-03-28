@@ -10,7 +10,7 @@ import { Link } from "react-scroll";
 const Home = () => {
   const { t } = useTranslation("freelance");
   return (
-    <main className="dark: relative pt-36 pb-36 lg:h-[calc(100vh*0.9)]">
+    <main id="container_hero" className="dark: relative pt-36 pb-36 lg:h-[calc(100vh*0.9)]">
       <MeshBackground />
       <div className="w-[90%] max-w-4xl m-auto flex flex-col lg:flex-row items-center relative z-10">
         <div className="flex flex-col items-center lg:basis-3/5">
