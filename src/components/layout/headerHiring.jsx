@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import XIconSvg from "../../assets/icons/icon_X";
 import MenuHamburguer from "../../assets/icons/icon_menu_hamburger";
+import { useNavigate } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 
@@ -9,7 +10,8 @@ import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
 import { Link } from "react-scroll";
 
 const Header = () => {
-  const { t } = useTranslation('hiring');
+  const { t } = useTranslation("hiring");
+  const navigate = useNavigate();
 
   const headerHeight = 120;
 
@@ -24,6 +26,10 @@ const Header = () => {
     setIsActive(!isActive);
   };
 
+  const goToServices = () => {
+    navigate("/freelance", { state: { scrollTo: "container_freelance" } });
+  };
+
   const handleClickLink = () => {
     setIsActive(false);
   };
@@ -31,7 +37,7 @@ const Header = () => {
   return (
     <header id="header-main">
       <div id="header-desktop">
-        <nav className="header-desktop-nav">
+        <nav className="header-desktop-nav gap-5 hidden lg:flex">
           <LanguageSwitcher />
           <Link
             activeClass="active"
@@ -40,6 +46,7 @@ const Header = () => {
             smooth={true}
             offset={-headerHeight}
             duration={1000}
+            className="text-center cursor-pointer text-white font-bold text-base py-8"
           >
             {t("header.home")}
           </Link>
@@ -50,6 +57,7 @@ const Header = () => {
             smooth={true}
             offset={-headerHeight}
             duration={1000}
+            className="text-center cursor-pointer text-white font-bold text-base"
           >
             {t("header.projects")}
           </Link>
@@ -60,6 +68,7 @@ const Header = () => {
             smooth={true}
             offset={-headerHeight}
             duration={1000}
+            className="text-center cursor-pointer text-white font-bold text-base"
           >
             {t("header.education")}
           </Link>
@@ -70,6 +79,7 @@ const Header = () => {
             smooth={true}
             offset={-headerHeight}
             duration={1000}
+            className="text-center cursor-pointer text-white font-bold text-base"
           >
             {t("header.jobs")}
           </Link>
@@ -80,6 +90,7 @@ const Header = () => {
             smooth={true}
             offset={-headerHeight}
             duration={1000}
+            className="text-center cursor-pointer text-white font-bold text-base"
           >
             {t("header.about")}
           </Link>
@@ -90,12 +101,19 @@ const Header = () => {
             smooth={true}
             offset={-headerHeight}
             duration={1000}
+            className="text-center cursor-pointer text-white font-bold text-base"
           >
             {t("header.contact")}
           </Link>
+          <button
+            className="text-center cursor-pointer text-white font-bold text-base"
+            onClick={() => goToServices()}
+          >
+            {t("buttonFreelance")}
+          </button>
         </nav>
       </div>
-      <div id="header-mobile">
+      <div id="header-mobile" className="lg:hidden">
         <div className="header-mobile-bar">
           <button className="hamburguer" onClick={handleClick}>
             <MenuHamburguer
@@ -143,7 +161,7 @@ const Header = () => {
               duration={1000}
               onClick={handleClickLink}
             >
-              {t("header.rojects")}
+              {t("header.projects")}
             </Link>
             <Link
               activeClass="active"
