@@ -2,6 +2,8 @@ import React from "react";
 import backgroundImg from "../../../../assets/images/call-to-action-3.jpg";
 import { useTranslation } from "react-i18next";
 
+import { Link } from "react-scroll";
+
 const Cta3 = () => {
   const { t } = useTranslation("freelance");
   return (
@@ -17,14 +19,19 @@ const Cta3 = () => {
       />
       <div className="flex flex-col items-center justify-center z-10 mx-auto max-w-2xl w-[90%]">
         <p className="text-white text-2xl max-w-96 lg:max-w-2xl mx-auto font-semibold lg:text-4xl self-center text-center mb-5 lg:mb-10 shadow-white">
-        {t("callToAction.callToAction3.messageCta3")}
+          {t("callToAction.callToAction3.messageCta3")}
           <span className="text-red-600 font-bold animate-text-attention lg:text-4xl">
-          {t("callToAction.callToAction3.auxMessageCta3")}
+            {t("callToAction.callToAction3.auxMessageCta3")}
           </span>
         </p>
-        <button className="bg-red-600 text-white px-5 py-2 shadow-2xl shadow-red-600 font-semibold">
-        {t("callToAction.callToAction3.buttonCta3")}
-        </button>
+        <a
+          href="https://wa.me/message/54TN4AJGPRJXD1"
+          target="_blank"
+          type="button"
+          className="bg-red-600 text-white px-5 py-2 shadow-2xl shadow-red-600 font-semibold"
+        >
+          {t("callToAction.callToAction3.buttonCta3")}
+        </a>
       </div>
     </div>
   );
