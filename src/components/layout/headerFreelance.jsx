@@ -8,19 +8,19 @@ export default function HeaderFreelancer() {
   const { t } = useTranslation("freelance");
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  
-    useEffect(() => {
-      const toggleVisibility = () => {
-        if (window.scrollY > 600) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
-      };
-  
-      window.addEventListener("scroll", toggleVisibility);
-      return () => window.removeEventListener("scroll", toggleVisibility);
-    }, []);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 600) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   const navigate = useNavigate();
 
@@ -107,7 +107,11 @@ export default function HeaderFreelancer() {
           href="https://wa.me/message/54TN4AJGPRJXD1"
           target="_blank"
           type="button"
-          className={isVisible === true ? "bg-green-50 px-5 py-2 text-sm rounded-full hover:bg-red-300 text-red-700 font-bold" : "hidden"}
+          className={
+            isVisible === true
+              ? "bg-green-50 px-5 py-2 text-sm rounded-full hover:bg-red-300 text-red-700 font-bold"
+              : "hidden"
+          }
         >
           {t("header.buttonText")}
         </a>

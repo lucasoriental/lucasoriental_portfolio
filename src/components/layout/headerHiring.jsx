@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   const goToServices = () => {
-    navigate("/freelance", { state: { scrollTo: "container_freelance" } });
+    navigate("/freelance", { state: { scrollTo: "container_hero" } });
   };
 
   const handleClickLink = () => {
@@ -207,6 +207,12 @@ const Header = () => {
             >
               {t("header.contact")}
             </Link>
+            <button
+              className="text-center cursor-pointer text-white font-bold text-base"
+              onClick={() => goToServices()}
+            >
+              {t("buttonFreelance")}
+            </button>
           </nav>
         </div>
       </div>
