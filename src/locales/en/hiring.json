@@ -1,0 +1,58 @@
+{
+  "header": {
+    "home": "Home",
+    "projects": "My Projects",
+    "education": "Education & Skills",
+    "jobs": "Job Experiences",
+    "about": "About Me",
+    "contact": "Contact Me"
+  },
+  "buttonFreelance": "Need a Service?",
+  "errorMessages": "The data is loading, please hold a moment...",
+  "sections": {
+    "homePage": {
+      "text1": "Hey there!",
+      "text2": "This is <span>Lucas Oriental!</span>",
+      "text3": "A <span>Full-Stack Developer</span> & <span>UX/UI Designer</span>",
+      "textButton": "Who Am I?",
+      "textMobile": "Hey there, this is <span>Lucas Oriental dos Santos!</span>",
+      "toolTipTexts": {
+        "instagram": "@lucasorientaldev",
+        "gitHub": "@lucasoriental",
+        "linkedIn": "Lucas Oriental dos Santos",
+        "behance": "@lucasoriental"
+      }
+    },
+    "myProjectsPage": {
+      "title": "My Projects",
+      "buttonText": "more details",
+      "headerModalText": "Check the Project"
+    },
+    "educationAndSkillsPage": {
+      "title": "Education & Skills",
+      "section1": { "title": "College", "buttonText": "University Website" },
+      "section2and3": {
+        "titleSkills": "Skills",
+        "toolTipSkill": "Obtained by through professional experience",
+        "titleCert": "Certificates",
+        "toolTipCert": "Click to see the credential",
+        "itSec": "Development",
+        "desSec": "Design",
+        "modal_cert": {
+          "header": "Course Information",
+          "input1": "Credential Code",
+          "input2": "Website to validate the certificate",
+          "button": "Click here to validate it!"
+        }
+      }
+    },
+    "jobExperiencesPage": {
+      "title": "Job Experiences",
+      "buttonText": "more details",
+      "headerModalText": "Job Details",
+      "bodyModalText": "My responsabilities on this experience:"
+    },
+    "aboutMePage": { "title": "About Me" },
+    "contactMePage": { "title": "Contact Me", "text1": "Get in Touch!" }
+  }
+}

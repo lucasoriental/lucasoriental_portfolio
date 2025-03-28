@@ -1,37 +1,31 @@
 import { useEffect } from "react";
-import "react-tooltip/dist/react-tooltip.css";
-import Header from "../src/components/global/header/header";
-import "./App.scss";
-import AboutMe from "./components/sections/about-me-page/aboutMe";
-import ContactMe from "./components/sections/contact-me-page/contactMe";
-import EducationAndSkills from "./components/sections/education-and-skills-page/educationAndSkills";
-import MainPage from "./components/sections/home-page/home";
-import JobExperiences from "./components/sections/job-experiences-page/jobExperiences";
-import MyProjects from "./components/sections/my-projects-page/myProjects";
-import CookieConsent from "react-cookie-consent"
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
+import "../src/styles/App.scss";
+import "../src/styles/tailwind.css";
 import "aos/dist/aos.css";
 
 import { useTranslation } from "react-i18next";
+
+import Hiring from "../src/pages/Hiring/hiring";
+import Freelance from "../src/pages/Freelance/freelance";
+import Home from "../src/pages/Home/Home";
 
 function App() {
   useEffect(() => {
     AOS.init({ once: true, duration: 1000 });
   }, []);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   return (
-    <>
-      <Header />
-      <MainPage />
-      <MyProjects />
-      <EducationAndSkills />
-      <JobExperiences />
-      <AboutMe />
-      <ContactMe />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Hiring" element={<Hiring />} />
+        <Route path="/Freelance" element={<Freelance />} />
+      </Routes>
+    </Router>
   );
 }
 

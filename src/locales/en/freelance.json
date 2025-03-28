@@ -1,0 +1,302 @@
+{
+  "header": {
+    "services": "Services",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "aboutMe": "About Me",
+    "skills": "Skills",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "hireMe": "Hire Me",
+    "buttonText": "Request a Free Quote!"
+  },
+  "heroSection": {
+    "title1": "I turn your idea into ",
+    "titleAux": ["a Perfect", "a Successful", "an Incredible"],
+    "title2": " Digital Business",
+    "subTitle": "You don't have to do everything alone – Together, we can create the perfect strategy to make your business shine online!",
+    "button1": "Request a ",
+    "auxButton1": "FREE",
+    "aux2Button1": " quote",
+    "button2": "Check out my Services"
+  },
+  "servicesSection": {
+    "title": "Tailor-Made Solutions for Your Digital Business",
+    "subTitle": "Development, Design, and Marketing combined to create digital experiences that captivate and convert customers for your business.",
+    "devService": {
+      "title": "Development/Programming",
+      "subTitle": "Complete and customized solutions",
+      "services": [
+        "Custom Website Development",
+        "Online Store Creation (E-commerce)",
+        "Optimized Landing Page Development",
+        "Mobile Application Development",
+        "Maintenance and Updates for Existing Websites",
+        "Digital Portfolio Creation",
+        "Event Page Development"
+      ]
+    },
+    "desService": {
+      "title": "Design",
+      "subTitle": "Visual identity that makes your brand stand out",
+      "services": [
+        "Website Interface Design",
+        "Mobile App Interface Design",
+        "Custom Web Page Development",
+        "Visual Content Creation for Social Media",
+        "Banner and Thumbnail Design",
+        "Flyer and Brochure Creation",
+        "Business Card Development",
+        "Digital Presentation Design (Slides)"
+      ]
+    },
+    "markService": {
+      "title": "Digital Marketing",
+      "subTitle": "Effective strategies for growing your business",
+      "services": [
+        "Social Media Management",
+        "Instagram Store Creation and Optimization",
+        "Paid Traffic Management (PPC)",
+        "Facebook Community Development",
+        "Marketing Results Analysis and Monitoring",
+        "Content Creation and Editing for Reels and TikToks"
+      ]
+    }
+  },
+  "projectsSection": {
+    "title": "Projects That Speak for Themselves!",
+    "subTitle": "A portfolio of innovative solutions that elevated brands and businesses to a new level.",
+    "modalHeaderText": "Check out the Project"
+  },
+  "testimonialsSection": {
+    "title": "What Do People Say About My Work?",
+    "subTitle": "Opinions from clients and professionals with whom I had the opportunity to collaborate throughout my journey."
+  },
+  "skillsSection": {
+    "title": "Tools and Skills at Your Service",
+    "subTitle": "Mastery of key technologies to transform ideas into efficient digital solutions.",
+    "skillSections": {
+      "cat1": "Programming Languages",
+      "cat2": "Markup and Styling Languages",
+      "cat3": "Front-end Frameworks and Libraries",
+      "cat4": "Back-end and Infrastructure",
+      "cat5": "Databases",
+      "cat6": "Version Control",
+      "cat7": "Testing and Code Quality",
+      "cat8": "Development Tools",
+      "cat9": "Operating Systems",
+      "cat10": "Hosts and DNS",
+      "cat11": "CMS",
+      "cat12": "Design",
+      "cat13": "Management"
+    }
+  },
+  "contactsSection": {
+    "title": "Let's Talk About Your Project?",
+    "subTitle": "I am ready to help turn your vision into reality. Get in touch!"
+  },
+  "faqSection": {
+    "title": "Frequently Asked Questions",
+    "subTitle": "Find answers to the most common questions about my services and processes.",
+    "questions": [
+      {
+        "id": 1,
+        "seccao": "1. About the Services",
+        "questions": [
+          {
+            "id": 1,
+            "question": "1.1 What services can I hire?",
+            "answear": "I offer a wide range of services, from website and online store creation to social media management and graphic design. You can find the full list of services in the Services section. If you don’t find exactly what you're looking for, feel free to contact me! I will be happy to understand your needs and find the best solution for you."
+          },
+          {
+            "id": 2,
+            "question": "1.2 Do you work with clients from different sectors and countries?",
+            "answear": "Yes! I serve clients from various sectors, both in Portugal and abroad, tailoring solutions to the specific needs of each business."
+          },
+          {
+            "id": 3,
+            "question": "1.3 How can I know which service is best for me?",
+            "answear": "If you’re unsure about which service to choose, simply get in touch. I will analyze your project and present the best solution based on your needs and objectives."
+          },
+          {
+            "id": 4,
+            "question": "1.4 Can I hire only part of a service, like a design without development?",
+            "answear": "Yes! If you only need the design for a website, app, or social media without development, I can help with that as well."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seccao": "2. Contracts and Formalization",
+        "questions": [
+          {
+            "id": 6,
+            "question": "2.1 Is it necessary to sign a contract?",
+            "answear": "Yes! The contract ensures security for both parties, setting deadlines, values, deliveries, and rights."
+          },
+          {
+            "id": 7,
+            "question": "2.2 How is the contract signed?",
+            "answear": "The contract can be signed digitally through platforms like DocuSign or HelloSign, ensuring legal validity and agility in the process."
+          },
+          {
+            "id": 8,
+            "question": "2.3 What happens if I need to cancel the project after it has started?",
+            "answear": "The cancellation policy and potential refunds will be defined in the contract. Usually, part of the paid amount covers the time and work already invested."
+          },
+          {
+            "id": 9,
+            "question": "2.4 Does the contract protect my intellectual property?",
+            "answear": "Yes! All the created material will be yours, as agreed in the contract. If necessary, I can include confidentiality clauses to protect sensitive information."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seccao": "3. Payments and Billing",
+        "questions": [
+          {
+            "id": 10,
+            "question": "3.1 What payment methods do you accept?",
+            "answear": "Currently, I accept payments via Wise and PayPal. Soon, MB Way and bank transfer will also be available."
+          },
+          {
+            "id": 11,
+            "question": "3.2 How does payment work?",
+            "answear": "Payment can be made in full or in installments, as agreed upon in the contract. Usually, an initial deposit is required to start the project."
+          },
+          {
+            "id": 12,
+            "question": "3.3 Do you work with fixed pricing or hourly rates?",
+            "answear": "The project price is generally fixed based on the client’s requirements. In specific cases, I may work with an hourly rate."
+          },
+          {
+            "id": 13,
+            "question": "3.4 Do you issue invoices for payments?",
+            "answear": "Yes! I issue invoices according to the current legislation."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seccao": "4. Work Process",
+        "questions": [
+          {
+            "id": 14,
+            "question": "4.1 How does the development process of my project work?",
+            "answear": "The process usually follows these steps: Initial meeting – Understanding needs and expectations; Proposal and contract – Presentation of budget and deadlines; Development – Creation of design and features, with continuous feedback; Revisions and adjustments – Opportunity for improvements before delivery; Delivery and support – Final delivery and possible post-project support."
+          },
+          {
+            "id": 15,
+            "question": "4.2 How long does development take?",
+            "answear": "Development time varies depending on the complexity of the project and specific requirements. Simpler projects can be completed quickly, while more advanced solutions, like e-commerce or mobile apps, require more time to ensure quality and functionality. During the initial phase, I will assess your request and provide a more accurate delivery estimate."
+          },
+          {
+            "id": 16,
+            "question": "4.3 How can I track the progress of my project?",
+            "answear": "I maintain an open communication channel (email, WhatsApp, or periodic meetings) to update you on progress and receive feedback."
+          },
+          {
+            "id": 17,
+            "question": "4.4 Can I request changes during the process?",
+            "answear": "Yes, minor changes are included. If significant changes are needed, we will adjust the budget and deadlines."
+          },
+          {
+            "id": 18,
+            "question": "4.5 If I already have a website, can you update or improve it?",
+            "answear": "Yes! I can optimize, fix errors, or redesign your website for better performance and updated design."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seccao": "5. Support and Maintenance",
+        "questions": [
+          {
+            "id": 19,
+            "question": "5.1 Is support included after delivery?",
+            "answear": "Yes! I offer a free support period (usually between 15 and 30 days), depending on the project."
+          },
+          {
+            "id": 20,
+            "question": "5.2 How does website and online store maintenance work?",
+            "answear": "If you need regular updates, security, or optimizations, we can set up a monthly maintenance plan."
+          },
+          {
+            "id": 21,
+            "question": "5.3 What if there's an issue with my site after delivery?",
+            "answear": "If the problem is within the free support period, I will resolve it at no additional cost. For issues outside of this period, we can evaluate the best maintenance plan."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seccao": "6. Security and Privacy",
+        "questions": [
+          {
+            "id": 22,
+            "question": "6.1 Will my site be secure?",
+            "answear": "Yes! I implement measures like SSL, regular backups, and firewall to ensure the security of your data and your customers' data."
+          },
+          {
+            "id": 23,
+            "question": "6.2 Are my data protected?",
+            "answear": "Yes! I work in accordance with GDPR standards, ensuring that all information is handled securely and privately."
+          },
+          {
+            "id": 24,
+            "question": "6.3 What happens if my site is hacked?",
+            "answear": "If you have a maintenance plan, I will take immediate steps to restore security. If you don't have active maintenance, we can evaluate an emergency solution."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seccao": "7. Other Services and Customizations",
+        "questions": [
+          {
+            "id": 25,
+            "question": "7.1 Do you also provide consulting for digital strategies?",
+            "answear": "Yes! If you need guidance on improving your business’s digital presence, we can work together on personalized strategies."
+          },
+          {
+            "id": 26,
+            "question": "7.2 Can you create a custom design for my website or social media?",
+            "answear": "Yes! All designs are personalized and tailored to each client."
+          },
+          {
+            "id": 27,
+            "question": "7.3 Do you integrate with other platforms (e.g., payments, automation, CRM)?",
+            "answear": "Yes, I can integrate your website or online store with external tools like payment gateways, marketing automation, and CRM."
+          },
+          {
+            "id": 28,
+            "question": "7.4 Can I hire just the design and have another professional develop it?",
+            "answear": "Yes, if you only need the design, I can deliver it ready for another professional to develop."
+          }
+        ]
+      }
+    ],
+    "auxText": "Your question isn't among the most frequently asked? Send me your question so I can help: "
+  },
+  "aboutMeSection": {
+    "title": "My Journey in the Digital World",
+    "subTitle": "A little about my journey, experience, and what motivates me to create impactful digital solutions.",
+    "aboutMeText": "My journey into the digital world began unexpectedly—yet it felt completely natural. Back in 2015, I started a YouTube channel where I shared gaming videos and vlogs. That’s where I discovered my passion for digital creation. From my very first upload, I made sure to edit my own content, design eye-catching thumbnails, create custom banners, and even dabble in 2D and 3D animations. What started as a simple hobby quickly turned into an essential skill, leading me to dive deeper into graphic design and, eventually, web development. <br/><br/> Over time, I refined my abilities, mastering tools like Photoshop, Illustrator, and Figma while combining them with programming to craft unique digital experiences. This shift from design to development allowed me to merge creativity with technology—something I now consider crucial for building intuitive and visually compelling digital products. <br/><br/> I hold a degree in Computer Science and have experience developing modern interfaces and functional solutions using technologies like React.js, Node.js, JavaScript, HTML, CSS, Python and SQL. I believe that great design paired with clean, structured code can take any project to the next level. <br/><br/> Outside of work, I’m passionate about gaming, music, and weightlifting. I enjoy laid-back moments with friends, but I also cherish my alone time—I’m a true advocate for the power of solitude. <br/><br/> Currently, I work as a freelancer, helping businesses, startups, and entrepreneurs turn ideas into innovative digital products. If you’re looking for a professional who understands both user experience and technical execution, I’d love to bring your vision to life. <br/><br/> Let’s build something amazing together?"
+  },
+  "callToAction": {
+    "callToAction1": {
+      "messageCta1": "If your business is not on the internet, then your business is out of business",
+      "authorCta1": "~ Bill Gates"
+    },
+    "callToAction2": {
+      "messageCta2": "Innovation is the key to success in any business, and the internet is the platform where it happens.",
+      "authorCta2": "~ Sundar Pichai"
+    },
+    "callToAction3": {
+      "messageCta3": "Did you like what you see? Get in touch now and ",
+      "auxMessageCta3": "start your project",
+      "buttonCta3": "Get in Touch"
+    }
+  }
+}
