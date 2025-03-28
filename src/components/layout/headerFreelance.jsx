@@ -14,7 +14,7 @@ export default function HeaderFreelancer() {
   };
 
   const goToHiring = () => {
-    navigate("/hiring", { state: { scrollTo: "container_hiring" } });
+    navigate("/hiring", { state: { scrollTo: "home-main-container" } });
   };
 
   const HeaderFreelance = [
@@ -41,7 +41,9 @@ export default function HeaderFreelancer() {
                 if (typeof item.to === "function") {
                   item.to();
                 } else {
-                  document.getElementById(item.to)?.scrollIntoView({ behavior: "smooth" });
+                  document
+                    .getElementById(item.to)
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }
               }}
               className="text-sm font-semibold text-white hover:text-red-300 cursor-pointer select-none"
@@ -70,8 +72,10 @@ export default function HeaderFreelancer() {
                   if (typeof item.to === "function") {
                     item.to();
                   } else {
-                    document.getElementById(item.to)?.scrollIntoView({ behavior: "smooth" });
-                    setIsOpen(false); // Fecha o menu ao clicar
+                    document
+                      .getElementById(item.to)
+                      ?.scrollIntoView({ behavior: "smooth" });
+                    setIsOpen(false);
                   }
                 }}
                 className="text-sm font-semibold text-red-600 hover:bg-red-300 cursor-pointer select-none w-full py-2 px-5"
@@ -84,12 +88,14 @@ export default function HeaderFreelancer() {
       </div>
 
       <div className="flex items-center gap-5">
-        <button
+        <a
+          href="https://wa.me/message/54TN4AJGPRJXD1"
+          target="_blank"
           type="button"
           className="bg-green-50 px-5 py-2 text-sm rounded-full hover:bg-red-300 text-red-700 font-bold"
         >
           {t("header.buttonText")}
-        </button>
+        </a>
         <button
           className="lg:hidden cursor-pointer text-white"
           onClick={handleClick}
