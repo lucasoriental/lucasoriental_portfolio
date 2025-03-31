@@ -19,7 +19,7 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Hiring" element={<Hiring />} />
