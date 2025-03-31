@@ -3,7 +3,7 @@ import { Tooltip } from "react-tooltip";
 import { useTranslation } from "react-i18next";
 
 export default function ProfessionalStarIconSvg({ size, outColor, inColor }) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   return (
     <>

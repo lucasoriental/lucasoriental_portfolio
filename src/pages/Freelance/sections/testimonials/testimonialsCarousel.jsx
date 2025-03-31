@@ -1,29 +1,16 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-import tempPic from "../../../../assets/images/home-profile.jpg";
+//import tempPic from "../../../../assets/images/home-profile.jpg";
+import ruteMatos from "../../../../assets/images/ruteMatos.webp";
 
 const testimonials = [
   {
-    img: tempPic,
+    img: ruteMatos,
     quote:
-      "Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.",
-    name: "Sarah Dayan",
-    position: "Staff Engineer, Algolia",
-  },
-  {
-    img: tempPic,
-    quote:
-      "I’ve been using Tailwind CSS for the past two years, and it has completely changed the way I build interfaces.",
-    name: "Adam Wathan",
-    position: "Creator of Tailwind CSS",
-  },
-  {
-    img: tempPic,
-    quote:
-      "Tailwind CSS makes styling so much easier, and the developer experience is just fantastic!",
-    name: "Guillermo Rauch",
-    position: "CEO, Vercel",
+      "Estou extremamente satisfeita com o website que me foi desenvolvido! Desde o início, apresentei um esboço do que tinha em mente, e o resultado final correspondeu totalmente às minhas expectativas. O design ficou limpo, profissional e transmite exatamente a imagem que eu queria passar. Além disso, o profissional esteve sempre disponível para ouvir as minhas sugestões, fazer ajustes e garantir que tudo ficasse perfeito. Recomendo sem hesitação pelo profissionalismo, atenção aos detalhes e compromisso em entregar um trabalho de qualidade!",
+    name: "Dra. Rute Isabel Matos",
+    position: "Psicóloga Clínica e da Saúde",
   },
 ];
 
@@ -76,7 +63,7 @@ export default function Carousel() {
         />
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
-            <p className="text-lg font-medium text-white">
+            <p className="text-base font-medium text-white">
               “{testimonials[index].quote}”
             </p>
           </blockquote>

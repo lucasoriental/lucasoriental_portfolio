@@ -7,6 +7,7 @@
     "about": "About Me",
     "contact": "Contact Me"
   },
+  "buttonFreelance": "Need a Service?",
   "errorMessages": "The data is loading, please hold a moment...",
   "sections": {
     "homePage": {

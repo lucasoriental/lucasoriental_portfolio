@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 export default function MyProjectModal({ information, setOpenModal }) {
   const [iconSize, setIconSize] = useState(window.innerWidth <= 800 ? 15 : 30);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   useEffect(() => {
     document.body.classList.add("modal-open");

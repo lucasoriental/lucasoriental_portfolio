@@ -12,7 +12,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("freelance");
 
   const fetchData = async (lng) => {
     try {
@@ -53,16 +53,14 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="dark: relative pb-36 pt-36">
+    <section id="container_projects" className="dark: relative pb-36 pt-36">
       <MeshBackground />
       <div className="mx-auto w-[90%] max-w-4xl">
         <p className="text-4xl font-extrabold drop-shadow-xl text-center text-white mb-5 select-none lg:text-start lg:w-[20em]">
-          Os Serviços que Impulsionam o Teu Negócio no Digital
+          {t("projectsSection.title")}
         </p>
         <p className="text-lg font-medium text text-zinc-100 mb-7 text-center select-none lg:text-start lg:w-[40em]">
-          Com uma abordagem estratégica e personalizada, ajudo a transformar a
-          presença online da tua marca, desde o desenvolvimento até ao marketing
-          digital.
+          {t("projectsSection.subTitle")}
         </p>
       </div>
       {/* Main Grid of all projects */}
@@ -79,7 +77,7 @@ const Projects = () => {
           {t("errorMessages")}
         </p>
       ) : (
-        <div className="flex flex-wrap justify-center gap-5 max-w-[90rem] w-[95%] items-center mx-auto">
+        <div className="flex flex-wrap justify-center lg:justify-between gap-5 max-w-4xl mx-auto items-center">
           {project.projects.map((project, index) => {
             return (
               <button
@@ -96,10 +94,10 @@ const Projects = () => {
                 }}
               >
                 <div className="absolute bottom-0 mb-6 bg-red-700 py-5 w-[90%] left-1/2 -translate-x-1/2 px-5 flex flex-col">
-                  <p className="text-white font-bold text-lg">
+                  <p className="text-white font-bold text-lg text-start">
                     {project.projectName}
                   </p>
-                  <p className="border-t text-red-200 font-semibold text-base">
+                  <p className="border-t text-red-200 font-semibold text-base text-start">
                     {project.projectArea}
                   </p>
                 </div>

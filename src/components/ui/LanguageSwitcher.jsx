@@ -13,7 +13,7 @@ const LanguageSwitcher = ({ onClick }) => {
   };
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 h-fit">
       <select
         value={selectedLang}
         onChange={(e) => changeLanguage(e.target.value)}

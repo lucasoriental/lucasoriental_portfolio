@@ -1,7 +1,9 @@
 import React from "react";
 import background1 from "../../../../assets/images/call-to-action-1.jpg";
+import { useTranslation } from "react-i18next";
 
 const Cta1 = () => {
+  const { t } = useTranslation("freelance");
   return (
     <div className="w-screen h-60 lg:h-96 flex relative">
       <div
@@ -13,11 +15,14 @@ const Cta1 = () => {
           filter: "grayscale(100%)",
         }}
       />
-      <p className="text-white max-w-96 w-[90%] mx-auto font-base text-xl self-center relative z-10">
-        "Se o teu negócio não está na Internet, então o teu negócio estará fora
-        dos negócios."{" "}
-        <span className="text-white text-xl font-bold">~ Bill Gates</span>
-      </p>
+      <div className="max-w-96 lg:max-w-2xl w-[90%] mx-auto self-center relative z-10">
+        <p className="text-white text-start font-base text-xl lg:text-4xl ">
+          "{t("callToAction.callToAction1.messageCta1")}"
+        </p>
+        <p className="text-white text-start font-base text-xl lg:text-3xl font-bold lg:mt-5 mt-2">
+          {t("callToAction.callToAction1.authorCta1")}
+        </p>
+      </div>
     </div>
   );
 };

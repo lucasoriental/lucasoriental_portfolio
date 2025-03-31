@@ -8,7 +8,7 @@ export default function JobExperiences(props) {
 
   const [modalOpen, setModalOpen] = useState(false);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   return (
     <div className="block-of-jobs">

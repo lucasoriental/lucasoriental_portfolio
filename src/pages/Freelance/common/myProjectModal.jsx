@@ -6,7 +6,7 @@ import { Globe } from "lucide-react";
 import { X } from "lucide-react";
 
 export default function MyProjectModal({ information, setOpenModal }) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("freelance");
 
   useEffect(() => {
     document.body.classList.add("modal-open");
@@ -31,7 +31,7 @@ export default function MyProjectModal({ information, setOpenModal }) {
             <X className="text-white" />
           </button>
           <p className="modal-header-title">
-            {t("sections.myProjectsPage.headerModalText")}
+            {t("projectsSection.modalHeaderText")}
           </p>
         </div>
         <div className="modal-body">

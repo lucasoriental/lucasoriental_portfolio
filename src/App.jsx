@@ -16,7 +16,7 @@ function App() {
     AOS.init({ once: true, duration: 1000 });
   }, []);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("hiring");
 
   return (
     <Router basename="/">
