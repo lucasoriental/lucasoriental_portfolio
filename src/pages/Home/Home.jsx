@@ -1,22 +1,32 @@
-/* import { useState } from "react"; */
-import { Link } from "react-router-dom";
 import Picture from "../../assets/images/home-profile.jpg";
-//import { Moon, Sun } from "lucide-react";
-
 import { useTranslation } from "react-i18next";
-
 import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
-  /* const [darkMode, setDarkMode] = useState(false); */
   const { t } = useTranslation("home");
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  /* const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  }; */
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      document.getElementById(location.state.scrollTo)?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, [location]);
+
+  const goToHiring = () => {
+    navigate("/hiring", { state: { scrollTo: "home-main-container" } });
+  };
+
+  const goToFreelance = () => {
+    navigate("/freelance", { state: { scrollTo: "container_hero" } });
+  };
 
   return (
-    <div /* className={`${darkMode && "dark"}`} */>
+    <div>
       <div className="bg-red-700 dark:bg-gray-950 flex flex-col justify-center min-h-screen py-10 px-5">
         <div className="flex flex-col mx-auto border py-10 px-2">
           <h1 className="text-3xl font-extrabold text-center text-white mb-5 max-w-[90%] mr-auto ml-auto select-none drop-shadow-lg">
@@ -35,34 +45,26 @@ function Home() {
             {t("title")}
           </p>
           <div className="flex flex-col items-center">
-            <Link to="/hiring">
-              <button className="bg-white w-72 pt-3 pb-3 rounded-full mb-1 text-red-800 font-semibold text-md">
-                {t("button1")}
-              </button>
-            </Link>
+            <button
+              className="bg-white w-72 pt-3 pb-3 rounded-full mb-1 text-red-800 font-semibold text-md"
+              onClick={() => goToHiring()}
+            >
+              {t("button1")}
+            </button>
             <p className="text-white text-center text-sm font-light max-w-[90%] mb-5 mr-auto ml-auto drop-shadow-lg">
               {t("textAuxButton1")}
             </p>
-            <Link to="/freelance">
-              <button className="bg-white w-72 pt-3 pb-3 mb-1 rounded-full text-red-800 font-semibold text-md">
-                {t("button2")}
-              </button>
-            </Link>
+            <button
+              className="bg-white w-72 pt-3 pb-3 mb-1 rounded-full text-red-800 font-semibold text-md"
+              onClick={() => goToFreelance()}
+            >
+              {t("button2")}
+            </button>
             <p className="text-white text-center text-sm max-w-[90%] font-light mr-auto ml-auto drop-shadow-lg">
               {t("textAuxButton2")}
             </p>
           </div>
           <div className="flex flex-col items-center w-fit mx-auto mt-10 gap-2">
-            {/* <button
-              onClick={toggleDarkMode}
-              className="p-3 bg-slate-800 dark:bg-yellow-600 rounded-full mb-3"
-            >
-              {darkMode ? (
-                <Sun className="text-white" />
-              ) : (
-                <Moon className="text-white" />
-              )}
-            </button> */}
             <LanguageSwitcher />
           </div>
         </div>
