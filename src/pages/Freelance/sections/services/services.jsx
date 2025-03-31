@@ -41,11 +41,13 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="p-5 lg:basis-3/5 lg:pl-10 w-[90%] max-w-fit mr-auto ml-auto">
+        <div className="p-5 lg:basis-3/5 lg:pl-10 w-[90%] max-w-fit mr-auto ml-auto flex flex-col gap-y-3">
           {services.map((service, index) => (
-            <div key={index} className="flex items-center">
-              <Check className="w-5 mr-2 text-green-500" />
-              <p className="text-justify text-base font-semibold text-zinc-800 drop-shadow-sm">
+            <div key={index} className="flex items-start gap-2">
+              <span className="w-5 h-5 flex items-center justify-center">
+                <Check className="w-5 h-5 text-green-500" />
+              </span>
+              <p className="text-sm lg:text-base font-semibold text-zinc-800 drop-shadow-sm">
                 {service}
               </p>
             </div>
