@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-//import tempPic from "../../../../assets/images/home-profile.jpg";
+import tempPic from "../../../../assets/images/pedroLucas.jpg";
 import ruteMatos from "../../../../assets/images/ruteMatos.webp";
 import caioVaz from "../../../../assets/images/caioVaz.jpeg";
 
@@ -19,6 +19,13 @@ const testimonials = [
       "Lucas é um profissional dedicado, preciso e inovador. Com um olhar estratégico e atenção aos detalhes, entrega soluções funcionais e alinhadas às necessidades do projeto. Além da competência técnica, tem grande capacidade de adaptação e resolução de problemas, sendo um parceiro confiável para qualquer equipe. Seu compromisso com a excelência garante resultados eficientes.",
     name: "Caio Marcelo Vaz",
     position: "Desenvolvedor Front-end",
+  },
+  {
+    img: tempPic,
+    quote:
+      "Lucas é um profissional talentoso, dedicado e sempre comprometido em entregar o melhor. Sua proatividade e atenção aos detalhes fazem toda a diferença, garantindo que cada projeto seja executado com precisão e qualidade. Ele escuta com cuidado e implementa feedbacks de forma impecável. No desenvolvimento frontend, seu talento é evidente: cria interfaces modernas, intuitivas e visualmente atraentes, unindo um ótimo senso estético a uma sólida habilidade técnica. Além disso, sua ética, paciência e comunicação clara tornam o processo de trabalho ainda mais fluido e eficiente. Sem dúvida, recomendo seu trabalho!",
+    name: "Pedro Lucas de Abreu",
+    position: "Engenheiro de Dados",
   },
 ];
 
