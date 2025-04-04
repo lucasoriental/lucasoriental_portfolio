@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src/assets/pictures/ico.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Lucas Oriental é Desenvolvedor Full-Stack, Designer UX/UI e Criador de Conteúdos. Disponível para projetos como freelancer ou profissional contratado em Portugal." />
+  <meta name="keywords"
+    content="desenvolvedor full-stack Portugal, designer UX/UI Portugal, freelancer Portugal, programador React, designer de interface, desenvolvimento web Portugal, desenvolvedor backend Node.js, designer UX/UI freelancer, soluções digitais, desenvolvimento de e-commerce, criação de sites, programação web, PostgreSQL, MongoDB, React, TypeScript, Node.js, backend para startups, desenvolvedor React JS Portugal">
+  <meta name="author" content="Lucas Oriental" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Lucas Oriental - Full-Stack Developer" />
+  <meta property="og:description"
+    content="Lucas Oriental, Desenvolvedor Full-Stack e Designer UX/UI. Disponível para projetos como freelancer ou profissional contratado." />
+  <meta property="og:image" content="URL_da_imagem_de_preview_aqui" />
+  <meta property="og:url" content="https://www.lucasoriental.com" />
+  <meta property="og:type" content="website">
+
+  <link rel="canonical" href="https://www.lucasoriental.com" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/pictures/ico.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-  <script type="text/javascript">
-    (function (l) {
-      if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-          l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
+  <link rel="icon" type="image/svg+xml" href="./src/assets/pictures/ico.ico" />
+  <link rel="alternate" hreflang="pt" href="https://www.lucasoriental.com">
+  <link rel="alternate" hreflang="en" href="https://www.lucasoriental.com">
 
   <title>Lucas Oriental - Full-Stack Developer</title>
 </head>
@@ -27,6 +32,20 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Script para manipulação da URL e evitar problemas de refresh -->
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&');
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location));
+  </script>
 </body>
 
 </html>
