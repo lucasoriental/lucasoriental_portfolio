@@ -54,5 +54,23 @@
     },
     "aboutMePage": { "title": "About Me" },
     "contactMePage": { "title": "Contact Me", "text1": "Get in Touch!" }
+  },
+  "skillsSection": {
+    "note": "Note: The technologies listed below are part of my professional and academic journey. Some were used in real-world projects, while others were explored through study and experimentation. This portfolio reflects my practical experience with these tools — not necessarily full mastery of each one.",
+    "skillSections": {
+      "cat1": "Programming Languages",
+      "cat2": "Markup and Styling Languages",
+      "cat3": "Front-end Frameworks and Libraries",
+      "cat4": "Back-end and Infrastructure",
+      "cat5": "Databases",
+      "cat6": "Version Control",
+      "cat7": "Testing and Code Quality",
+      "cat8": "Development Tools",
+      "cat9": "Operating Systems",
+      "cat10": "Hosts and DNS",
+      "cat11": "CMS",
+      "cat12": "Design",
+      "cat13": "Management"
+    }
   }
 }
