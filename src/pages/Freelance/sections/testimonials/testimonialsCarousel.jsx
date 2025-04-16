@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-import tempPic from "../../../../assets/images/pedroLucas.jpg";
+import pedroLucas from "../../../../assets/images/pedroLucas.jpg";
 import ruteMatos from "../../../../assets/images/ruteMatos.webp";
 import caioVaz from "../../../../assets/images/caioVaz.jpeg";
 
@@ -21,7 +21,7 @@ const testimonials = [
     position: "Desenvolvedor Front-end",
   },
   {
-    img: tempPic,
+    img: pedroLucas,
     quote:
       "Lucas é um profissional talentoso, dedicado e sempre comprometido em entregar o melhor. Sua proatividade e atenção aos detalhes fazem toda a diferença, garantindo que cada projeto seja executado com precisão e qualidade. Ele escuta com cuidado e implementa feedbacks de forma impecável. No desenvolvimento frontend, seu talento é evidente: cria interfaces modernas, intuitivas e visualmente atraentes, unindo um ótimo senso estético a uma sólida habilidade técnica. Além disso, sua ética, paciência e comunicação clara tornam o processo de trabalho ainda mais fluido e eficiente. Sem dúvida, recomendo seu trabalho!",
     name: "Pedro Lucas de Abreu",
