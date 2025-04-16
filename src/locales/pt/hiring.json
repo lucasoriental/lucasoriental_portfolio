@@ -57,5 +57,23 @@
     },
     "aboutMePage": { "title": "Sobre mim" },
     "contactMePage": { "title": "Meus Contatos", "text1": "Entre em contato!" }
+  },
+  "skillsSection": {
+    "note": "Nota: As tecnologias listadas abaixo fazem parte da minha trajetória profissional e acadêmica. Algumas eu utilizei em projetos reais, outras explorei em estudos e experimentações. Este portfólio reflete meu contato prático com essas ferramentas — não necessariamente domínio pleno de todas.",
+    "skillSections": {
+      "cat1": "Linguagens de Programação",
+      "cat2": "Linguagens de Marcação e Estilização",
+      "cat3": "Frameworks e Bibliotecas Front-end",
+      "cat4": "Back-end e Infraestrutura",
+      "cat5": "Bases de Dados",
+      "cat6": "Controlo de Versão",
+      "cat7": "Testes e Qualidade de Código",
+      "cat8": "Ferramentas de Desenvolvimento",
+      "cat9": "Sistemas Operativos",
+      "cat10": "Hosts e DNS",
+      "cat11": "CMS",
+      "cat12": "Design",
+      "cat13": "Gestão"
+    }
   }
 }
