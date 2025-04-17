@@ -100,6 +100,8 @@ const EducationAndSkillsPage = () => {
       category: t("skillsSection.skillSections.cat4"),
       items: [
         { icon: SiNodedotjs, name: "Node.js" },
+        { icon: SiSqlalchemy, name: "SQLAlchemy" },
+        { icon: SiFastapi, name: "FastAPI" },
         { icon: SiExpress, name: "Express" },
         { icon: SiAmazonwebservices, name: "Amazon Web Services" },
         { icon: VscAzure, name: "Microsoft Azure" },
@@ -113,8 +115,7 @@ const EducationAndSkillsPage = () => {
       items: [
         { icon: SiMongodb, name: "MongoDB" },
         { icon: SiPostgresql, name: "PostgreSQL" },
-        { icon: SiSqlalchemy, name: "SQLAlchemy" },
-        { icon: SiFastapi, name: "FastAPI" },
+        
       ],
     },
     {
@@ -123,7 +124,7 @@ const EducationAndSkillsPage = () => {
         { icon: SiGit, name: "Git" },
         { icon: SiGithub, name: "GitHub" },
         { icon: SiJson, name: "JSON" },
-        { icon: SiGithubpages, name: "GitHub Pages" },
+        
       ],
     },
     {
@@ -152,6 +153,7 @@ const EducationAndSkillsPage = () => {
     {
       category: t("skillsSection.skillSections.cat10"),
       items: [
+        { icon: SiGithubpages, name: "GitHub Pages" },
         { icon: SiHostinger, name: "Hostinger" },
         { icon: SiWix, name: "Wix" },
       ],
@@ -300,7 +302,7 @@ const EducationAndSkillsPage = () => {
                   />
                 </div>
               </div>
-              <p className="justify-center text-center mx-auto max-w-[90%] text-red-900 font-medium lg:text-base md:text-sm" data-aos="fade-left"
+              <p className="justify-center lg:text-center mx-auto max-w-[90%] text-red-900 font-medium lg:text-base text-sm text-justify" data-aos="fade-left"
                     data-aos-anchor-placement="center-bottom">
                 {t("skillsSection.note")}
               </p>
