@@ -11,7 +11,7 @@
 
 - 💻 Full Stack Developer passionate about building modern web applications.
 - 🧠 Deep interest in business, software architecture, and user-centric design.
-- 🛠️ Current stack: **FastAPI**, **React**, **Node.js**, **PostgreSQL**, **AWS RDS**, **SQLAlchemy**, **Tailwind CSS**.
+- 🛠️ Current stack: **React**, **Node.js**, **JavaScript**, **Python**, **FastAPI**, **PostgreSQL**, **AWS Cloud**, **Sass**, **Tailwind CSS**.
 - 📚 Currently learning: **TypeScript**, **Software Architecture**, and **AI foundations**.
 - 👨‍🎨 Founder of the geek-themed store [@orientalize_oficial](https://www.instagram.com/orientalize_oficial) (Print on Demand).
 - 🚀 Open to new opportunities and collaborations in the tech industry.
