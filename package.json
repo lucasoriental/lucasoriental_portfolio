@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "cp CNAME dist\\",
+    "postbuild": "cp public/NAME dist\\",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
