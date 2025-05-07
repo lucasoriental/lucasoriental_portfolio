@@ -10,7 +10,7 @@ import NumberSVG from "../../../assets/light_theme/wpp_or_call";
 import { useTranslation } from "react-i18next";
 
 const contactMePage = () => {
-  const { t } = useTranslation('hiring');
+  const { t } = useTranslation("hiring");
   return (
     <div id="contact-me-container">
       <div className="container-general">
@@ -36,16 +36,12 @@ const contactMePage = () => {
               </div>
               <div className="left-side-all-items">
                 <div className="left-side-item">
-                  <a
-                    href="https://maps.app.goo.gl/DKu344RzMXNqM6C46"
-                    target="_blank"
-                    className="left-side-item-a"
-                  >
+                  <div className="left-side-item-a">
                     <p className="social-media-name">
-                    Figueira da Foz - Portugal
+                      Lisboa/Lisbon - Portugal
                     </p>
                     <LocationSVG width={40} height={41} color={"#E00036"} />
-                  </a>
+                  </div>
                 </div>
                 <div className="left-side-item">
                   <a
@@ -83,7 +79,7 @@ const contactMePage = () => {
                     className="left-side-item-a"
                     target="_blank"
                   >
-                    <p className="social-media-name">/lucasoriental</p>
+                    <p className="social-media-name">@lucasoriental</p>
                     <GitHubSVG width={40} height={40} color={"#E00036"} />
                   </a>
                 </div>
@@ -105,7 +101,7 @@ const contactMePage = () => {
                     target="_blank"
                     className="left-side-item-a"
                   >
-                    <p className="social-media-name">/lucasoriental</p>
+                    <p className="social-media-name">@lucasoriental</p>
                     <BehanceSVG width={40} height={40} color={"#E00036"} />
                   </a>
                 </div>
