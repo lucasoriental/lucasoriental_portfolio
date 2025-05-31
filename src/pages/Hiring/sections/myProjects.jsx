@@ -11,7 +11,7 @@ const MyProjectsPage = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
-  const { t } = useTranslation('hiring');
+  const { t } = useTranslation("hiring");
 
   const fetchData = async (lng) => {
     try {

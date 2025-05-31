@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+LocateLightSvg.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function LocateLightSvg({ width, height, color }) {
   return (
     <svg

@@ -1,6 +1,5 @@
-import React from "react";
-import background2 from "../../../../assets/images/call-to-action-2.jpg";
 import { useTranslation } from "react-i18next";
+import background2 from "../../../../assets/images/call-to-action-2.jpg";
 
 const Cta2 = () => {
   const { t } = useTranslation("freelance");
@@ -15,9 +14,9 @@ const Cta2 = () => {
           filter: "grayscale(100%)",
         }}
       />
-      <div className="max-w-96 w-[90%] mx-auto self-center relative z-10 lg:max-w-2xl" >
+      <div className="max-w-96 w-[90%] mx-auto self-center relative z-10 lg:max-w-2xl">
         <p className="text-white font-base text-xl lg:text-4xl text-end">
-          "{t("callToAction.callToAction2.messageCta2")}"
+          &quot;{t("callToAction.callToAction2.messageCta2")}&quot;
         </p>
         <p className="text-white font-base text-xl font-bold lg:mt-5 lg:text-3xl mt-2 text-end">
           {t("callToAction.callToAction2.authorCta2")}

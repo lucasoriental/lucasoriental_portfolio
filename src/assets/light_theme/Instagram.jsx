@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+InstagramLightSvg.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function InstagramLightSvg({ width, height, color }) {
   return (
     <svg

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import XIconSvg from "../../assets/icons/icon_X";
 import MenuHamburguer from "../../assets/icons/icon_menu_hamburger";
-import { useNavigate } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 

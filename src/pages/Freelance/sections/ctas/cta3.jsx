@@ -1,8 +1,5 @@
-import React from "react";
-import backgroundImg from "../../../../assets/images/call-to-action-3.jpg";
 import { useTranslation } from "react-i18next";
-
-import { Link } from "react-scroll";
+import backgroundImg from "../../../../assets/images/call-to-action-3.jpg";
 
 const Cta3 = () => {
   const { t } = useTranslation("freelance");

@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-import { SiGithub, SiBehance } from "@icons-pack/react-simple-icons";
-import { Globe } from "lucide-react";
-import { X } from "lucide-react";
+import { SiBehance, SiGithub } from "@icons-pack/react-simple-icons";
+import { Globe, X } from "lucide-react";
+
+import PropTypes from "prop-types";
 
 export default function MyProjectModal({ information, setOpenModal }) {
   const { t } = useTranslation("freelance");
@@ -24,10 +25,7 @@ export default function MyProjectModal({ information, setOpenModal }) {
     <div className="modal-background" onClick={() => setOpenModal(false)}>
       <div className="modal-container" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
-          <button
-            className="ml-3 lg:ml-10"
-            onClick={() => setOpenModal(false)}
-          >
+          <button className="ml-3 lg:ml-10" onClick={() => setOpenModal(false)}>
             <X className="text-white" />
           </button>
           <p className="modal-header-title">
@@ -86,3 +84,16 @@ export default function MyProjectModal({ information, setOpenModal }) {
     </div>
   );
 }
+
+MyProjectModal.propTypes = {
+  information: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    projectName: PropTypes.string.isRequired,
+    projectArea: PropTypes.string.isRequired,
+    projectDescription: PropTypes.string.isRequired,
+    gitHubRepo: PropTypes.string,
+    website: PropTypes.string,
+    behanceRepo: PropTypes.string,
+  }).isRequired,
+  setOpenModal: PropTypes.func,
+};

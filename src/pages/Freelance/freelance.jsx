@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import "react-tooltip/dist/react-tooltip.css";
 
 import Header from "../../components/layout/headerFreelance";
-import Home from "../Freelance/sections/home/home";
-import Services from "../Freelance/sections/services/services";
-import Projects from "../Freelance/sections/projects/projects";
-import Testimonials from "../Freelance/sections/testimonials/testimonials";
 import AboutMe from "../Freelance/sections/aboutMe/aboutMe";
-import Skills from "../Freelance/sections/skills/skills";
 import Contact from "../Freelance/sections/contact/contact";
 import Faq from "../Freelance/sections/faq/faq";
+import Home from "../Freelance/sections/home/home";
+import Projects from "../Freelance/sections/projects/projects";
+import Services from "../Freelance/sections/services/services";
+import Skills from "../Freelance/sections/skills/skills";
+import Testimonials from "../Freelance/sections/testimonials/testimonials";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

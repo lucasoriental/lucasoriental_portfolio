@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+GitHubLightSvg.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function GitHubLightSvg({ width, height, color }) {
   return (
     <svg

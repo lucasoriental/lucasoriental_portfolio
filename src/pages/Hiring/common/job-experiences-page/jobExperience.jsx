@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import JobExperiencesModal from "./jobExperiencesModal";
 
 import { useTranslation } from "react-i18next";
+
+import PropTypes from "prop-types";
 
 export default function JobExperiences(props) {
   const [jobExperience, setJobExperience] = useState(null);
@@ -59,3 +61,16 @@ export default function JobExperiences(props) {
     </div>
   );
 }
+
+JobExperiences.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      image: PropTypes.string.isRequired,
+      jobTitle: PropTypes.string.isRequired,
+      companyName: PropTypes.string.isRequired,
+      time: PropTypes.string.isRequired,
+      responsibilities: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

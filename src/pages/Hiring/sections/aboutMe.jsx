@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import image from "../../../assets/images/about-me-profile.jpg";
 
 import { useTranslation } from "react-i18next";

@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import XIconSvg from "../../../../assets/icons/icon_X";
 
 import { useTranslation } from "react-i18next";
+
+import PropTypes from "prop-types";
 
 export default function JobExperiencesModal({ setOpenModal, information }) {
   const { t } = useTranslation("hiring");
@@ -74,3 +76,8 @@ export default function JobExperiencesModal({ setOpenModal, information }) {
     </div>
   );
 }
+
+JobExperiencesModal.propTypes = {
+  setOpenModal: PropTypes.func,
+  information: PropTypes.object,
+};

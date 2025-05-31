@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+BehanceLightSvg.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function BehanceLightSvg({ width, height, color }) {
   return (
     <svg

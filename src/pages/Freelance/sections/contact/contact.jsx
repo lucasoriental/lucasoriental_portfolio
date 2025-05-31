@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { Check, Phone, Mail, MapPin, Copy, ExternalLink } from "lucide-react";
 import {
-  SiInstagram,
-  SiFacebook,
   SiBehance,
+  SiFacebook,
   SiGithub,
+  SiInstagram,
 } from "@icons-pack/react-simple-icons";
+import { Check, Copy, ExternalLink, Mail, MapPin, Phone } from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import MeshBackground from "../../common/meshBackground";
@@ -21,15 +21,18 @@ const Contacts = () => {
   };
 
   return (
-    <section id="container_contact" className="relative w-screen mx-auto pt-24 pb-24">
+    <section
+      id="container_contact"
+      className="relative w-screen mx-auto pt-24 pb-24"
+    >
       <MeshBackground />
       <div>
         <div className="mr-auto ml-auto w-[90%] max-w-4xl">
           <p className="text-4xl font-extrabold drop-shadow-xl text-center text-white mb-5 select-none lg:text-start lg:w-[20em]">
-          {t("contactsSection.title")}
+            {t("contactsSection.title")}
           </p>
           <p className="text-lg font-medium text text-zinc-100 mb-7 text-center select-none lg:text-start lg:w-[40em]">
-          {t("contactsSection.subTitle")}
+            {t("contactsSection.subTitle")}
           </p>
         </div>
         <div className="flex flex-col gap-1 border border-zinc-100 w-[90%] mr-auto max-w-4xl ml-auto justify-between text-white">

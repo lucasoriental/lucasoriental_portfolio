@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import JobExperience from "../common/job-experiences-page/jobExperience";
 
 import { useTranslation } from "react-i18next";
@@ -7,7 +7,7 @@ import i18n from "../../../locales/i18n";
 const JobExperiencesPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [jobExperiences, setJobExperiences] = useState(null);
-  const { t } = useTranslation('hiring');
+  const { t } = useTranslation("hiring");
 
   const fetchData = async (lng) => {
     try {

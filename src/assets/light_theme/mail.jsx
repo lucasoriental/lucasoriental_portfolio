@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+MailLightSvg.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function MailLightSvg({ width, height, color }) {
   return (
     <svg

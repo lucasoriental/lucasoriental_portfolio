@@ -1,5 +1,6 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
+
+import PropTypes from "prop-types";
 
 export default function College(props) {
   const { t } = useTranslation("hiring");
@@ -36,7 +37,7 @@ export default function College(props) {
                 className="EAS-college-button"
               >
                 <button className="EAS-college-button">
-                  {t('sections.educationAndSkillsPage.section1.buttonText')}
+                  {t("sections.educationAndSkillsPage.section1.buttonText")}
                 </button>
               </a>
             </div>
@@ -46,3 +47,16 @@ export default function College(props) {
     </div>
   );
 }
+
+College.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      img: PropTypes.string,
+      courseTitle: PropTypes.string.isRequired,
+      universityName: PropTypes.string.isRequired,
+      time: PropTypes.string.isRequired,
+      websiteLink: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

@@ -1,9 +1,9 @@
-import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 
+import caioVaz from "../../../../assets/images/caioVaz.jpeg";
 import pedroLucas from "../../../../assets/images/pedroLucas.jpg";
 import ruteMatos from "../../../../assets/images/ruteMatos.webp";
-import caioVaz from "../../../../assets/images/caioVaz.jpeg";
 
 const testimonials = [
   {

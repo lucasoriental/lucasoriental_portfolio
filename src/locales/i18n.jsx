@@ -1,13 +1,13 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import enHome from "../locales/en/home.json";
 import enFreelance from "../locales/en/freelance.json";
 import enHiring from "../locales/en/hiring.json";
+import enHome from "../locales/en/home.json";
 
-import ptHome from "../locales/pt/home.json";
 import ptFreelance from "../locales/pt/freelance.json";
 import ptHiring from "../locales/pt/hiring.json";
+import ptHome from "../locales/pt/home.json";
 
 i18n.use(initReactI18next).init({
   resources: {

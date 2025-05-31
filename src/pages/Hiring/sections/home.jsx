@@ -1,10 +1,9 @@
-import React from "react";
+import main_picture from "../../../assets/images/home-profile.jpg";
 import BehanceSVG from "../../../assets/light_theme/Behance";
 import GitHubSVG from "../../../assets/light_theme/GitHub";
 import InstagramSVG from "../../../assets/light_theme/Instagram";
 import LinkedInSVG from "../../../assets/light_theme/LinkedIn";
 import MouseSrollSvg from "../../../assets/light_theme/mouse_arrow_down";
-import main_picture from "../../../assets/images/home-profile.jpg";
 
 import { Tooltip } from "react-tooltip";
 
@@ -13,7 +12,7 @@ import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
 const MainPage = () => {
-  const { t } = useTranslation('hiring');
+  const { t } = useTranslation("hiring");
 
   const headerHeight = 120;
 
@@ -69,7 +68,6 @@ const MainPage = () => {
             </Link>
             <div className="home-social-medias">
               <a
-                place="top"
                 data-tooltip-id="my-tooltip-instagram"
                 data-tooltip-content={t(
                   "sections.homePage.toolTipTexts.instagram"
@@ -82,7 +80,6 @@ const MainPage = () => {
                 <InstagramSVG width={40} height={40} color={"#E00036"} />
               </a>
               <a
-                place="top"
                 data-tooltip-id="my-tooltip-GitHub"
                 data-tooltip-content={t(
                   "sections.homePage.toolTipTexts.gitHub"
@@ -95,7 +92,6 @@ const MainPage = () => {
                 <GitHubSVG width={40} height={40} color={"#E00036"} />
               </a>
               <a
-                place="top"
                 data-tooltip-id="my-tooltip-LinkedIn"
                 data-tooltip-content={t(
                   "sections.homePage.toolTipTexts.linkedIn"
@@ -108,7 +104,6 @@ const MainPage = () => {
                 <LinkedInSVG width={40} height={40} color={"#E00036"} />
               </a>
               <a
-                place="top"
                 data-tooltip-id="my-tooltip-Behance"
                 data-tooltip-content={t(
                   "sections.homePage.toolTipTexts.behance"

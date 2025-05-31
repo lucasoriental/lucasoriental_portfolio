@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const XIconSvg = ({ width, height, strokeWidth, color }) => {
   return (
     <svg
@@ -25,3 +27,10 @@ const XIconSvg = ({ width, height, strokeWidth, color }) => {
 };
 
 export default XIconSvg;
+
+XIconSvg.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  strokeWidth: PropTypes.number,
+  color: PropTypes.string,
+};

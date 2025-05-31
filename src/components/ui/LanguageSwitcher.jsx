@@ -1,5 +1,6 @@
 import i18n from "i18next";
-import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
 
 const LanguageSwitcher = ({ onClick }) => {
   const [selectedLang, setSelectedLang] = useState(i18n.language);
@@ -27,3 +28,7 @@ const LanguageSwitcher = ({ onClick }) => {
 };
 
 export default LanguageSwitcher;
+
+LanguageSwitcher.propTypes = {
+  onClick: PropTypes.func,
+};

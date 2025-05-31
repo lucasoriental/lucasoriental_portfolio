@@ -1,4 +1,12 @@
-export default function clockLightSVG({ width, height, color }) {
+import PropTypes from "prop-types";
+
+ClockLightSVG.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
+export default function ClockLightSVG({ width, height, color }) {
   return (
     <svg
       width={width}

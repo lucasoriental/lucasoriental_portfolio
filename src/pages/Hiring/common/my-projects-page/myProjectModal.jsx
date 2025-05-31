@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import XIconSvg from "../../../../assets/icons/icon_X";
 import BehanceIcon from "../../../../assets/light_theme/Behance";
 import GitHubIcon from "../../../../assets/light_theme/GitHub";
 import BrowserIcon from "../../../../assets/light_theme/browser";
 
 import { useTranslation } from "react-i18next";
+
+import PropTypes from "prop-types";
 
 export default function MyProjectModal({ information, setOpenModal }) {
   const [iconSize, setIconSize] = useState(window.innerWidth <= 800 ? 15 : 30);
@@ -120,3 +122,8 @@ export default function MyProjectModal({ information, setOpenModal }) {
     </div>
   );
 }
+
+MyProjectModal.propTypes = {
+  information: PropTypes.object,
+  setOpenModal: PropTypes.func,
+};

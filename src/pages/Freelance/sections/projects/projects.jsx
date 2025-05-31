@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import MeshBackground from "../../common/meshBackground";
 
@@ -101,15 +101,15 @@ const Projects = () => {
                     {project.projectArea}
                   </p>
                 </div>
-                {modalOpen && selectedProject === index && (
-                  <MyProjectModal
-                    information={project}
-                    setOpenModal={setModalOpen}
-                  />
-                )}
               </button>
             );
           })}
+          {modalOpen && selectedProject !== null && (
+            <MyProjectModal
+              information={project.projects[selectedProject]}
+              setOpenModal={setModalOpen}
+            />
+          )}
         </div>
       )}
     </section>

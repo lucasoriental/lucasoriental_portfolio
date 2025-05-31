@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+WppOrCallLightSvg.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function WppOrCallLightSvg({ width, height, color }) {
   return (
     <svg

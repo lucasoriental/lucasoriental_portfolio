@@ -1,12 +1,12 @@
-import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "../src/styles/App.scss";
 import "../src/styles/tailwind.css";
-import "aos/dist/aos.css";
 
-import Hiring from "../src/pages/Hiring/hiring";
 import Freelance from "../src/pages/Freelance/freelance";
+import Hiring from "../src/pages/Hiring/hiring";
 import Home from "../src/pages/Home/Home";
 
 function App() {

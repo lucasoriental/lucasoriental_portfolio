@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+CapCourseLightSVG.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function CapCourseLightSVG({ width, height, color }) {
   return (
     <svg

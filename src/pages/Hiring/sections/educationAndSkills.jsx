@@ -1,61 +1,60 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Certificates from "../common/education-and-skills-page/certificates";
 import College from "../common/education-and-skills-page/college";
 //import Skills from "../common/education-and-skills-page/skills";
 
 import {
-  SiGithub,
-  SiJavascript,
-  SiHtml5,
+  SiAmazonwebservices,
+  SiCanva,
+  SiCreatereactapp,
   SiCss,
-  SiTypescript,
+  SiDocker,
+  SiEslint,
+  SiFigma,
+  SiGit,
+  SiGithub,
+  SiGithubpages,
+  SiHostinger,
+  SiHtml5,
+  SiJavascript,
+  SiJenkins,
+  SiJest,
+  SiJira,
+  SiJson,
+  SiJupyter,
+  SiLucide,
+  SiMaterialdesign,
+  SiMongodb,
+  SiNodedotjs,
+  SiNotion,
+  SiNpm,
+  SiPostgresql,
   SiPython,
   SiReact,
-  SiTailwindcss,
-  SiMongodb,
-  SiPostgresql,
-  SiMysql,
-  SiSass,
-  SiJest,
-  SiNodedotjs,
   SiReactbootstrap,
-  SiFigma,
-  SiAmazonwebservices,
-  SiSonarqube,
-  SiSonarlint,
   SiReactrouter,
-  SiVite,
-  SiGit,
-  SiJson,
-  SiCreatereactapp,
-  SiLucide,
+  SiSass,
+  SiShopify,
   SiSimpleicons,
-  SiMaterialdesign,
-  SiDocker,
-  SiJenkins,
-  SiNpm,
-  SiUbuntu,
-  SiJupyter,
-  SiHostinger,
-  SiEslint,
-  SiCanva,
-  SiJira,
+  SiSonarlint,
+  SiSonarqube,
+  SiTailwindcss,
   SiTrello,
-  SiGithubpages,
+  SiTypescript,
+  SiUbuntu,
+  SiVite,
   SiWix,
   SiWordpress,
-  SiNotion,
-  SiShopify,
 } from "@icons-pack/react-simple-icons";
+import { useTranslation } from "react-i18next";
 import { RiFileExcel2Fill, RiWindowsFill } from "react-icons/ri";
-import { VscAzure, VscVscode } from "react-icons/vsc";
 import {
   SiAdobephotoshop,
-  SiFastapi,
   SiExpress,
+  SiFastapi,
   SiSqlalchemy,
 } from "react-icons/si";
-import { useTranslation } from "react-i18next";
+import { VscAzure, VscVscode } from "react-icons/vsc";
 
 import i18n from "../../../locales/i18n";
 
@@ -115,7 +114,6 @@ const EducationAndSkillsPage = () => {
       items: [
         { icon: SiMongodb, name: "MongoDB" },
         { icon: SiPostgresql, name: "PostgreSQL" },
-        
       ],
     },
     {
@@ -124,7 +122,6 @@ const EducationAndSkillsPage = () => {
         { icon: SiGit, name: "Git" },
         { icon: SiGithub, name: "GitHub" },
         { icon: SiJson, name: "JSON" },
-        
       ],
     },
     {
@@ -302,19 +299,28 @@ const EducationAndSkillsPage = () => {
                   />
                 </div>
               </div>
-              <p className="justify-center lg:text-center mx-auto max-w-[90%] text-red-900 font-medium lg:text-base text-sm text-justify" data-aos="fade-left"
-                    data-aos-anchor-placement="center-bottom">
+              <p
+                className="justify-center lg:text-center mx-auto max-w-[90%] text-red-900 font-medium lg:text-base text-sm text-justify"
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+              >
                 {t("skillsSection.note")}
               </p>
-              <div className="flex gap-3 flex-wrap justify-start max-w-[90%] mx-auto flex-col" >
+              <div className="flex gap-3 flex-wrap justify-start max-w-[90%] mx-auto flex-col">
                 {skills.map(({ category, items }) => (
-                  <div key={category} data-aos="fade-left"
-                  data-aos-anchor-placement="center-bottom">
+                  <div
+                    key={category}
+                    data-aos="fade-left"
+                    data-aos-anchor-placement="center-bottom"
+                  >
                     <p className="mb-3 mt-8 text-lg font-bold text-zinc-950">
                       {category}
                     </p>
-                    <div className="flex gap-3 flex-wrap justify-start" data-aos="fade-up"
-                  data-aos-anchor-placement="center-bottom">
+                    <div
+                      className="flex gap-3 flex-wrap justify-start"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="center-bottom"
+                    >
                       {items.map(({ icon: SkillIcon, name }) => (
                         <div
                           key={name}

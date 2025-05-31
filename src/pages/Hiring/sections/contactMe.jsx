@@ -1,4 +1,3 @@
-import React from "react";
 import BehanceSVG from "../../../assets/light_theme/Behance";
 import GitHubSVG from "../../../assets/light_theme/GitHub";
 import InstagramSVG from "../../../assets/light_theme/Instagram";
@@ -9,7 +8,7 @@ import NumberSVG from "../../../assets/light_theme/wpp_or_call";
 
 import { useTranslation } from "react-i18next";
 
-const contactMePage = () => {
+const ContactMePage = () => {
   const { t } = useTranslation("hiring");
   return (
     <div id="contact-me-container">
@@ -114,4 +113,4 @@ const contactMePage = () => {
   );
 };
 
-export default contactMePage;
+export default ContactMePage;

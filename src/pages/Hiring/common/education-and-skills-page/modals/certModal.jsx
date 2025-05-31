@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import XIconSvg from "../../../../../assets/icons/icon_X";
 
+import PropTypes from "prop-types";
+
 import { useTranslation } from "react-i18next";
 
 export default function CertModal({ setOpenModal, information }) {
@@ -25,7 +27,11 @@ export default function CertModal({ setOpenModal, information }) {
           >
             <XIconSvg width={30} height={30} strokeWidth={3} color="white" />
           </button>
-          <p className="modal-header-title">{t('sections.educationAndSkillsPage.section2and3.modal_cert.header')}</p>
+          <p className="modal-header-title">
+            {t(
+              "sections.educationAndSkillsPage.section2and3.modal_cert.header"
+            )}
+          </p>
         </div>
         <div className="modal-body">
           <div className="modal-block-info-cert-all">
@@ -39,7 +45,7 @@ export default function CertModal({ setOpenModal, information }) {
             </div>
             <div className="modal-block-info-cert">
               <p className="modal-cert-title">
-              {t(
+                {t(
                   "sections.educationAndSkillsPage.section2and3.modal_cert.input2"
                 )}
               </p>
@@ -48,9 +54,11 @@ export default function CertModal({ setOpenModal, information }) {
                 target="_blank"
                 className="modal-cert-value-a"
               >
-                <p className="modal-cert-value">{t(
-                  "sections.educationAndSkillsPage.section2and3.modal_cert.button"
-                )}</p>
+                <p className="modal-cert-value">
+                  {t(
+                    "sections.educationAndSkillsPage.section2and3.modal_cert.button"
+                  )}
+                </p>
               </a>
             </div>
           </div>
@@ -59,3 +67,8 @@ export default function CertModal({ setOpenModal, information }) {
     </div>
   );
 }
+
+CertModal.propTypes = {
+  setOpenModal: PropTypes.func,
+  information: PropTypes.object,
+};

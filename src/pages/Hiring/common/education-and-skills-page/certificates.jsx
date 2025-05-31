@@ -4,6 +4,8 @@ import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
 import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
 import CertModal from "./modals/certModal";
 
+import PropTypes from "prop-types";
+
 import { useTranslation } from "react-i18next";
 
 export default function Certificates(props) {
@@ -64,7 +66,8 @@ export default function Certificates(props) {
                     dangerouslySetInnerHTML={{
                       __html: certificate.time,
                     }}
-                  /><p className="EAS-certificates-div-text">h</p> 
+                  />
+                  <p className="EAS-certificates-div-text">h</p>
                 </div>
               </div>
               {modalOpen && selectedCourse === index && (
@@ -80,3 +83,15 @@ export default function Certificates(props) {
     </div>
   );
 }
+
+Certificates.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      img: PropTypes.string.isRequired,
+      course: PropTypes.string.isRequired,
+      platform: PropTypes.string.isRequired,
+      time: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

@@ -1,8 +1,8 @@
-import Picture from "../../assets/images/home-profile.jpg";
-import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
-import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
+import Picture from "../../assets/images/home-profile.jpg";
+import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
 
 function Home() {
   const { t } = useTranslation("home");

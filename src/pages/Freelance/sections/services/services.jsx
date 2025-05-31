@@ -1,9 +1,9 @@
-import React from "react";
-import { Check, Code, Palette, ChartNoAxesCombined } from "lucide-react";
-import developmentImg from "../../../../assets/images/background-development.jpg";
-import designImg from "../../../../assets/images/background-design.jpg";
-import marketingImg from "../../../../assets/images/background-marketing.jpg";
+import { ChartNoAxesCombined, Check, Code, Palette } from "lucide-react";
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
+import designImg from "../../../../assets/images/background-design.jpg";
+import developmentImg from "../../../../assets/images/background-development.jpg";
+import marketingImg from "../../../../assets/images/background-marketing.jpg";
 
 const Services = () => {
   const { t } = useTranslation("freelance");
@@ -56,6 +56,15 @@ const Services = () => {
       </div>
     </div>
   );
+
+  ServiceCard.propTypes = {
+    img: PropTypes.string.isRequired,
+    icon: PropTypes.elementType.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    services: PropTypes.arrayOf(PropTypes.string).isRequired,
+    reverse: PropTypes.bool,
+  };
 
   const arrayServices = [
     {

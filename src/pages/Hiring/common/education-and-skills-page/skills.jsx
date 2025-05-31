@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProfessionalStarIconSvg from "../../../../assets/icons/professional_star";
 
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import PropTypes from "prop-types";
 
 // Import Swiper styles
 import "swiper/css";
@@ -81,3 +83,14 @@ export default function Skills(props) {
     </div>
   );
 }
+
+Skills.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      img: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      professional: PropTypes.bool,
+    })
+  ).isRequired,
+};

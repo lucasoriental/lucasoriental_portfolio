@@ -1,3 +1,11 @@
+import PropTypes from "prop-types";
+
+Browser.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
+  color: PropTypes.string,
+};
+
 export default function Browser({ width, height, color }) {
   return (
     <svg

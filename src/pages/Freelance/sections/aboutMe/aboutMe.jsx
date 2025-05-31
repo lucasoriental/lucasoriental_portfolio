@@ -1,7 +1,6 @@
-import React from "react";
-import MeshBackground from "../../common/meshBackground";
-import picture from "../../../../assets/images/about-me-profile.jpg";
 import { useTranslation } from "react-i18next";
+import picture from "../../../../assets/images/about-me-profile.jpg";
+import MeshBackground from "../../common/meshBackground";
 
 const AboutMe = () => {
   const { t } = useTranslation("freelance");

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
+import { AlignJustify, X } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { X, AlignJustify } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import LanguageSwitcher from "../../components/ui/LanguageSwitcher";
 
 export default function HeaderFreelancer() {
   const { t } = useTranslation("freelance");

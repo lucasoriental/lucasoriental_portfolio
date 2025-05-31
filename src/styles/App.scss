@@ -68,7 +68,7 @@
   a:hover {
     transition: 600ms;
     font-weight: 900;
-    color: var(--HoverTextColor)
+    color: var(--HoverTextColor);
   }
 }
 
@@ -499,7 +499,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     margin: 60px 0px;
   }
 }
@@ -563,12 +563,10 @@
 }
 
 .column-1-teste {
-
   flex-grow: 0;
 }
 
 .column-2-teste {
-
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -733,7 +731,6 @@
 }
 
 .canvas-teste {
-
   margin: 0 2px;
   background-color: var(--RedLight);
   height: 20px;
@@ -749,7 +746,6 @@
 }
 
 .canvas-teste2 {
-
   margin: 0 2px;
   background-color: var(--LightGray);
   height: 20px;
@@ -999,7 +995,7 @@
   }
 
   @media (max-width: 398px) {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 }
 
@@ -1523,7 +1519,6 @@ body.modal-open {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--RedLight) !important;
-
 }
 
 .list-json-experience {
@@ -1533,7 +1528,6 @@ body.modal-open {
 
 //MODAL JOB EXPERIENCES
 
-
 .modal-job-img {
   width: 100px;
   height: 100%;
@@ -1541,7 +1535,7 @@ body.modal-open {
   border: 2px solid var(--DarkGray);
   border-radius: 10%;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     height: 100px;
   }
 }
@@ -1558,7 +1552,7 @@ body.modal-open {
   padding-top: 20px;
   margin-left: 20px;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     padding-top: 10px;
     margin-left: 15px;
   }
@@ -1566,14 +1560,14 @@ body.modal-open {
 
 .modal-body-img-and-info {
   display: flex;
-  margin: 20px 0px 30px 0px
+  margin: 20px 0px 30px 0px;
 }
 
 .modal-job-company-name {
   font-size: 25px;
   font-weight: 900;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 23px;
   }
 }
@@ -1582,7 +1576,7 @@ body.modal-open {
   font-size: 20px;
   font-weight: 700;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 18px;
   }
 }
@@ -1591,7 +1585,7 @@ body.modal-open {
   font-size: 18px;
   font-weight: 500;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 16px;
   }
 }
@@ -1601,7 +1595,7 @@ body.modal-open {
   font-weight: bold;
   font-size: 18px;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 16px;
   }
 }
@@ -1611,7 +1605,7 @@ body.modal-open {
   text-align: justify;
   color: var(--DarkGray);
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     font-size: 14px;
   }
 }
@@ -1621,14 +1615,13 @@ body.modal-open {
   color: var(--DeepGray);
   text-decoration: underline;
   font-weight: 700;
-  transition: 500ms
+  transition: 500ms;
 }
 
 .modal-job-responsibilities span:hover {
   letter-spacing: 2px;
   transition: 500ms;
 }
-
 
 .X-icon-svg {
   transition: 1000ms;
